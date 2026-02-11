@@ -6,64 +6,111 @@ const About = () => {
   return (
     <section id="about" className="py-24 px-4">
       <div className="max-w-5xl mx-auto">
-        <div className="grid md:grid-cols-2 gap-12 items-center">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="text-center mb-14"
+        >
+          <span className="text-primary font-body text-sm font-medium tracking-wide uppercase mb-3 block">
+            Meet Your Coaches
+          </span>
+          <h2 className="text-3xl md:text-4xl font-display font-semibold mb-4">
+            We've been where you are.
+          </h2>
+          <p className="text-muted-foreground font-body max-w-xl mx-auto">
+            Two coaches who understand heartbreak firsthand — here to walk beside you on your healing journey.
+          </p>
+        </motion.div>
+
+        <div className="grid md:grid-cols-2 gap-10">
+          {/* Bruna */}
           <motion.div
-            initial={{ opacity: 0, x: -30 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
+            className="bg-card rounded-2xl p-8 border border-border"
+            style={{ boxShadow: "var(--shadow-soft)" }}
           >
-            <div className="relative">
+            <div className="relative mb-6">
               <img
                 src={brunaImg}
                 alt="Bruna - Relationship & Attachment Coach"
-                className="rounded-2xl w-full max-w-sm mx-auto object-cover aspect-square"
+                className="rounded-2xl w-full max-w-xs mx-auto object-cover aspect-square"
                 style={{ boxShadow: "var(--shadow-warm)" }}
               />
-              <div className="absolute -bottom-4 -right-4 bg-primary text-primary-foreground rounded-xl px-4 py-2 font-body text-sm font-medium">
+              <div className="absolute -bottom-3 left-1/2 -translate-x-1/2 bg-primary text-primary-foreground rounded-xl px-4 py-2 font-body text-sm font-medium whitespace-nowrap">
                 Relationship Coach 💛
               </div>
             </div>
-          </motion.div>
-
-          <motion.div
-            initial={{ opacity: 0, x: 30 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-          >
-            <span className="text-primary font-body text-sm font-medium tracking-wide uppercase mb-3 block">
-              Meet Your Coach
-            </span>
-            <h2 className="text-3xl md:text-4xl font-display font-semibold mb-5">
-              Hi, I'm Bruna.
-            </h2>
-            <div className="space-y-4 text-muted-foreground font-body leading-relaxed">
+            <h3 className="text-2xl font-display font-semibold mb-3 text-center">Hi, I'm Bruna.</h3>
+            <div className="space-y-3 text-muted-foreground font-body text-sm leading-relaxed">
               <p>
                 I know how it feels. The sleepless nights, the constant replaying
-                of memories, the ache that seems like it will never end. I've
-                been there — and I found my way through.
+                of memories. I've been there — and I found my way through.
               </p>
               <p>
                 As a relationship and attachment coach, I specialize in helping
-                people navigate the painful journey of heartbreak. I'll help you
-                understand your attachment patterns, build healthier
-                relationships with yourself, and emerge from this stronger than
-                you ever imagined.
+                people navigate heartbreak, understand their attachment patterns,
+                and emerge stronger than they ever imagined.
               </p>
-              <p className="text-foreground font-medium italic font-display text-lg">
-                "You're not broken. You're healing. And healing is brave."
+              <p className="text-foreground font-medium italic font-display text-base">
+                "You're not broken. You're healing."
               </p>
             </div>
-
-            <div className="flex gap-6 mt-8">
+            <div className="flex gap-4 mt-6 justify-center">
               {[
                 { icon: Heart, label: "Compassionate" },
                 { icon: Sparkles, label: "Transformative" },
-                { icon: Shield, label: "Safe Space" },
               ].map(({ icon: Icon, label }) => (
                 <div key={label} className="flex items-center gap-2 text-sm font-body text-muted-foreground">
                   <Icon className="w-4 h-4 text-primary" />
+                  {label}
+                </div>
+              ))}
+            </div>
+          </motion.div>
+
+          {/* Pascal */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.15 }}
+            className="bg-card rounded-2xl p-8 border border-border"
+            style={{ boxShadow: "var(--shadow-soft)" }}
+          >
+            <div className="relative mb-6">
+              <div className="rounded-2xl w-full max-w-xs mx-auto aspect-square bg-muted flex items-center justify-center">
+                <span className="text-6xl font-display text-primary/30">P</span>
+              </div>
+              <div className="absolute -bottom-3 left-1/2 -translate-x-1/2 bg-secondary text-secondary-foreground rounded-xl px-4 py-2 font-body text-sm font-medium whitespace-nowrap">
+                Recovery Coach 🤍
+              </div>
+            </div>
+            <h3 className="text-2xl font-display font-semibold mb-3 text-center">Hi, I'm Pascal.</h3>
+            <div className="space-y-3 text-muted-foreground font-body text-sm leading-relaxed">
+              <p>
+                Breakups can shake everything you thought you knew about yourself.
+                I've been through that darkness — and I know the way out.
+              </p>
+              <p>
+                I help people rebuild their sense of self, master the no-contact
+                journey, and turn heartbreak into the beginning of their
+                strongest chapter.
+              </p>
+              <p className="text-foreground font-medium italic font-display text-base">
+                "Your pain is proof you loved deeply. Now love yourself."
+              </p>
+            </div>
+            <div className="flex gap-4 mt-6 justify-center">
+              {[
+                { icon: Shield, label: "Safe Space" },
+                { icon: Sparkles, label: "Action-Oriented" },
+              ].map(({ icon: Icon, label }) => (
+                <div key={label} className="flex items-center gap-2 text-sm font-body text-muted-foreground">
+                  <Icon className="w-4 h-4 text-secondary" />
                   {label}
                 </div>
               ))}
