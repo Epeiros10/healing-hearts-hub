@@ -39,14 +39,14 @@ const Coaching = () => {
           className="text-center mb-14"
         >
           <span className="text-primary font-body text-sm font-medium tracking-wide uppercase mb-3 block">
-            1:1 Coaching with Bruna
+            1:1 Coaching with Bruna & Pascal
           </span>
           <h2 className="text-3xl md:text-4xl font-display font-semibold mb-4">
             Personalized Support, Just for You
           </h2>
           <p className="text-muted-foreground font-body max-w-xl mx-auto">
-            Everyone's healing journey is unique. Choose the way you'd like to
-            connect, and let's start working through this together.
+            Everyone's healing journey is unique. Work with Bruna or Pascal —
+            choose the way you'd like to connect, and let's start working through this together.
           </p>
         </motion.div>
 
