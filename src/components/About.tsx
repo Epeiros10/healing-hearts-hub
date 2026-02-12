@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { Heart, Sparkles, Shield } from "lucide-react";
 import brunaImg from "@/assets/bruna-coach.jpg";
+import pascalImg from "@/assets/pascal-coach.jpg";
 
 const About = () => {
   return (
@@ -82,9 +83,12 @@ const About = () => {
             style={{ boxShadow: "var(--shadow-soft)" }}
           >
             <div className="relative mb-6">
-              <div className="rounded-2xl w-full max-w-xs mx-auto aspect-square bg-muted flex items-center justify-center">
-                <span className="text-6xl font-display text-primary/30">P</span>
-              </div>
+              <img
+                src={pascalImg}
+                alt="Pascal - Recovery Coach"
+                className="rounded-2xl w-full max-w-xs mx-auto object-cover aspect-square"
+                style={{ boxShadow: "var(--shadow-warm)" }}
+              />
               <div className="absolute -bottom-3 left-1/2 -translate-x-1/2 bg-secondary text-secondary-foreground rounded-xl px-4 py-2 font-body text-sm font-medium whitespace-nowrap">
                 Recovery Coach 🤍
               </div>
