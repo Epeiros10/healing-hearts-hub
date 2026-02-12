@@ -22,7 +22,7 @@ const Hero = () => {
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
           <span className="inline-flex items-center gap-2 text-primary font-body text-sm font-medium tracking-wide uppercase mb-6">
-            <Heart className="w-4 h-4" fill="currentColor" /> You will heal
+            <Heart className="w-4 h-4" fill="currentColor" /> Break Up Recovery
           </span>
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-display font-semibold leading-tight mb-6">
             Heartbreak is

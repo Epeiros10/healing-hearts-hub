@@ -29,7 +29,7 @@ const Navbar = () => {
       <div className="max-w-5xl mx-auto flex items-center justify-between px-4 py-4">
         <a href="#" className="flex items-center gap-2 font-display text-xl font-semibold">
           <Heart className="w-5 h-5 text-primary" fill="currentColor" />
-          <span>Heal Together</span>
+          <span>Break Up Recovery</span>
         </a>
 
         {/* Desktop */}
