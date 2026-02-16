@@ -1,12 +1,13 @@
-import { Heart } from "lucide-react";
-
 const Footer = () => {
   return (
     <footer className="py-12 px-4 border-t border-border">
       <div className="max-w-5xl mx-auto text-center">
         <div className="flex items-center justify-center gap-2 mb-4">
-          <Heart className="w-4 h-4 text-primary" fill="currentColor" />
-          <span className="font-display text-lg font-semibold">Break Up Recovery</span>
+          <span className="font-display text-lg font-semibold tracking-tight">
+            <span className="text-primary">b</span>
+            <span className="text-foreground/80">r</span>
+            <span className="text-muted-foreground text-[0.6em] mx-[2px] align-middle">•</span>
+          </span>
         </div>
         <p className="font-body text-sm text-muted-foreground max-w-md mx-auto mb-6">
           Remember: healing isn't linear, and it's okay to not be okay.
