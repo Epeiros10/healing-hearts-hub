@@ -27,10 +27,13 @@ const Navbar = () => {
       }`}
     >
       <div className="max-w-5xl mx-auto flex items-center justify-between px-4 py-4">
-        <a href="#" className="font-display text-xl font-semibold tracking-tight">
-          <span className="text-primary">b</span>
-          <span className="text-foreground/80">r</span>
-          <span className="text-muted-foreground text-[0.6em] mx-[2px] align-middle">•</span>
+        <a href="#" className="flex items-center gap-2 font-display text-xl font-semibold tracking-tight">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" className="text-primary shrink-0">
+            <path d="M12 21C12 21 3 13.5 3 8.5C3 5.42 5.42 3 8.5 3C10.24 3 11.91 3.81 12 5L12 5C12.09 3.81 13.76 3 15.5 3C18.58 3 21 5.42 21 8.5C21 13.5 12 21 12 21Z" fill="currentColor" opacity="0.15"/>
+            <path d="M3 8.5C3 13.5 12 21 12 21C12 21 21 13.5 21 8.5C21 5.42 18.58 3 15.5 3C13.76 3 12.09 3.81 12 5C11.91 3.81 10.24 3 8.5 3C5.42 3 3 5.42 3 8.5Z" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+            <path d="M12 5L12 21" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeDasharray="2 3"/>
+          </svg>
+          <span>Break Up Recovery</span>
         </a>
 
         {/* Desktop */}
