@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Heart, Menu, X } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
 const navLinks = [
@@ -27,9 +27,10 @@ const Navbar = () => {
       }`}
     >
       <div className="max-w-5xl mx-auto flex items-center justify-between px-4 py-4">
-        <a href="#" className="flex items-center gap-2 font-display text-xl font-semibold">
-          <Heart className="w-5 h-5 text-primary" fill="currentColor" />
-          <span>Break Up Recovery</span>
+        <a href="#" className="font-display text-xl font-semibold tracking-tight">
+          <span className="text-primary">b</span>
+          <span className="text-foreground/80">r</span>
+          <span className="text-muted-foreground text-[0.6em] mx-[2px] align-middle">•</span>
         </a>
 
         {/* Desktop */}
