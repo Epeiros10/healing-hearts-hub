@@ -11,8 +11,8 @@ const About = () => {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-center mb-14"
-        >
+          className="text-center mb-14">
+
           <span className="text-primary font-body text-sm font-medium tracking-wide uppercase mb-3 block">
             Meet Your Coaches
           </span>
@@ -32,15 +32,15 @@ const About = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
             className="bg-card rounded-2xl p-8 border border-border"
-            style={{ boxShadow: "var(--shadow-soft)" }}
-          >
+            style={{ boxShadow: "var(--shadow-soft)" }}>
+
             <div className="relative mb-6">
               <img
-                src={brunaImg}
+
                 alt="Bruna - Relationship & Attachment Coach"
                 className="rounded-2xl w-full max-w-xs mx-auto object-cover aspect-square"
-                style={{ boxShadow: "var(--shadow-warm)" }}
-              />
+                style={{ boxShadow: "var(--shadow-warm)" }} src="/lovable-uploads/fcd8f7c5-6bdb-4624-9f54-70365fb58964.png" />
+
               <div className="absolute -bottom-3 left-1/2 -translate-x-1/2 bg-primary text-primary-foreground rounded-xl px-4 py-2 font-body text-sm font-medium whitespace-nowrap">
                 Relationship Coach 💛
               </div>
@@ -62,14 +62,14 @@ const About = () => {
             </div>
             <div className="flex gap-4 mt-6 justify-center">
               {[
-                { icon: Heart, label: "Compassionate" },
-                { icon: Sparkles, label: "Transformative" },
-              ].map(({ icon: Icon, label }) => (
-                <div key={label} className="flex items-center gap-2 text-sm font-body text-muted-foreground">
+              { icon: Heart, label: "Compassionate" },
+              { icon: Sparkles, label: "Transformative" }].
+              map(({ icon: Icon, label }) =>
+              <div key={label} className="flex items-center gap-2 text-sm font-body text-muted-foreground">
                   <Icon className="w-4 h-4 text-primary" />
                   {label}
                 </div>
-              ))}
+              )}
             </div>
           </motion.div>
 
@@ -80,15 +80,15 @@ const About = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.15 }}
             className="bg-card rounded-2xl p-8 border border-border"
-            style={{ boxShadow: "var(--shadow-soft)" }}
-          >
+            style={{ boxShadow: "var(--shadow-soft)" }}>
+
             <div className="relative mb-6">
               <img
-                src={pascalImg}
+
                 alt="Pascal - Recovery Coach"
                 className="rounded-2xl w-full max-w-xs mx-auto object-cover aspect-square"
-                style={{ boxShadow: "var(--shadow-warm)" }}
-              />
+                style={{ boxShadow: "var(--shadow-warm)" }} src="/lovable-uploads/4fbc4fcb-b5cf-4789-87e6-02b5b67ee9ab.png" />
+
               <div className="absolute -bottom-3 left-1/2 -translate-x-1/2 bg-secondary text-secondary-foreground rounded-xl px-4 py-2 font-body text-sm font-medium whitespace-nowrap">
                 Recovery Coach 🤍
               </div>
@@ -110,20 +110,20 @@ const About = () => {
             </div>
             <div className="flex gap-4 mt-6 justify-center">
               {[
-                { icon: Shield, label: "Safe Space" },
-                { icon: Sparkles, label: "Action-Oriented" },
-              ].map(({ icon: Icon, label }) => (
-                <div key={label} className="flex items-center gap-2 text-sm font-body text-muted-foreground">
+              { icon: Shield, label: "Safe Space" },
+              { icon: Sparkles, label: "Action-Oriented" }].
+              map(({ icon: Icon, label }) =>
+              <div key={label} className="flex items-center gap-2 text-sm font-body text-muted-foreground">
                   <Icon className="w-4 h-4 text-secondary" />
                   {label}
                 </div>
-              ))}
+              )}
             </div>
           </motion.div>
         </div>
       </div>
-    </section>
-  );
+    </section>);
+
 };
 
 export default About;
