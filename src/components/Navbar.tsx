@@ -38,7 +38,7 @@ const Navbar = () => {
             <circle cx="16" cy="18" r="2" className="fill-primary" />
             <path d="M16 13.5V12.5M20.2 15.3L20.9 14.6M21.5 18H22.5M20.2 20.7L20.9 21.4M16 22.5V23.5M11.8 20.7L11.1 21.4M10.5 18H9.5M11.8 15.3L11.1 14.6" className="stroke-primary" strokeWidth="1" strokeLinecap="round" />
           </svg>
-          <span className="uppercase tracking-[0.2em] font-mono text-base text-black font-normal">Break Up Recovery</span>
+          <span className="uppercase tracking-[0.2em] font-mono text-black font-normal text-sm text-left">BREAK UP RECOVERY</span>
         </a>
 
         {/* Desktop */}
