@@ -28,7 +28,7 @@ const Navbar = () => {
 
       <div className="max-w-5xl mx-auto flex items-center justify-between px-4 py-4">
         <a href="#" className="flex flex-col items-center gap-0.5 leading-none">
-          <svg width="28" height="28" viewBox="0 0 32 32" fill="none" className="shrink-0 rounded-md shadow-inner">
+          <svg width="28" height="28" viewBox="0 0 32 32" fill="none" className="shrink-0 rounded-md shadow-inner border-4 border-destructive">
             {/* Heart outline */}
             <path d="M4 11.5C4 17.5 16 27 16 27C16 27 28 17.5 28 11.5C28 7.36 24.64 4 20.5 4C18.27 4 16.27 5.08 16 6.6C15.73 5.08 13.73 4 11.5 4C7.36 4 4 7.36 4 11.5Z" className="fill-primary/10 stroke-primary" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
             {/* Crack/gap */}
