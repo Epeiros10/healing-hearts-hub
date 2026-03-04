@@ -28,15 +28,11 @@ const Navbar = () => {
 
       <div className="max-w-5xl mx-auto flex items-center justify-between px-4 py-4">
         <a href="#" className="flex flex-col items-center gap-0.5 leading-none">
-          <svg width="28" height="28" viewBox="0 0 32 32" fill="none" className="shrink-0 rounded-md shadow-inner border-destructive border-0">
-            {/* Heart outline */}
-            <path d="M4 11.5C4 17.5 16 27 16 27C16 27 28 17.5 28 11.5C28 7.36 24.64 4 20.5 4C18.27 4 16.27 5.08 16 6.6C15.73 5.08 13.73 4 11.5 4C7.36 4 4 7.36 4 11.5Z" className="fill-primary/10 stroke-primary" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-            {/* Crack/gap */}
-            <path d="M16 6.6V14" className="stroke-primary/40" strokeWidth="1.2" strokeLinecap="round" />
-            {/* Sunrise rays */}
-            <circle cx="16" cy="18" r="3.5" className="fill-primary/30" />
-            <circle cx="16" cy="18" r="2" className="fill-primary" />
-            <path d="M16 13.5V12.5M20.2 15.3L20.9 14.6M21.5 18H22.5M20.2 20.7L20.9 21.4M16 22.5V23.5M11.8 20.7L11.1 21.4M10.5 18H9.5M11.8 15.3L11.1 14.6" className="stroke-primary" strokeWidth="1" strokeLinecap="round" />
+          <svg width="26" height="26" viewBox="0 0 32 32" fill="none" className="shrink-0">
+            <path d="M16 28C16 28 4 19 4 12a6 6 0 0 1 12-1 6 6 0 0 1 12 1c0 7-12 16-12 16Z" className="stroke-primary" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" fill="none" />
+            <line x1="8" y1="17" x2="24" y2="17" className="stroke-primary/50" strokeWidth="1.2" strokeLinecap="round" />
+            <circle cx="16" cy="17" r="2.2" className="fill-primary/25" />
+            <circle cx="16" cy="17" r="1.2" className="fill-primary" />
           </svg>
           <span className="uppercase tracking-[0.2em] text-black font-normal text-left text-xs font-sans">BREAK UP RECOVERY      </span>
         </a>
