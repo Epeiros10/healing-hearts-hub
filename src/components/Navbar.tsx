@@ -28,11 +28,9 @@ const Navbar = () => {
 
       <div className="max-w-5xl mx-auto flex items-center justify-between px-4 py-4">
         <a href="#" className="flex flex-col items-center gap-0.5 leading-none">
-          <svg width="26" height="26" viewBox="0 0 32 32" fill="none" className="shrink-0">
-            <path d="M16 28C16 28 4 19 4 12a6 6 0 0 1 12-1 6 6 0 0 1 12 1c0 7-12 16-12 16Z" className="stroke-primary" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" fill="none" />
-            <line x1="8" y1="17" x2="24" y2="17" className="stroke-primary/50" strokeWidth="1.2" strokeLinecap="round" />
-            <circle cx="16" cy="17" r="2.2" className="fill-primary/25" />
-            <circle cx="16" cy="17" r="1.2" className="fill-primary" />
+          <svg width="24" height="24" viewBox="0 0 32 32" fill="none" className="shrink-0">
+            <path d="M6 22 C6 22 16 4 26 22" className="stroke-primary" strokeWidth="2" strokeLinecap="round" fill="none" />
+            <circle cx="16" cy="14" r="2" className="fill-primary" />
           </svg>
           <span className="uppercase tracking-[0.2em] text-black font-normal text-left text-xs font-sans">BREAK UP RECOVERY      </span>
         </a>
