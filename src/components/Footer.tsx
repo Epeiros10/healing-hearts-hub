@@ -4,8 +4,9 @@ const Footer = () => {
       <div className="max-w-5xl mx-auto text-center">
         <div className="flex flex-col items-center gap-1 mb-4">
           <svg width="20" height="20" viewBox="0 0 32 32" fill="none" className="shrink-0">
-            <path d="M6 22 C6 22 16 4 26 22" className="stroke-primary" strokeWidth="2" strokeLinecap="round" fill="none" />
-            <circle cx="16" cy="14" r="2" className="fill-primary" />
+            <path d="M16 28C16 28 4 19 4 12a6 6 0 0 1 12-1" className="stroke-primary" strokeWidth="1.8" strokeLinecap="round" fill="none" />
+            <path d="M16 28C16 28 28 19 28 12a6 6 0 0 0-12-1" className="stroke-primary" strokeWidth="1.8" strokeLinecap="round" fill="none" />
+            <path d="M16 7 L15 12 L17 16 L15 20 L16 28" stroke="#D4A843" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" fill="none" />
           </svg>
           <span className="text-[0.6rem] font-body font-medium uppercase tracking-[0.2em] text-foreground/70">Break Up Recovery</span>
         </div>
