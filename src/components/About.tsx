@@ -79,8 +79,8 @@ const About = () => {
                 href="https://calendly.com/brunacoach"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-primary text-primary-foreground font-body text-sm font-medium hover:opacity-90 transition-opacity"
-              >
+                className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-primary text-primary-foreground font-body text-sm font-medium hover:opacity-90 transition-opacity">
+                
                 <Calendar className="w-4 h-4" />
                 Book Now
               </a>
@@ -138,11 +138,11 @@ const About = () => {
                 €79 <span className="text-muted-foreground font-normal">/ 45-min emergency talk session</span>
               </p>
               <a
-                href="https://calendly.com/pascalcoach"
+
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-secondary text-secondary-foreground font-body text-sm font-medium hover:opacity-90 transition-opacity"
-              >
+                className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-secondary text-secondary-foreground font-body text-sm font-medium hover:opacity-90 transition-opacity" href="https://calendly.com/pascal-niggli/30min">
+                
                 <Calendar className="w-4 h-4" />
                 Book Now
               </a>
