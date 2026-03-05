@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Heart, Sparkles, Shield } from "lucide-react";
+import { Heart, Sparkles, Shield, Calendar } from "lucide-react";
 import brunaImg from "@/assets/bruna-coach.jpg";
 import pascalImg from "@/assets/pascal-coach.jpg";
 
@@ -71,6 +71,20 @@ const About = () => {
                 </div>
               )}
             </div>
+            <div className="mt-6 text-center space-y-3">
+              <p className="text-sm font-body font-semibold text-foreground">
+                €79 <span className="text-muted-foreground font-normal">/ 45-min emergency talk session</span>
+              </p>
+              <a
+                href="https://calendly.com/brunacoach"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-primary text-primary-foreground font-body text-sm font-medium hover:opacity-90 transition-opacity"
+              >
+                <Calendar className="w-4 h-4" />
+                Book Now
+              </a>
+            </div>
           </motion.div>
 
           {/* Pascal */}
@@ -118,6 +132,20 @@ const About = () => {
                   {label}
                 </div>
               )}
+            </div>
+            <div className="mt-6 text-center space-y-3">
+              <p className="text-sm font-body font-semibold text-foreground">
+                €79 <span className="text-muted-foreground font-normal">/ 45-min emergency talk session</span>
+              </p>
+              <a
+                href="https://calendly.com/pascalcoach"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-secondary text-secondary-foreground font-body text-sm font-medium hover:opacity-90 transition-opacity"
+              >
+                <Calendar className="w-4 h-4" />
+                Book Now
+              </a>
             </div>
           </motion.div>
         </div>
