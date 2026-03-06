@@ -14,9 +14,11 @@ const Footer = () => {
           Remember: healing isn't linear, and it's okay to not be okay.
           You're already brave for being here. 💛
         </p>
-        <p className="font-body text-xs text-muted-foreground/60">
-          © {new Date().getFullYear()} Break Up Recovery. All rights reserved.
-        </p>
+        <div className="flex items-center justify-center gap-3 font-body text-xs text-muted-foreground/60">
+          <span>© {new Date().getFullYear()} Break Up Recovery</span>
+          <span>·</span>
+          <a href="/privacy" className="hover:text-foreground transition-colors">Privacy Policy</a>
+        </div>
       </div>
     </footer>
   );
