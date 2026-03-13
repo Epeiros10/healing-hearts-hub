@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
+import BookingDialog from "./BookingDialog";
 
 const navLinks = [
 { label: "About", href: "#about" },
@@ -11,6 +12,7 @@ const navLinks = [
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+  const [bookingOpen, setBookingOpen] = useState(false);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 50);
@@ -19,6 +21,7 @@ const Navbar = () => {
   }, []);
 
   return (
+    <>
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
       scrolled ?
@@ -50,12 +53,11 @@ const Navbar = () => {
               {link.label}
             </a>
           )}
-          <a
-            href="#coaching"
+          <button
+            onClick={() => setBookingOpen(true)}
             className="inline-flex items-center px-5 py-2.5 rounded-xl bg-primary text-primary-foreground font-body text-sm font-medium hover:opacity-90 transition-opacity">
-
             Get Support
-          </a>
+          </button>
         </div>
 
         {/* Mobile toggle */}
@@ -87,18 +89,18 @@ const Navbar = () => {
                   {link.label}
                 </a>
             )}
-              <a
-              href="#coaching"
-              onClick={() => setMenuOpen(false)}
-              className="block text-center py-3 rounded-xl bg-primary text-primary-foreground font-body text-sm font-medium">
-
+              <button
+              onClick={() => { setMenuOpen(false); setBookingOpen(true); }}
+              className="block w-full text-center py-3 rounded-xl bg-primary text-primary-foreground font-body text-sm font-medium">
                 Get Support
-              </a>
+              </button>
             </div>
           </motion.div>
         }
       </AnimatePresence>
-    </nav>);
+    </nav>
+    <BookingDialog open={bookingOpen} onOpenChange={setBookingOpen} />
+    </>);
 
 };
 
