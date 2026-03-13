@@ -112,13 +112,13 @@ const TalkToSomeone = () => {
                   <p className="text-muted-foreground font-body text-sm leading-relaxed mb-5">
                     {coach.style}
                   </p>
-                  <a
-                    href={coach.calendly}
+                  <button
+                    onClick={() => setBookingOpen(true)}
                     className="flex items-center justify-center gap-2 w-full py-3 rounded-xl bg-primary text-primary-foreground font-body text-sm font-medium hover:opacity-90 transition-opacity"
                   >
                     Book a Session with {coach.name}
                     <ArrowRight className="w-4 h-4" />
-                  </a>
+                  </button>
                 </div>
               </motion.div>
             ))}
