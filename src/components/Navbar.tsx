@@ -97,7 +97,9 @@ const Navbar = () => {
           </motion.div>
         }
       </AnimatePresence>
-    </nav>);
+    </nav>
+    <BookingDialog open={bookingOpen} onOpenChange={setBookingOpen} />
+    </>);
 
 };
 
