@@ -88,13 +88,11 @@ const Navbar = () => {
                   {link.label}
                 </a>
             )}
-              <a
-              href="#coaching"
-              onClick={() => setMenuOpen(false)}
-              className="block text-center py-3 rounded-xl bg-primary text-primary-foreground font-body text-sm font-medium">
-
+              <button
+              onClick={() => { setMenuOpen(false); setBookingOpen(true); }}
+              className="block w-full text-center py-3 rounded-xl bg-primary text-primary-foreground font-body text-sm font-medium">
                 Get Support
-              </a>
+              </button>
             </div>
           </motion.div>
         }
