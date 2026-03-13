@@ -1,6 +1,8 @@
+import { useState } from "react";
 import { motion } from "framer-motion";
 import { Phone, MessageCircle, Shield, Clock, Heart, ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
+import BookingDialog from "@/components/BookingDialog";
 
 const coaches = [
   {
@@ -20,8 +22,11 @@ const coaches = [
 ];
 
 const TalkToSomeone = () => {
+  const [bookingOpen, setBookingOpen] = useState(false);
+
   return (
     <div className="min-h-screen bg-background">
+      <BookingDialog open={bookingOpen} onOpenChange={setBookingOpen} />
       {/* Minimal top bar */}
       <div className="w-full px-4 py-4 flex items-center justify-between max-w-3xl mx-auto">
         <Link to="/" className="flex flex-col items-center gap-0.5 leading-none">
@@ -107,13 +112,13 @@ const TalkToSomeone = () => {
                   <p className="text-muted-foreground font-body text-sm leading-relaxed mb-5">
                     {coach.style}
                   </p>
-                  <a
-                    href={coach.calendly}
+                  <button
+                    onClick={() => setBookingOpen(true)}
                     className="flex items-center justify-center gap-2 w-full py-3 rounded-xl bg-primary text-primary-foreground font-body text-sm font-medium hover:opacity-90 transition-opacity"
                   >
                     Book a Session with {coach.name}
                     <ArrowRight className="w-4 h-4" />
-                  </a>
+                  </button>
                 </div>
               </motion.div>
             ))}
