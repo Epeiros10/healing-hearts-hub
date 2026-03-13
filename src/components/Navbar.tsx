@@ -52,12 +52,11 @@ const Navbar = () => {
               {link.label}
             </a>
           )}
-          <a
-            href="#coaching"
+          <button
+            onClick={() => setBookingOpen(true)}
             className="inline-flex items-center px-5 py-2.5 rounded-xl bg-primary text-primary-foreground font-body text-sm font-medium hover:opacity-90 transition-opacity">
-
             Get Support
-          </a>
+          </button>
         </div>
 
         {/* Mobile toggle */}
