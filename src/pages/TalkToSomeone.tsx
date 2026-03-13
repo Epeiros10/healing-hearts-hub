@@ -1,6 +1,8 @@
+import { useState } from "react";
 import { motion } from "framer-motion";
 import { Phone, MessageCircle, Shield, Clock, Heart, ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
+import BookingDialog from "@/components/BookingDialog";
 
 const coaches = [
   {
