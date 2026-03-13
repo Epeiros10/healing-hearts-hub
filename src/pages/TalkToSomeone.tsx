@@ -22,8 +22,11 @@ const coaches = [
 ];
 
 const TalkToSomeone = () => {
+  const [bookingOpen, setBookingOpen] = useState(false);
+
   return (
     <div className="min-h-screen bg-background">
+      <BookingDialog open={bookingOpen} onOpenChange={setBookingOpen} />
       {/* Minimal top bar */}
       <div className="w-full px-4 py-4 flex items-center justify-between max-w-3xl mx-auto">
         <Link to="/" className="flex flex-col items-center gap-0.5 leading-none">
