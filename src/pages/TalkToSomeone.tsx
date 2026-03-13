@@ -1,21 +1,19 @@
 import { motion } from "framer-motion";
 import { Phone, MessageCircle, Shield, Clock, Heart, ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
-import brunaImg from "@/assets/bruna-coach.jpg";
-import pascalImg from "@/assets/pascal-coach.jpg";
 
 const coaches = [
   {
     name: "Bruna",
     role: "Relationship & Attachment Coach",
-    image: brunaImg,
+    image: "/lovable-uploads/fcd8f7c5-6bdb-4624-9f54-70365fb58964.png",
     calendly: "#contact",
     style: "Warm, intuitive, specializing in attachment patterns and emotional processing.",
   },
   {
     name: "Pascal",
     role: "Recovery Coach",
-    image: pascalImg,
+    image: "/lovable-uploads/4fbc4fcb-b5cf-4789-87e6-02b5b67ee9ab.png",
     calendly: "#contact",
     style: "Grounded, practical, focused on rebuilding confidence and moving forward.",
   },
