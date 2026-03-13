@@ -1,8 +1,6 @@
 import { motion } from "framer-motion";
 import { Phone, MessageCircle, Shield, Clock, Heart, ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
-import brunaImg from "@/assets/bruna-coach.jpg";
-import pascalImg from "@/assets/pascal-coach.jpg";
 
 const coaches = [
   {

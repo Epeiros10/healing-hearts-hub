@@ -1,7 +1,5 @@
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import { ArrowRight } from "lucide-react";
-import brunaImg from "@/assets/bruna-coach.jpg";
-import pascalImg from "@/assets/pascal-coach.jpg";
 
 const coaches = [
   {
