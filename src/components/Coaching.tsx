@@ -1,5 +1,7 @@
+import { useState } from "react";
 import { motion } from "framer-motion";
 import { MessageCircle, Phone, Video, Calendar } from "lucide-react";
+import BookingDialog from "./BookingDialog";
 
 const services = [
   {
@@ -8,7 +10,6 @@ const services = [
     description:
       "Text-based support where you can share at your own pace. Perfect for when you need someone who truly understands.",
     cta: "Start Chatting",
-    href: "https://wa.me/YOUR_PHONE_NUMBER",
   },
   {
     icon: Phone,
@@ -16,7 +17,6 @@ const services = [
     description:
       "Sometimes you just need to hear a caring voice. Book a call and let's talk through what you're feeling.",
     cta: "Book a Call",
-    href: "#contact",
   },
   {
     icon: Video,
@@ -24,13 +24,15 @@ const services = [
     description:
       "Face-to-face coaching sessions where we dive deep into your healing journey and build a personalized recovery plan.",
     cta: "Book a Session",
-    href: "#contact",
   },
 ];
 
 const Coaching = () => {
+  const [bookingOpen, setBookingOpen] = useState(false);
+
   return (
     <section id="coaching" className="py-24 px-4 bg-card">
+      <BookingDialog open={bookingOpen} onOpenChange={setBookingOpen} />
       <div className="max-w-5xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -70,12 +72,12 @@ const Coaching = () => {
               <p className="text-muted-foreground font-body text-sm leading-relaxed mb-6">
                 {service.description}
               </p>
-              <a
-                href={service.href}
+              <button
+                onClick={() => setBookingOpen(true)}
                 className="inline-flex items-center gap-2 text-primary font-body font-medium text-sm hover:underline"
               >
                 {service.cta} →
-              </a>
+              </button>
             </motion.div>
           ))}
         </div>
