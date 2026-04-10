@@ -13,7 +13,7 @@ const coaches = [
     name: "Pascal",
     role: "Recovery Coach",
     image: "/lovable-uploads/4fbc4fcb-b5cf-4789-87e6-02b5b67ee9ab.png",
-    calendly: "https://calendly.com/pascal-niggli/30min",
+    calendly: "https://cal.com/pascal-niggli-uenxj0/45-min-coaching-call",
     style: "Grounded, practical, focused on rebuilding confidence and moving forward.",
   },
 ];
