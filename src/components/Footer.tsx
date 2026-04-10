@@ -14,6 +14,12 @@ const Footer = () => {
           Remember: healing isn't linear, and it's okay to not be okay.
           You're already brave for being here. 💛
         </p>
+        <div className="mb-6">
+          <h3 className="font-body text-xs font-medium uppercase tracking-[0.15em] text-foreground/70 mb-2">Contact Us</h3>
+          <a href="mailto:bfriggi93@gmail.com" className="font-body text-sm text-muted-foreground hover:text-foreground transition-colors">
+            bfriggi93@gmail.com
+          </a>
+        </div>
         <div className="flex items-center justify-center gap-3 font-body text-xs text-muted-foreground/60">
           <span>© {new Date().getFullYear()} Break Up Recovery</span>
           <span>·</span>
