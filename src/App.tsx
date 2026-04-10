@@ -6,6 +6,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import TalkToSomeone from "./pages/TalkToSomeone";
+import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 import CookieConsent from "./components/CookieConsent";
 

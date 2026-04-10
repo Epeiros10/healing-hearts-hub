@@ -19,7 +19,7 @@ const Footer = () => {
           <span>·</span>
           <a href="/privacy" className="hover:text-foreground transition-colors">Privacy Policy</a>
           <span>·</span>
-          <a href="mailto:bfriggi93@gmail.com" className="hover:text-foreground transition-colors">Contact Us</a>
+          <a href="/contact" className="hover:text-foreground transition-colors">Contact Us</a>
         </div>
       </div>
     </footer>
