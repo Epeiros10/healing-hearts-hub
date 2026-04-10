@@ -11,12 +11,11 @@ const Contact = () => {
           Have a question, feedback, or just need someone to point you in the right direction? We'd love to hear from you.
         </p>
 
-        <div className="inline-flex flex-col items-center gap-3 p-8 rounded-2xl border border-border bg-card">
-          <Mail className="w-6 h-6 text-primary" />
-          <span className="text-sm text-muted-foreground">Email us at</span>
+        <div className="inline-flex items-center gap-3 px-6 py-4 rounded-full border border-border bg-card hover:border-primary/30 transition-colors">
+          <Mail className="w-5 h-5 text-primary" />
           <a
             href="mailto:bfriggi93@gmail.com"
-            className="text-lg font-medium text-foreground hover:text-primary transition-colors"
+            className="text-base font-medium text-foreground hover:text-primary transition-colors"
           >
             bfriggi93@gmail.com
           </a>
