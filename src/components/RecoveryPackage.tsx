@@ -28,6 +28,65 @@ const RecoveryPackage = () => {
   return (
     <section id="recovery-package" className="py-24 px-4 bg-background">
       <div className="max-w-5xl mx-auto">
+        {/* Individual Sessions */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="text-center mb-10"
+        >
+          <span className="text-primary font-body text-sm font-medium tracking-wide uppercase mb-3 block">
+            Start with One Session
+          </span>
+          <h2 className="text-3xl md:text-4xl font-display font-semibold mb-4">
+            Book an Individual Coaching Session
+          </h2>
+          <p className="text-muted-foreground font-body max-w-xl mx-auto">
+            Not ready for a full package? Start with a single 45-minute session and see how it feels.
+          </p>
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="grid sm:grid-cols-2 gap-4 mb-16"
+        >
+          {coaches.map((coach) => (
+            <a
+              key={coach.name}
+              href={coach.name === "Bruna" 
+                ? "https://cal.com/bruna-friggi-zjnhgp/45-min-call" 
+                : "https://cal.com/pascal-niggli-uenxj0/45-min-coaching-call"
+              }
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-4 p-5 rounded-2xl bg-card border border-border hover:border-primary/40 hover:bg-primary/5 transition-all group"
+            >
+              <img
+                src={coach.image}
+                alt={`${coach.name} — ${coach.role}`}
+                className="w-14 h-14 rounded-full object-cover flex-shrink-0"
+              />
+              <div className="flex-1 min-w-0">
+                <p className="font-display font-semibold text-base text-foreground">
+                  {coach.name}
+                </p>
+                <p className="font-body text-xs text-muted-foreground mb-1">
+                  {coach.role}
+                </p>
+                <p className="font-display font-semibold text-primary">
+                  €79 <span className="text-xs font-normal text-muted-foreground">/ 45 min</span>
+                </p>
+              </div>
+              <span className="font-body text-sm font-medium text-primary group-hover:translate-x-0.5 transition-transform">
+                Book →
+              </span>
+            </a>
+          ))}
+        </motion.div>
+
+        {/* 10-Session Package */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
