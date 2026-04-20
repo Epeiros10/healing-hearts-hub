@@ -88,13 +88,18 @@ const Coaching = () => {
           viewport={{ once: true }}
           className="mt-12 text-center"
         >
-          <div className="inline-flex items-center gap-3 bg-primary/5 border border-primary/10 rounded-2xl px-6 py-4">
+          <a
+            href="https://cal.com/pascal-niggli-uenxj0/15min"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-3 bg-primary/5 border border-primary/10 rounded-2xl px-6 py-4 hover:bg-primary/10 transition-colors cursor-pointer"
+          >
             <Calendar className="w-5 h-5 text-primary" />
             <p className="font-body text-sm text-foreground">
               <span className="font-medium">Not sure where to start?</span>{" "}
               Book a free 15-minute discovery call.
             </p>
-          </div>
+          </a>
         </motion.div>
       </div>
     </section>
