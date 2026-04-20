@@ -6,7 +6,7 @@ const coaches = [
     name: "Bruna",
     role: "Relationship & Attachment Coach",
     image: "/lovable-uploads/fcd8f7c5-6bdb-4624-9f54-70365fb58964.png",
-    calendly: "https://calendly.com/brunacoach",
+    calendly: "https://cal.com/bruna-friggi-zjnhgp/45-min-call",
     style: "Warm, intuitive, specializing in attachment patterns and emotional processing.",
   },
   {
