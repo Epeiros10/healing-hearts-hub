@@ -138,10 +138,10 @@ const About = () => {
                 €79 <span className="text-muted-foreground font-normal">/ 45-min emergency talk session</span>
               </p>
               <a
-
+                href="https://cal.com/pascal-niggli-uenxj0/45-min-coaching-call"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-secondary text-secondary-foreground font-body text-sm font-medium hover:opacity-90 transition-opacity" href="https://calendly.com/pascal-niggli/30min">
+                className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-secondary text-secondary-foreground font-body text-sm font-medium hover:opacity-90 transition-opacity">
                 
                 <Calendar className="w-4 h-4" />
                 Book Now
