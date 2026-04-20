@@ -76,7 +76,7 @@ const About = () => {
                 €79 <span className="text-muted-foreground font-normal">/ 45-min emergency talk session</span>
               </p>
               <a
-                href="https://calendly.com/brunacoach"
+                href="https://cal.com/bruna-friggi-zjnhgp/45-min-call"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-primary text-primary-foreground font-body text-sm font-medium hover:opacity-90 transition-opacity">
