@@ -16,6 +16,7 @@ const coaches = [
     role: "Recovery Coach",
     image: "/lovable-uploads/4fbc4fcb-b5cf-4789-87e6-02b5b67ee9ab.png",
     calLink: "https://cal.com/pascal-niggli-uenxj0/45-min-coaching-call",
+    emergencyLink: "/book/pascal-emergency",
   },
 ];
 
@@ -48,7 +49,7 @@ const offerings: Offering[] = [
       "No commitment required",
     ],
     ctaLabel: "Book with",
-    getHref: (i) => coaches[i].calLink,
+    getHref: (i) => coaches[i].emergencyLink ?? coaches[i].calLink,
   },
   {
     icon: Sprout,
