@@ -124,7 +124,7 @@ const AIChat = () => {
             <Heart className="w-4 h-4" /> Free AI Support
           </span>
           <h2 className="text-3xl md:text-4xl font-display font-semibold mb-3">
-            Talk to Your Healing Companion
+            Talk To Our 24/7 AI Assistant
           </h2>
           <p className="text-muted-foreground font-body max-w-xl mx-auto">
             Share what you're going through. Our AI Recovery Assistant is here to listen,

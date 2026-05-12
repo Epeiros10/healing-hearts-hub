@@ -38,15 +38,9 @@ const Hero = () => {
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="#ai-chat"
+              href="#coaching"
               className="inline-flex items-center justify-center px-8 py-4 rounded-xl bg-primary text-primary-foreground font-body font-medium text-base hover:opacity-90 transition-opacity"
               style={{ boxShadow: "var(--shadow-warm)" }}>
-
-              Talk to AI Recovery Assistant
-            </a>
-            <a
-              href="#coaching"
-              className="inline-flex items-center justify-center px-8 py-4 rounded-xl border-2 border-primary/20 text-foreground font-body font-medium text-base hover:bg-primary/5 transition-colors">
 
               Book 1:1 Coaching
             </a>
