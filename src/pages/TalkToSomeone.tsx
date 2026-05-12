@@ -153,7 +153,7 @@ const TalkToSomeone = () => {
               Not ready to book?
             </p>
             <p className="text-muted-foreground font-body text-sm mb-4 leading-relaxed">
-              Talk to our AI companion first — it's free, anonymous, and available 24/7.
+              Talk to our AI Recovery Assistant first — it's free, anonymous, and available 24/7.
             </p>
             <Link
               to="/#ai-chat"

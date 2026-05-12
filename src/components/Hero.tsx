@@ -42,7 +42,7 @@ const Hero = () => {
               className="inline-flex items-center justify-center px-8 py-4 rounded-xl bg-primary text-primary-foreground font-body font-medium text-base hover:opacity-90 transition-opacity"
               style={{ boxShadow: "var(--shadow-warm)" }}>
 
-              Talk to AI Companion
+              Talk to AI Recovery Assistant
             </a>
             <a
               href="#coaching"
