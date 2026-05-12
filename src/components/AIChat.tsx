@@ -127,7 +127,7 @@ const AIChat = () => {
             Talk to Your Healing Companion
           </h2>
           <p className="text-muted-foreground font-body max-w-xl mx-auto">
-            Share what you're going through. Our AI companion is here to listen,
+            Share what you're going through. Our AI Recovery Assistant is here to listen,
             validate your feelings, and offer gentle guidance — anytime, day or night.
           </p>
         </motion.div>
