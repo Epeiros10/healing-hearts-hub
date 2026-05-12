@@ -4,14 +4,14 @@ import { ArrowRight } from "lucide-react";
 const coaches = [
   {
     name: "Bruna",
-    role: "Relationship & Attachment Coach",
+    role: "Licensed Relationship Coach",
     image: "/lovable-uploads/fcd8f7c5-6bdb-4624-9f54-70365fb58964.png",
     calendly: "https://cal.com/bruna-friggi-zjnhgp/45-min-call",
     style: "Warm, intuitive, specializing in attachment patterns and emotional processing.",
   },
   {
     name: "Pascal",
-    role: "Recovery Coach",
+    role: "Licensed Relationship Coach",
     image: "/lovable-uploads/4fbc4fcb-b5cf-4789-87e6-02b5b67ee9ab.png",
     calendly: "/book/pascal-emergency",
     style: "Grounded, practical, focused on rebuilding confidence and moving forward.",
