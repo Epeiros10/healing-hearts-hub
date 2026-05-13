@@ -37,12 +37,12 @@ const About = () => {
             <div className="relative mb-6">
               <img
 
-                alt="Bruna - Licensed Relationship Coach"
+                alt="Bruna - Certified Relationship Coach"
                 className="rounded-2xl w-full max-w-xs mx-auto object-cover aspect-square"
                 style={{ boxShadow: "var(--shadow-warm)" }} src="/lovable-uploads/fcd8f7c5-6bdb-4624-9f54-70365fb58964.png" />
 
               <div className="absolute -bottom-3 left-1/2 -translate-x-1/2 bg-primary text-primary-foreground rounded-xl px-4 py-2 font-body text-sm font-medium whitespace-nowrap">
-                Licensed Relationship Coach 💛
+                Certified Relationship Coach 💛
               </div>
             </div>
             <h3 className="text-2xl font-display font-semibold mb-3 text-center">Hi, I'm Bruna.</h3>
@@ -99,12 +99,12 @@ const About = () => {
             <div className="relative mb-6">
               <img
 
-                alt="Pascal - Licensed Relationship Coach"
+                alt="Pascal - Certified Relationship Coach"
                 className="rounded-2xl w-full max-w-xs mx-auto object-cover aspect-square"
                 style={{ boxShadow: "var(--shadow-warm)" }} src="/lovable-uploads/4fbc4fcb-b5cf-4789-87e6-02b5b67ee9ab.png" />
 
               <div className="absolute -bottom-3 left-1/2 -translate-x-1/2 bg-secondary text-secondary-foreground rounded-xl px-4 py-2 font-body text-sm font-medium whitespace-nowrap">
-                Licensed Relationship Coach 🤍
+                Certified Relationship Coach 🤍
               </div>
             </div>
             <h3 className="text-2xl font-display font-semibold mb-3 text-center">Hi, I'm Pascal.</h3>
