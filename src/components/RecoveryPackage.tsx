@@ -16,7 +16,7 @@ const coaches = [
     role: "Certified Relationship Coach",
     image: "/lovable-uploads/4fbc4fcb-b5cf-4789-87e6-02b5b67ee9ab.png",
     calLink: "https://cal.com/pascal-niggli-uenxj0/45-min-coaching-call",
-    emergencyLink: "/book/pascal-emergency",
+    emergencyLink: "https://cal.com/pascal-niggli-uenxj0/45-min-coaching-call?overlayCalendar=true",
   },
 ];
 
