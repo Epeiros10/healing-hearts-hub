@@ -59,6 +59,8 @@ const BookingDialog = ({ open, onOpenChange }: BookingDialogProps) => {
                 </p>
                 <a
                   href={coach.calendly}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="flex items-center justify-center gap-2 w-full py-2.5 rounded-xl bg-primary text-primary-foreground font-body text-sm font-medium hover:opacity-90 transition-opacity"
                 >
                   Book Now
