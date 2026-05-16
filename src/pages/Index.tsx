@@ -6,6 +6,7 @@ import AIChat from "@/components/AIChat";
 import Coaching from "@/components/Coaching";
 import RecoveryPackage from "@/components/RecoveryPackage";
 import Footer from "@/components/Footer";
+import ContactSection from "@/components/ContactSection";
 
 const Index = () => {
   return (
@@ -17,6 +18,7 @@ const Index = () => {
       <AIChat />
       <Coaching />
       <RecoveryPackage />
+      <ContactSection />
       <Footer />
     </div>
   );
