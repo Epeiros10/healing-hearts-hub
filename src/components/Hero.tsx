@@ -1,4 +1,6 @@
+import { useState } from "react";
 import { motion } from "framer-motion";
+import BookingDialog from "./BookingDialog";
 import { Heart, ArrowDown } from "lucide-react";
 import heroBg from "@/assets/hero-bg.jpg";
 
