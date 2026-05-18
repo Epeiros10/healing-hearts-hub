@@ -28,7 +28,7 @@ const Hero = () => {
           
 
 
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-display font-semibold leading-tight mb-6">
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-display font-semibold leading-tight mb-10">
             Heartbreak is
             <span className="italic text-primary"> temporary.</span>
             <br />
