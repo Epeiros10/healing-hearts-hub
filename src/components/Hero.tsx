@@ -41,13 +41,13 @@ const Hero = () => {
 
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a
-              href="#coaching"
+            <button
+              onClick={() => setBookingOpen(true)}
               className="inline-flex items-center justify-center px-8 py-4 rounded-xl bg-primary text-primary-foreground font-body font-medium text-base hover:opacity-90 transition-opacity"
               style={{ boxShadow: "var(--shadow-warm)" }}>
 
               Book 1:1 Coaching
-            </a>
+            </button>
           </div>
         </motion.div>
 
