@@ -1,8 +1,12 @@
+import { useState } from "react";
 import { motion } from "framer-motion";
-import { Heart, ArrowDown } from "lucide-react";
+import BookingDialog from "./BookingDialog";
+import { ArrowDown } from "lucide-react";
 import heroBg from "@/assets/hero-bg.jpg";
 
 const Hero = () => {
+  const [bookingOpen, setBookingOpen] = useState(false);
+
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image */}
@@ -24,7 +28,7 @@ const Hero = () => {
           
 
 
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-display font-semibold leading-tight mb-6">
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-display font-semibold leading-tight mb-10">
             Heartbreak is
             <span className="italic text-primary"> temporary.</span>
             <br />
@@ -37,13 +41,13 @@ const Hero = () => {
 
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a
-              href="#coaching"
+            <button
+              onClick={() => setBookingOpen(true)}
               className="inline-flex items-center justify-center px-8 py-4 rounded-xl bg-primary text-primary-foreground font-body font-medium text-base hover:opacity-90 transition-opacity"
               style={{ boxShadow: "var(--shadow-warm)" }}>
 
               Book 1:1 Coaching
-            </a>
+            </button>
           </div>
         </motion.div>
 
@@ -58,6 +62,7 @@ const Hero = () => {
           </a>
         </motion.div>
       </div>
+      <BookingDialog open={bookingOpen} onOpenChange={setBookingOpen} />
     </section>);
 
 };
