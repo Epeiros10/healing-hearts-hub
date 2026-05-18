@@ -35,9 +35,6 @@ const Hero = () => {
             Private 1:1 coaching sessions with Bruna & Pascal. Emergency calls available today from €79.
           </p>
 
-          <p className="text-sm text-muted-foreground font-body max-w-xl mx-auto mb-4 leading-relaxed">
-            Private 1:1 coaching sessions with Bruna & Pascal. Emergency calls available today from €79.
-          </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
