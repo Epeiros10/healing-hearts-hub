@@ -32,13 +32,9 @@ const Hero = () => {
             <span className="italic text-secondary">forever.</span>
           </h1>
           <p className="text-lg md:text-xl text-muted-foreground font-body max-w-xl mx-auto mb-10 leading-relaxed">
-            You're going through one of the hardest things a person can face.
-            But you don't have to do it alone. Let's walk this path together.
-          </p>
-
-          <p className="text-sm text-muted-foreground font-body max-w-xl mx-auto mb-4 leading-relaxed">
             Private 1:1 coaching sessions with Bruna & Pascal. Emergency calls available today from €79.
           </p>
+
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
