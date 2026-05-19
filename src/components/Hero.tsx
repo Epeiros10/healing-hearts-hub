@@ -36,18 +36,16 @@ const Hero = () => {
             <span className="italic text-secondary">forever.</span>
           </h1>
           <p className="text-lg md:text-xl text-muted-foreground font-body max-w-xl mx-auto mb-10 leading-relaxed">
-            Private 1:1 coaching sessions with Bruna & Pascal. Emergency calls available today from €79.
+            Private 1:1 coaching sessions with Bruna & Pascal. Emergency calls available today — €79.
           </p>
 
-
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a
-              href="#about"
+            <button
+              onClick={() => setBookingOpen(true)}
               className="inline-flex items-center justify-center px-8 py-4 rounded-xl bg-primary text-primary-foreground font-body font-medium text-base hover:opacity-90 transition-opacity"
               style={{ boxShadow: "var(--shadow-warm)" }}>
-
               Book Emergency Call — €79
-            </a>
+            </button>
           </div>
         </motion.div>
 
