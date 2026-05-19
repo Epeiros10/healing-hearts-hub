@@ -18,8 +18,6 @@ const Footer = () => {
           <span>© {new Date().getFullYear()} Break Up Recovery</span>
           <span>·</span>
           <a href="/privacy" className="hover:text-foreground transition-colors">Privacy Policy</a>
-          <span>·</span>
-          <a href="/contact" className="hover:text-foreground transition-colors">Contact Us</a>
         </div>
       </div>
     </footer>
