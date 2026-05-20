@@ -46,7 +46,7 @@ const BookingDialog = ({ open, onOpenChange }: BookingDialogProps) => {
                 <img
                   src={coach.image}
                   alt={`${coach.name} — ${coach.role}`}
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover object-top"
                 />
               </div>
               <div className="p-4 flex flex-col flex-1">
