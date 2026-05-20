@@ -42,11 +42,11 @@ const BookingDialog = ({ open, onOpenChange }: BookingDialogProps) => {
               key={coach.name}
               className="bg-muted/50 rounded-xl border border-border overflow-hidden flex flex-col"
             >
-              <div className="aspect-[16/9] sm:aspect-[4/3] overflow-hidden">
+              <div className="aspect-[3/4] bg-muted">
                 <img
                   src={coach.image}
                   alt={`${coach.name} — ${coach.role}`}
-                  className="w-full h-full object-cover object-top"
+                  className="w-full h-full object-contain"
                 />
               </div>
               <div className="p-4 flex flex-col flex-1">
