@@ -26,9 +26,9 @@ interface BookingDialogProps {
 const BookingDialog = ({ open, onOpenChange }: BookingDialogProps) => {
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
-      <DialogContent className="sm:max-w-xl p-0 overflow-hidden rounded-2xl">
+      <DialogContent className="sm:max-w-xl p-0 rounded-2xl max-h-[90vh] overflow-y-auto max-w-[calc(100%-2rem)]">
         <DialogHeader className="px-6 pt-6 pb-2">
-          <DialogTitle className="text-2xl font-display font-semibold text-center">
+          <DialogTitle className="text-xl sm:text-2xl font-display font-semibold text-center">
             Book Your First Session
           </DialogTitle>
           <p className="text-sm text-muted-foreground font-body text-center mt-1">
@@ -36,13 +36,13 @@ const BookingDialog = ({ open, onOpenChange }: BookingDialogProps) => {
           </p>
         </DialogHeader>
 
-        <div className="grid sm:grid-cols-2 gap-4 px-6 pb-6">
+        <div className="grid sm:grid-cols-2 gap-4 px-4 sm:px-6 pb-6">
           {coaches.map((coach) => (
             <div
               key={coach.name}
               className="bg-muted/50 rounded-xl border border-border overflow-hidden flex flex-col"
             >
-              <div className="aspect-[4/3] overflow-hidden">
+              <div className="aspect-[16/9] sm:aspect-[4/3] overflow-hidden">
                 <img
                   src={coach.image}
                   alt={`${coach.name} — ${coach.role}`}
