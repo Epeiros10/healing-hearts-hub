@@ -5,8 +5,8 @@ import BookingDialog from "./BookingDialog";
 
 const navLinks = [
 { label: "About", href: "#about" },
-{ label: "AI Support", href: "#ai-chat" },
-{ label: "Coaching", href: "#coaching" }];
+{ label: "Coaching", href: "#coaching" },
+{ label: "Contact", href: "#contact" }];
 
 
 const Navbar = () => {

@@ -2,7 +2,6 @@ import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
 import Testimonials from "@/components/Testimonials";
-import AIChat from "@/components/AIChat";
 import Coaching from "@/components/Coaching";
 import RecoveryPackage from "@/components/RecoveryPackage";
 import Footer from "@/components/Footer";
@@ -15,7 +14,6 @@ const Index = () => {
       <Hero />
       <About />
       <Testimonials />
-      <AIChat />
       <Coaching />
       <RecoveryPackage />
       <ContactSection />
