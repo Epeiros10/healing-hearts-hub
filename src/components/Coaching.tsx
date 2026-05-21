@@ -24,8 +24,8 @@ const highlights = [
 const includes = [
   "45-minute private video session",
   "Choose Bruna or Pascal as your coach",
-  "Personalized healing plan after the call",
-  "Gentle follow-up resources via email",
+  "Same-day booking possible",
+  "100% confidential & judgment-free",
 ];
 
 const Coaching = () => {
