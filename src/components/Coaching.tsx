@@ -1,30 +1,31 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { MessageCircle, Phone, Video, Calendar } from "lucide-react";
+import { Video, Calendar, Heart, Compass, Sparkles, Check } from "lucide-react";
 import BookingDialog from "./BookingDialog";
 
-const services = [
+const highlights = [
   {
-    icon: MessageCircle,
-    title: "Chat with Me",
-    description:
-      "Text-based support where you can share at your own pace. Perfect for when you need someone who truly understands.",
-    cta: "Start Chatting",
+    icon: Heart,
+    title: "A safe space to feel",
+    description: "Be heard without judgment. We hold space for whatever you're carrying — grief, anger, confusion, or hope.",
   },
   {
-    icon: Phone,
-    title: "Voice Call",
-    description:
-      "Sometimes you just need to hear a caring voice. Book a call and let's talk through what you're feeling.",
-    cta: "Book a Call",
+    icon: Compass,
+    title: "Clarity on your next step",
+    description: "Walk away from each session with a clear direction and gentle, practical tools you can actually use.",
   },
   {
-    icon: Video,
-    title: "Video Session",
-    description:
-      "Face-to-face coaching sessions where we dive deep into your healing journey and build a personalized recovery plan.",
-    cta: "Book a Session",
+    icon: Sparkles,
+    title: "A personalized recovery plan",
+    description: "Tailored to your story. Together we shape a path that honors your pace and your healing.",
   },
+];
+
+const includes = [
+  "45-minute private video session",
+  "Choose Bruna or Pascal as your coach",
+  "Personalized healing plan after the call",
+  "Gentle follow-up resources via email",
 ];
 
 const Coaching = () => {
@@ -47,46 +48,108 @@ const Coaching = () => {
             Personalized Support, Just for You
           </h2>
           <p className="text-muted-foreground font-body max-w-xl mx-auto">
-            Everyone's healing journey is unique. Work with Bruna or Pascal —
-            choose the way you'd like to connect, and let's start working through this together.
+            Everyone's healing journey is unique. Work face-to-face with Bruna or Pascal
+            in a private video session — and let's start moving through this together.
           </p>
         </motion.div>
 
-        <div className="grid md:grid-cols-3 gap-6">
-          {services.map((service, i) => (
+        {/* Highlights */}
+        <div className="grid md:grid-cols-3 gap-6 mb-12">
+          {highlights.map((item, i) => (
             <motion.div
-              key={service.title}
+              key={item.title}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ delay: i * 0.15 }}
-              className="bg-background rounded-2xl p-8 border border-border hover:border-primary/30 transition-colors group"
+              transition={{ delay: i * 0.12 }}
+              className="bg-background rounded-2xl p-7 border border-border hover:border-primary/30 transition-colors"
               style={{ boxShadow: "var(--shadow-soft)" }}
             >
-              <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-5 group-hover:bg-primary/20 transition-colors">
-                <service.icon className="w-6 h-6 text-primary" />
+              <div className="w-11 h-11 rounded-xl bg-primary/10 flex items-center justify-center mb-4">
+                <item.icon className="w-5 h-5 text-primary" />
               </div>
-              <h3 className="text-xl font-display font-semibold mb-3">
-                {service.title}
+              <h3 className="text-lg font-display font-semibold mb-2">
+                {item.title}
               </h3>
-              <p className="text-muted-foreground font-body text-sm leading-relaxed mb-6">
-                {service.description}
+              <p className="text-muted-foreground font-body text-sm leading-relaxed">
+                {item.description}
               </p>
-              <button
-                onClick={() => setBookingOpen(true)}
-                className="inline-flex items-center gap-2 text-primary font-body font-medium text-sm hover:underline"
-              >
-                {service.cta} →
-              </button>
             </motion.div>
           ))}
         </div>
 
+        {/* Feature offer card */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="mt-12 text-center"
+          className="bg-background rounded-3xl border border-border overflow-hidden"
+          style={{ boxShadow: "var(--shadow-warm)" }}
+        >
+          <div className="grid md:grid-cols-5 gap-0">
+            {/* Left: details */}
+            <div className="md:col-span-3 p-8 md:p-10">
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-body font-medium tracking-wide uppercase mb-5">
+                <Video className="w-3.5 h-3.5" />
+                Private Video Session
+              </div>
+              <h3 className="text-2xl md:text-3xl font-display font-semibold mb-3">
+                A 45-minute session, just for you
+              </h3>
+              <p className="text-muted-foreground font-body text-sm leading-relaxed mb-6">
+                Face-to-face, from wherever you are. We'll listen deeply, help you make sense
+                of what you're feeling, and build a personalized recovery plan together.
+              </p>
+
+              <ul className="space-y-3 mb-8">
+                {includes.map((item) => (
+                  <li key={item} className="flex items-start gap-3 font-body text-sm text-foreground">
+                    <span className="mt-0.5 w-5 h-5 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
+                      <Check className="w-3 h-3 text-primary" />
+                    </span>
+                    {item}
+                  </li>
+                ))}
+              </ul>
+
+              <button
+                onClick={() => setBookingOpen(true)}
+                className="inline-flex items-center justify-center px-6 py-3 rounded-xl bg-primary text-primary-foreground font-body font-medium text-sm hover:opacity-90 transition-opacity"
+                style={{ boxShadow: "var(--shadow-warm)" }}
+              >
+                Book Your Session — €79
+              </button>
+            </div>
+
+            {/* Right: price panel */}
+            <div className="md:col-span-2 bg-primary/5 border-t md:border-t-0 md:border-l border-border p-8 md:p-10 flex flex-col justify-center">
+              <p className="font-body text-xs uppercase tracking-wide text-muted-foreground mb-2">
+                Single session
+              </p>
+              <div className="flex items-baseline gap-2 mb-1">
+                <span className="text-5xl font-display font-semibold text-foreground">€79</span>
+                <span className="font-body text-sm text-muted-foreground">/ 45 min</span>
+              </div>
+              <p className="font-body text-sm text-muted-foreground mb-6">
+                Emergency calls available today.
+              </p>
+              <div className="h-px bg-border mb-6" />
+              <p className="font-body text-sm text-foreground leading-relaxed italic">
+                "You don't have to walk through this alone."
+              </p>
+              <p className="font-body text-xs text-muted-foreground mt-2">
+                — Bruna & Pascal
+              </p>
+            </div>
+          </div>
+        </motion.div>
+
+        {/* Discovery call */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="mt-10 text-center"
         >
           <a
             href="https://cal.com/pascal-niggli-uenxj0/15min"
