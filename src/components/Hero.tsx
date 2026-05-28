@@ -39,18 +39,18 @@ const Hero = () => {
             Private 1:1 coaching sessions with Bruna & Pascal. Emergency calls available today — €79.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="flex flex-col gap-4 justify-center items-center">
             <button
               onClick={() => setBookingOpen(true)}
-              className="inline-flex items-center justify-center px-8 py-4 rounded-xl bg-primary text-primary-foreground font-body font-medium text-base hover:opacity-90 transition-opacity"
+              className="inline-flex items-center justify-center px-8 py-4 rounded-xl bg-primary text-primary-foreground font-body font-medium text-base hover:opacity-90 transition-opacity w-full sm:w-auto"
               style={{ boxShadow: "var(--shadow-warm)" }}>
               Book Emergency Call — €79
             </button>
             <a
-              href="https://wa.me/351960155044"
+              href="https://wa.me/351960155044?text=Hi%2C%20I%27d%20like%20to%20talk%20about%20coaching."
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl bg-background/80 backdrop-blur border border-border text-foreground font-body font-medium text-base hover:bg-background transition-colors">
+              className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl bg-background/80 backdrop-blur border border-border text-foreground font-body font-medium text-base hover:bg-background transition-colors w-full sm:w-auto">
               <MessageCircle className="w-5 h-5" />
               Start WhatsApp Conversation
             </a>
