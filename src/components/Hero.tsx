@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import BookingDialog from "./BookingDialog";
-import { ArrowDown } from "lucide-react";
+import { ArrowDown, MessageCircle } from "lucide-react";
 import heroBg from "@/assets/hero-bg.jpg";
 
 const Hero = () => {
@@ -46,6 +46,14 @@ const Hero = () => {
               style={{ boxShadow: "var(--shadow-warm)" }}>
               Book Emergency Call — €79
             </button>
+            <a
+              href="https://wa.me/351960155044"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl bg-background/80 backdrop-blur border border-border text-foreground font-body font-medium text-base hover:bg-background transition-colors">
+              <MessageCircle className="w-5 h-5" />
+              Start WhatsApp Conversation
+            </a>
           </div>
         </motion.div>
 
