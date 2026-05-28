@@ -50,7 +50,8 @@ const Hero = () => {
               href="https://wa.me/351960155044?text=Hi%2C%20I%27d%20like%20to%20talk%20about%20coaching."
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl bg-background/80 backdrop-blur border border-border text-foreground font-body font-medium text-base hover:bg-background transition-colors w-full sm:w-auto">
+              className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl bg-[#25D366] text-white font-body font-semibold text-base hover:bg-[#1ebe5b] hover:scale-[1.02] transition-all w-full sm:w-auto ring-2 ring-[#25D366]/30 ring-offset-2 ring-offset-background"
+              style={{ boxShadow: "0 10px 30px -8px rgba(37, 211, 102, 0.55)" }}>
               <MessageCircle className="w-5 h-5" />
               Start WhatsApp Conversation
             </a>
