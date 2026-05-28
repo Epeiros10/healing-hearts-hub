@@ -44,7 +44,7 @@ const Hero = () => {
               onClick={() => setBookingOpen(true)}
               className="inline-flex items-center justify-center px-8 py-4 rounded-xl bg-primary text-primary-foreground font-body font-medium text-base hover:opacity-90 transition-opacity w-full sm:w-auto"
               style={{ boxShadow: "var(--shadow-warm)" }}>
-              Book Emergency Call — €79
+              Book 1:1 Call — €79
             </button>
             <a
               href="https://wa.me/351960155044?text=Hi%2C%20I%27d%20like%20to%20talk%20about%20coaching."
