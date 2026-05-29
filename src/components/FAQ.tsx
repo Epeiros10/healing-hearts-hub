@@ -19,7 +19,7 @@ const faqs = [
   },
   {
     q: "How quickly can I book a session?",
-    a: "Usually within a few days. Bruna and Pascal both keep regular availability, and you can see real-time open slots when you book through their calendars. If you're in an urgent moment, grab the soonest spot — we'll make it work.",
+    a: "Usually within the same day. Bruna and Pascal both keep regular availability, and you can see real-time open slots when you book through their calendars. If you're in an urgent moment, grab the soonest spot — we'll make it work.",
   },
   {
     q: "Can I choose my coach?",
