@@ -1,10 +1,4 @@
 import { motion } from "framer-motion";
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
 
 const faqs = [
   {
@@ -22,6 +16,22 @@ const faqs = [
   {
     q: "How much does a session cost?",
     a: "A 45-minute 1:1 coaching call with Bruna or Pascal is €79. One session is often enough to feel lighter, clearer, and more grounded — and many people return when they need extra support along the way.",
+  },
+  {
+    q: "How quickly can I book a session?",
+    a: "Usually within a few days. Bruna and Pascal both keep regular availability, and you can see real-time open slots when you book through their calendars. If you're in an urgent moment, grab the soonest spot — we'll make it work.",
+  },
+  {
+    q: "Can I choose my coach?",
+    a: "Absolutely. When you click to book, you'll be able to pick between Bruna and Pascal. Read a little about each of them and go with whoever resonates most — there's no wrong choice, and you can always switch later.",
+  },
+  {
+    q: "What happens after the first call?",
+    a: "You'll leave with more clarity, a little more breathing room, and a few practical next steps to focus on. There's no obligation to continue, but many people book follow-up sessions to keep the momentum going as they rebuild.",
+  },
+  {
+    q: "Do you offer ongoing support programs?",
+    a: "Yes. Beyond one-off sessions, many clients work with us across a series of calls to go deeper — through no-contact, rebuilding self-worth, or preparing for what's next. Just mention it on your first call and your coach will tailor a plan with you.",
   },
 ];
 
@@ -51,21 +61,19 @@ const FAQ = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="bg-card rounded-2xl p-4 md:p-8 border border-border"
+          className="bg-card rounded-2xl p-6 md:p-10 border border-border divide-y divide-border"
           style={{ boxShadow: "var(--shadow-soft)" }}
         >
-          <Accordion type="single" collapsible className="w-full">
-            {faqs.map((item, i) => (
-              <AccordionItem key={i} value={`item-${i}`}>
-                <AccordionTrigger className="text-left font-display text-base md:text-lg">
-                  {item.q}
-                </AccordionTrigger>
-                <AccordionContent className="text-muted-foreground font-body text-sm md:text-base leading-relaxed">
-                  {item.a}
-                </AccordionContent>
-              </AccordionItem>
-            ))}
-          </Accordion>
+          {faqs.map((item, i) => (
+            <div key={i} className="py-6 first:pt-0 last:pb-0">
+              <h3 className="font-display text-base md:text-lg font-medium mb-2">
+                {item.q}
+              </h3>
+              <p className="text-muted-foreground font-body text-sm md:text-base leading-relaxed">
+                {item.a}
+              </p>
+            </div>
+          ))}
         </motion.div>
       </div>
     </section>
