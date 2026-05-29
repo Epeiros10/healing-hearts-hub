@@ -53,7 +53,7 @@ const Hero = () => {
               className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl bg-background text-primary font-body font-semibold text-base border-2 border-primary hover:bg-primary/5 hover:scale-[1.02] transition-all w-full sm:w-auto"
               style={{ boxShadow: "var(--shadow-soft)" }}>
               <MessageCircle className="w-5 h-5" />
-              Start WhatsApp Conversation
+              Text Us — We're Here for You
             </a>
           </div>
         </motion.div>
