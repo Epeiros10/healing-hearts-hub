@@ -4,25 +4,33 @@ import { Star, Quote } from "lucide-react";
 const testimonials = [
   {
     name: "Sarah M.",
+    location: "Lisbon",
+    when: "4 months ago",
     text: "After my 5-year relationship ended, I felt completely lost. Bruna helped me understand my attachment patterns and gave me the tools to heal. I'm stronger now than I ever was.",
     coach: "Worked with Bruna",
     stars: 5,
   },
   {
     name: "James T.",
+    location: "London",
+    when: "2 months ago",
     text: "Pascal's no-contact framework saved me. I was constantly checking my ex's social media, spiraling. He gave me structure, accountability, and real talk when I needed it most.",
     coach: "Worked with Pascal",
     stars: 5,
   },
   {
     name: "Elena R.",
+    location: "Barcelona",
+    when: "8 months ago",
     text: "I never thought I'd say this, but my breakup was the best thing that happened to me. The coaching helped me rediscover who I am outside of a relationship.",
     coach: "Worked with Bruna",
     stars: 5,
   },
   {
     name: "David K.",
-    text: "The AI chat got me through the hardest nights when I couldn't sleep. And then the 1:1 sessions with Pascal took my recovery to another level. Truly life-changing.",
+    location: "Berlin",
+    when: "3 weeks ago",
+    text: "I booked a session with Pascal on one of the worst days I'd had in months. One call genuinely shifted things — I left with a plan, and for the first time in weeks I could actually breathe.",
     coach: "Worked with Pascal",
     stars: 5,
   },
@@ -69,9 +77,14 @@ const Testimonials = () => {
               <p className="text-muted-foreground font-body text-sm leading-relaxed mb-5">
                 "{t.text}"
               </p>
-              <div className="flex items-center justify-between">
-                <span className="font-display font-semibold text-sm">{t.name}</span>
-                <span className="text-xs font-body text-muted-foreground">{t.coach}</span>
+              <div className="flex items-end justify-between gap-3">
+                <div className="flex flex-col">
+                  <span className="font-display font-semibold text-sm">{t.name}</span>
+                  <span className="text-xs font-body text-muted-foreground">
+                    {t.location} · {t.when}
+                  </span>
+                </div>
+                <span className="text-xs font-body text-muted-foreground text-right">{t.coach}</span>
               </div>
             </motion.div>
           ))}
