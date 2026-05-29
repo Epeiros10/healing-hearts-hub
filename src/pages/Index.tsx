@@ -6,6 +6,7 @@ import Coaching from "@/components/Coaching";
 import RecoveryPackage from "@/components/RecoveryPackage";
 import Footer from "@/components/Footer";
 import ContactSection from "@/components/ContactSection";
+import FAQ from "@/components/FAQ";
 
 const Index = () => {
   return (
@@ -17,6 +18,7 @@ const Index = () => {
       <Coaching />
       <RecoveryPackage />
       <ContactSection />
+      <FAQ />
       <Footer />
     </div>
   );
