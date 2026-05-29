@@ -23,10 +23,10 @@ const ContactSection = () => {
           <div className="inline-flex items-center gap-3 px-6 py-4 rounded-full border border-border bg-card hover:border-primary/30 transition-colors">
             <Mail className="w-5 h-5 text-primary" />
             <a
-              href="mailto:bfriggi93@gmail.com"
+              href="mailto:breakuprecoveryy@gmail.com"
               className="text-base font-body font-medium text-foreground hover:text-primary transition-colors"
             >
-              bfriggi93@gmail.com
+              breakuprecoveryy@gmail.com
             </a>
           </div>
         </motion.div>
