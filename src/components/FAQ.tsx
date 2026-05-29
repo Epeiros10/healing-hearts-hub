@@ -1,4 +1,10 @@
 import { motion } from "framer-motion";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
 
 const faqs = [
   {
@@ -61,19 +67,21 @@ const FAQ = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="bg-card rounded-2xl p-6 md:p-10 border border-border divide-y divide-border"
+          className="bg-card rounded-2xl p-6 md:p-10 border border-border"
           style={{ boxShadow: "var(--shadow-soft)" }}
         >
-          {faqs.map((item, i) => (
-            <div key={i} className="py-6 first:pt-0 last:pb-0">
-              <h3 className="font-display text-base md:text-lg font-medium mb-2">
-                {item.q}
-              </h3>
-              <p className="text-muted-foreground font-body text-sm md:text-base leading-relaxed">
-                {item.a}
-              </p>
-            </div>
-          ))}
+          <Accordion type="single" collapsible className="w-full">
+            {faqs.map((item, i) => (
+              <AccordionItem key={i} value={`item-${i}`}>
+                <AccordionTrigger className="font-display text-base md:text-lg font-medium text-left">
+                  {item.q}
+                </AccordionTrigger>
+                <AccordionContent className="text-muted-foreground font-body text-sm md:text-base leading-relaxed">
+                  {item.a}
+                </AccordionContent>
+              </AccordionItem>
+            ))}
+          </Accordion>
         </motion.div>
       </div>
     </section>
