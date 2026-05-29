@@ -17,7 +17,7 @@ const faqs = [
   },
   {
     q: "What if I'm not ready to talk to someone?",
-    a: "That's completely okay. You can start by chatting with our AI companion — it's free, private, and available any time of day or night. When (and if) you're ready for a 1:1 session, we'll be here. No pressure, no timeline. Healing happens at your pace.",
+    a: "That's completely okay. There's no pressure and no timeline — healing happens at your pace. When you're ready, even just reaching out with a short message is a meaningful first step. We'll meet you wherever you are.",
   },
   {
     q: "How much does a session cost?",
