@@ -8,6 +8,8 @@ import PrivacyPolicy from "./pages/PrivacyPolicy";
 import TalkToSomeone from "./pages/TalkToSomeone";
 import Contact from "./pages/Contact";
 import BookPascalEmergency from "./pages/BookPascalEmergency";
+import Blog from "./pages/Blog";
+import BlogPost from "./pages/BlogPost";
 import NotFound from "./pages/NotFound";
 import CookieConsent from "./components/CookieConsent";
 
@@ -25,6 +27,8 @@ const App = () => (
           <Route path="/talk" element={<TalkToSomeone />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/book/pascal-emergency" element={<BookPascalEmergency />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/blog/:slug" element={<BlogPost />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

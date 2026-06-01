@@ -17,6 +17,8 @@ const Footer = () => {
         <div className="flex items-center justify-center gap-3 font-body text-xs text-muted-foreground/60">
           <span>© {new Date().getFullYear()} Break Up Recovery</span>
           <span>·</span>
+          <a href="/blog" className="hover:text-foreground transition-colors">Blog</a>
+          <span>·</span>
           <a href="/privacy" className="hover:text-foreground transition-colors">Privacy Policy</a>
         </div>
       </div>

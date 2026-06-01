@@ -4,9 +4,10 @@ import { motion, AnimatePresence } from "framer-motion";
 import BookingDialog from "./BookingDialog";
 
 const navLinks = [
-{ label: "About", href: "#about" },
-{ label: "Coaching", href: "#coaching" },
-{ label: "Contact", href: "#contact" }];
+{ label: "About", href: "/#about" },
+{ label: "Coaching", href: "/#coaching" },
+{ label: "Blog", href: "/blog" },
+{ label: "Contact", href: "/#contact" }];
 
 
 const Navbar = () => {
