@@ -67,7 +67,7 @@ const BlogPost = () => {
               {post.content.map((p, i) => (
                 <p
                   key={i}
-                  className="font-body text-foreground/85 leading-relaxed"
+                  className="font-body text-foreground/85 leading-relaxed whitespace-pre-line"
                 >
                   {p}
                 </p>
