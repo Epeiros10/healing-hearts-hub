@@ -104,7 +104,7 @@ export const blogPosts: BlogPost[] = [
       "When happiness sneaks back in, it can trigger an unexpected wave of guilt. Here's how to make peace with it.",
     category: "Emotions",
     readTime: "5 min read",
-    date: "June 1, 2026",
+    date: "May 24, 2026",
     content: [
       "It happens quietly. You laugh at a joke, enjoy a meal, forget to check your phone for an afternoon — and then it hits you. A pang of guilt. How can you feel good when something so important ended? How can you be okay when, just weeks ago, you weren't sure you'd ever be okay again? Some people even describe a strange panic when joy returns, as if feeling better means the love wasn't real.",
       "That guilt is a sign of love, not disloyalty. It means the relationship mattered, that the person mattered, that you took it seriously. But it doesn't mean you're not allowed to feel alive again. Moving on isn't forgetting. It's choosing to live alongside the memory, not underneath it.",
@@ -120,7 +120,7 @@ export const blogPosts: BlogPost[] = [
       "The nights are often the hardest. Gentle strategies for finding rest when everything feels raw.",
     category: "Self-Care",
     readTime: "5 min read",
-    date: "June 3, 2026",
+    date: "May 27, 2026",
     content: [
       "There's something about the stillness of night that makes heartbreak louder. During the day, there are tasks, conversations, errands, small distractions that keep the pain at a manageable volume. At night, it's just you and everything you haven't processed yet. The bed that used to be shared. The silence that used to be a voice. The 3 a.m. mind that won't stop replaying the last conversation.",
       "Start by accepting that your sleep might be messy for a while. Fighting it creates a second layer of anxiety — the original pain plus the panic of 'I have to sleep or tomorrow will be even worse.' Instead, lower the bar. Aim for rest, not perfect sleep. Make your bedroom a soft place to be awake, not a battleground you have to win.",
@@ -137,7 +137,7 @@ export const blogPosts: BlogPost[] = [
       "Anger after heartbreak is often the emotion we hide — but it's also one of the most healing ones to feel.",
     category: "Emotions",
     readTime: "6 min read",
-    date: "June 5, 2026",
+    date: "May 30, 2026",
     content: [
       "We tend to romanticize heartbreak as sadness. Tears, longing, quiet grief, staring out of windows to melancholy music. But often, what shows up first — or out of nowhere weeks later — is anger. Hot, sharp, sometimes shocking anger. And most of us weren't taught what to do with it, especially toward someone we loved.",
       "Anger isn't the opposite of love. It's a response to having your boundaries crossed, your time wasted, your trust broken, or your needs minimized. It's a signal that something mattered to you — and that you deserved better. Many people feel guilty for being angry, as if the anger erases the good parts of the relationship. It doesn't. You can love someone deeply and still be furious at how things ended.",
@@ -154,7 +154,7 @@ export const blogPosts: BlogPost[] = [
       "Not all journaling works. These prompts are designed to move you through grief, not just circle it.",
     category: "Growth",
     readTime: "7 min read",
-    date: "June 8, 2026",
+    date: "June 1, 2026",
     content: [
       "Blank pages can feel intimidating, especially when your emotions are already overwhelming. 'Just write how you feel' is well-meaning advice that often leaves people staring at the page or, worse, looping endlessly through the same painful thoughts in ink. The right prompt can turn journaling from a spiral into a bridge — something that moves you forward instead of keeping you stuck.",
       "Below are nine prompts grouped into three stages of healing. You don't have to do them in order, and you don't have to answer them all. Pick the one that makes you slightly uncomfortable in a curious way — that's usually where the work is.",
