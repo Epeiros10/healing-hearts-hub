@@ -69,4 +69,79 @@ export const blogPosts: BlogPost[] = [
       "Rebuilding identity isn't about erasing the relationship — it's about expanding back into the full shape of who you are. The 'you' on the other side of this won't be the old you. They'll be more honest, more chosen, more yours.",
     ],
   },
+  {
+    slug: "when-the-mind-wont-stop-racing",
+    title: "When Your Mind Won't Stop Racing After a Breakup",
+    excerpt:
+      "Rumination is exhausting. Here's how to gently interrupt the loop and give your nervous system a rest.",
+    category: "Anxiety",
+    readTime: "6 min read",
+    date: "May 28, 2026",
+    content: [
+      "After a breakup, the mind becomes an echo chamber. Why did they leave? What if I had said something different? Will I ever stop thinking about this? The questions are endless, and the answers are never satisfying.",
+      "Rumination isn't weakness — it's the brain trying to solve an emotional problem with logic. But heartbreak doesn't resolve in the mind. It resolves in the body, in time, in being witnessed.",
+      "Try this: set a 10-minute timer to write down every looping thought. When the timer ends, close the notebook and step outside. You're not suppressing the thoughts — you're containing them so they don't spill into every hour of your day.",
+      "Grounding techniques also help. Name five things you can see, four you can touch, three you can hear. These small sensory acts pull the nervous system out of the past and into the present, where relief is actually possible.",
+    ],
+  },
+  {
+    slug: "the-guilt-of-moving-on",
+    title: "The Guilt of Moving On: Why Feeling Better Can Feel Like Betrayal",
+    excerpt:
+      "When happiness sneaks back in, it can trigger an unexpected wave of guilt. Here's how to make peace with it.",
+    category: "Emotions",
+    readTime: "5 min read",
+    date: "June 1, 2026",
+    content: [
+      "It happens quietly. You laugh at a joke, enjoy a meal, forget to check your phone for an afternoon — and then it hits you. A pang of guilt. How can you feel good when something so important ended?",
+      "That guilt is a sign of love, not disloyalty. It means the relationship mattered. But it doesn't mean you're not allowed to feel alive again. Moving on isn't forgetting. It's choosing to live alongside the memory, not underneath it.",
+      "Notice the guilt, thank it for showing you what you valued, and let it pass. Your heart didn't break because you were careless with it. It broke because you were brave enough to love fully.",
+      "You don't owe your sadness a permanent home. Joy can coexist with loss. In fact, it's one of the most honest things grief eventually teaches — that life keeps offering itself to us, even when we're not sure we deserve it yet.",
+    ],
+  },
+  {
+    slug: "sleep-after-heartbreak",
+    title: "How to Sleep When Your Heart Is Broken",
+    excerpt:
+      "The nights are often the hardest. Gentle strategies for finding rest when everything feels raw.",
+    category: "Self-Care",
+    readTime: "5 min read",
+    date: "June 3, 2026",
+    content: [
+      "There's something about the stillness of night that makes heartbreak louder. During the day, there are distractions. At night, it's just you and everything you haven't processed yet.",
+      "Start by accepting that your sleep might be messy for a while. Fighting it creates a second layer of anxiety. Instead, make your bedroom a soft place to be awake. Dim the lights, keep a notebook nearby, and let yourself feel what you feel without forcing sleep.",
+      "Try a body scan before bed. Lie down, place your hands on your belly, and slowly move your attention from your toes to the top of your head. You're not trying to relax perfectly — you're reminding your body that it's safe enough to rest.",
+      "If you wake up at 3 a.m. with your mind spinning, don't reach for your phone. Turn on a low light, read something neutral, or listen to a soothing voice. The middle of the night is not the time to solve your heartbreak. It's the time to wait gently for morning.",
+    ],
+  },
+  {
+    slug: "anger-after-a-breakup",
+    title: "The Anger You Didn't Expect to Feel",
+    excerpt:
+      "Anger after heartbreak is often the emotion we hide — but it's also one of the most healing ones to feel.",
+    category: "Emotions",
+    readTime: "6 min read",
+    date: "June 5, 2026",
+    content: [
+      "We tend to romanticize heartbreak as sadness. Tears, longing, quiet grief. But often, what shows up first is anger. And most of us weren't taught what to do with it.",
+      "Anger isn't the opposite of love. It's a response to having your boundaries crossed, your time wasted, or your trust broken. It's a signal that something mattered to you — and that you deserved better.",
+      "The trick isn't to suppress it or vent it destructively. It's to channel it into clarity. Write an angry letter you never send. Go for a run and let the rhythm carry it out of your body. Clean your space like you're reclaiming territory — because you are.",
+      "Over time, anger softens into something more useful: self-respect. You begin to see the red flags you missed, the needs you minimized, the patterns you're done repeating. Anger, felt honestly, becomes a map toward the kind of love you actually want next.",
+    ],
+  },
+  {
+    slug: "journaling-for-healing",
+    title: "Journaling Prompts That Actually Help You Heal",
+    excerpt:
+      "Not all journaling works. These prompts are designed to move you through grief, not just circle it.",
+    category: "Growth",
+    readTime: "7 min read",
+    date: "June 8, 2026",
+    content: [
+      "Blank pages can feel intimidating, especially when your emotions are already overwhelming. But the right prompt can turn journaling from a spiral into a bridge — something that moves you forward instead of keeping you stuck.",
+      "Try prompts that look ahead, not just back. What kind of person do I want to become through this? What did I learn about my own needs? What will I do differently in my next relationship because of what I know now?",
+      "Balance reflection with self-compassion. Write a letter to yourself from the perspective of someone who loves you unconditionally. List three things you're proud of yourself for today, even if one of them is just getting out of bed.",
+      "And if a prompt brings up too much, stop. Healing through writing doesn't mean reliving every detail. It means gently visiting the hard parts so they lose their grip — and making room for new stories, new hopes, and a slowly returning sense of yourself.",
+    ],
+  },
 ];
