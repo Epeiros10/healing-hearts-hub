@@ -87,7 +87,7 @@ export const blogPosts: BlogPost[] = [
       "Rumination is exhausting. Here's how to gently interrupt the loop and give your nervous system a rest.",
     category: "Anxiety",
     readTime: "6 min read",
-    date: "May 28, 2026",
+    date: "May 20, 2026",
     content: [
       "After a breakup, the mind becomes an echo chamber. Why did they leave? What if I had said something different? What did that last text really mean? Will I ever stop thinking about this? The questions are endless, and the answers — even when you find them — are never quite satisfying. You answer one and three more appear.",
       "Rumination isn't weakness, and it isn't a character flaw. It's the brain trying to solve an emotional problem with logic. Your mind is treating the breakup like a puzzle it can crack if it just thinks hard enough. But heartbreak doesn't resolve in the mind. It resolves in the body, in time, in being witnessed by people who care about you. No amount of replaying the last conversation is going to change what happened.",
