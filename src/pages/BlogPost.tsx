@@ -56,8 +56,6 @@ const BlogPost = () => {
               </span>
               <span>·</span>
               <span>{post.date}</span>
-              <span>·</span>
-              <span>{post.readTime}</span>
             </div>
             <h1 className="font-display text-3xl md:text-4xl text-foreground mb-8 leading-tight">
               {post.title}
