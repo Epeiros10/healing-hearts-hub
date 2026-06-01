@@ -43,8 +43,6 @@ const Blog = () => {
                   <span className="uppercase tracking-[0.15em] text-primary">
                     {post.category}
                   </span>
-                  <span>·</span>
-                  <span>{post.readTime}</span>
                 </div>
                 <h2 className="font-display text-xl text-foreground mb-3 leading-snug">
                   {post.title}
