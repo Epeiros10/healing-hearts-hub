@@ -165,4 +165,24 @@ export const blogPosts: BlogPost[] = [
       "If a prompt brings up too much, stop. Healing through writing doesn't mean reliving every detail or forcing catharsis on a schedule. It means gently visiting the hard parts so they lose their grip — and making room for new stories, new hopes, and a slowly returning sense of yourself.",
     ],
   },
+  {
+    slug: "attachment-styles-and-breakups",
+    title: "How Each Attachment Style Heals From a Breakup",
+    excerpt:
+      "Understanding your attachment pattern can change how you move through heartbreak — and how you rebuild afterward.",
+    category: "Growth",
+    readTime: "9 min read",
+    date: "June 10, 2026",
+    content: [
+      "Most breakup advice is written as if we all react the same way to loss. We don't. The way you grieve, panic, shut down, or rebound is shaped by something deeper than willpower — it's shaped by your attachment style, the emotional blueprint you developed early in life for how love, safety, and separation feel. Learning your pattern doesn't mean labeling yourself. It means understanding why you do what you do, so you can meet yourself with the right kind of care.",
+      "If you have an anxious attachment style, a breakup can feel like freefall. The relationship was probably a primary source of reassurance, and without it, the mind spins into worst-case scenarios: they're already with someone else, they're happier without you, you weren't enough. The urge to reach out, check their social media, or seek closure repeatedly isn't weakness — it's a nervous system in search of the safety it lost.",
+      "For the anxiously attached, healing starts with containment. The impulse is to chase connection in any form — old texts, rebounds, constant updates. Instead, try building a safety net with people you trust, scheduled check-ins so your nervous system has something predictable to hold onto. Journaling can help, but keep it structured so it doesn't turn into rumination. And remind yourself, often, that their silence isn't a verdict on your worth. It's just space — and space can be survived.",
+      "If you have an avoidant attachment style, the breakup might look very different from the outside. You may seem fine — even distant. But beneath the surface, the loss is there, delayed and disorienting. Avoidant healing tends to start later, once the adrenaline of independence fades. The sadness may hit in quiet moments, weeks or months after, and the instinct is often to manage it alone.",
+      "For the avoidantly attached, the risk isn't falling apart — it's never fully feeling it at all. Healing requires a counterintuitive move: letting someone in, just a little. A trusted friend, a therapist, even a journal that you actually read back. Avoidant healing isn't about becoming someone who needs people all the time. It's about learning that need isn't danger, and that connection doesn't always end in suffocation or loss.",
+      "If you have a fearful-avoidant or disorganized style, heartbreak can feel completely contradictory. One day you're desperate for them back; the next you're relieved it's over. You oscillate between reaching out and pulling away, trusting and suspecting, needing and resenting. This isn't confusion about the relationship — it's confusion about safety itself, because the people who were supposed to be safe weren't always.",
+      "For the fearful-avoidant, healing requires extra gentleness. Your system is already on high alert, and a breakup can trigger the sense that love is inherently dangerous. The work here is small and repeated: choosing one safe person and learning to trust them a little more over time. Noticing the cycle without judging it. Giving yourself permission to need someone without punishing yourself for it afterward. You're not broken — you're rebuilding a nervous system that learned early that love and harm came from the same place.",
+      "And if you have a secure attachment style, you may still be devastated. Secure attachment doesn't make you immune to grief — it just means you have tools others are still building. You may feel the loss deeply, reach out to your support network naturally, and over time find your way back to equilibrium. But even secure people can get blindsided by an especially meaningful loss, or find themselves in a pattern they didn't expect. Your job isn't to be perfect at healing. It's to let it happen.",
+      "The real power of knowing your attachment style isn't prediction — it's compassion. You stop asking yourself why you can't just move on, or why you're so needy, or why you're so shut down. You start meeting yourself where you actually are, with the right tools for your particular shape of grief. And eventually, you learn to hold your own heart the way you needed someone else to hold it all along.",
+    ],
+  },
 ];
