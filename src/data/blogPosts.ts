@@ -172,7 +172,7 @@ export const blogPosts: BlogPost[] = [
       "Understanding your attachment pattern can change how you move through heartbreak — and how you rebuild afterward.",
     category: "Growth",
     readTime: "9 min read",
-    date: "June 10, 2026",
+    date: "May 22, 2026",
     content: [
       "Most breakup advice is written as if we all react the same way to loss. We don't. The way you grieve, panic, shut down, or rebound is shaped by something deeper than willpower — it's shaped by your attachment style, the emotional blueprint you developed early in life for how love, safety, and separation feel. Learning your pattern doesn't mean labeling yourself. It means understanding why you do what you do, so you can meet yourself with the right kind of care.",
       "If you have an anxious attachment style, a breakup can feel like freefall. The relationship was probably a primary source of reassurance, and without it, the mind spins into worst-case scenarios: they're already with someone else, they're happier without you, you weren't enough. The urge to reach out, check their social media, or seek closure repeatedly isn't weakness — it's a nervous system in search of the safety it lost.",
