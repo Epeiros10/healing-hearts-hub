@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import BookingDialog from "./BookingDialog";
@@ -6,7 +7,7 @@ import BookingDialog from "./BookingDialog";
 const navLinks = [
 { label: "About", href: "/#about" },
 { label: "Coaching", href: "/#coaching" },
-{ label: "Blog", href: "/blog" },
+{ label: "Blog", href: "/blog", route: true },
 { label: "Contact", href: "/#contact" }];
 
 
@@ -46,6 +47,14 @@ const Navbar = () => {
         {/* Desktop */}
         <div className="hidden md:flex items-center gap-8">
           {navLinks.map((link) =>
+          link.route ?
+          <Link
+            key={link.label}
+            to={link.href}
+            className="font-body text-sm text-muted-foreground hover:text-foreground transition-colors">
+
+              {link.label}
+            </Link> :
           <a
             key={link.label}
             href={link.href}
@@ -81,6 +90,15 @@ const Navbar = () => {
 
             <div className="px-4 py-4 space-y-3">
               {navLinks.map((link) =>
+            link.route ?
+            <Link
+              key={link.label}
+              to={link.href}
+              onClick={() => setMenuOpen(false)}
+              className="block font-body text-sm text-muted-foreground hover:text-foreground py-2">
+
+                  {link.label}
+                </Link> :
             <a
               key={link.label}
               href={link.href}
