@@ -11,6 +11,7 @@ import BookPascalEmergency from "./pages/BookPascalEmergency";
 import Blog from "./pages/Blog";
 import BlogPost from "./pages/BlogPost";
 import Quiz from "./pages/Quiz";
+import ShouldITextMyEx from "./pages/ShouldITextMyEx";
 import NotFound from "./pages/NotFound";
 import CookieConsent from "./components/CookieConsent";
 
@@ -31,6 +32,7 @@ const App = () => (
           <Route path="/blog" element={<Blog />} />
           <Route path="/blog/:slug" element={<BlogPost />} />
           <Route path="/quiz" element={<Quiz />} />
+          <Route path="/should-i-text-my-ex" element={<ShouldITextMyEx />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
