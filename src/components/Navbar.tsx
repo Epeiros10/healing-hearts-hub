@@ -8,6 +8,7 @@ const navLinks = [
 { label: "About", href: "/#about" },
 { label: "Coaching", href: "/#coaching" },
 { label: "Quiz", href: "/quiz", route: true },
+{ label: "Text My Ex?", href: "/should-i-text-my-ex", route: true },
 { label: "Blog", href: "/blog", route: true },
 { label: "Contact", href: "/#contact" }];
 
