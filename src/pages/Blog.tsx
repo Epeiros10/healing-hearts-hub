@@ -1,16 +1,32 @@
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import { blogPosts } from "@/data/blogPosts";
+import { blogPosts, SITE_URL } from "@/data/blogPosts";
 
 const Blog = () => {
   return (
     <div className="min-h-screen bg-background">
+      <Helmet>
+        <title>Breakup Recovery Blog: Gentle Guides to Heal After Heartbreak</title>
+        <meta
+          name="description"
+          content="Compassionate, in-depth articles on healing after a breakup — no contact, attachment styles, rebuilding yourself, and more. Written by certified coaches."
+        />
+        <link rel="canonical" href={`${SITE_URL}/blog`} />
+        <meta property="og:title" content="Breakup Recovery Blog: Gentle Guides to Heal After Heartbreak" />
+        <meta
+          property="og:description"
+          content="Compassionate, in-depth articles on healing after a breakup — written by certified coaches."
+        />
+        <meta property="og:url" content={`${SITE_URL}/blog`} />
+        <meta property="og:type" content="website" />
+      </Helmet>
       <Navbar />
       <main className="pt-32 pb-20 px-4">
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-5xl mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -36,26 +52,42 @@ const Blog = () => {
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: i * 0.08 }}
-                className="bg-card border border-border rounded-2xl p-6 flex flex-col hover:shadow-[var(--shadow-soft)] transition-shadow"
+                transition={{ duration: 0.5, delay: i * 0.05 }}
+                className="bg-card border border-border rounded-2xl overflow-hidden flex flex-col hover:shadow-[var(--shadow-soft)] transition-shadow"
               >
-                <div className="flex items-center gap-3 text-xs font-body text-muted-foreground mb-3">
-                  <span className="uppercase tracking-[0.15em] text-primary">
-                    {post.category}
-                  </span>
-                </div>
-                <h2 className="font-display text-xl text-foreground mb-3 leading-snug">
-                  {post.title}
-                </h2>
-                <p className="font-body text-sm text-muted-foreground mb-5 flex-1">
-                  {post.excerpt}
-                </p>
-                <Link
-                  to={`/blog/${post.slug}`}
-                  className="inline-flex items-center gap-2 font-body text-sm text-primary hover:gap-3 transition-all"
-                >
-                  Read article <ArrowRight className="w-4 h-4" />
+                <Link to={`/blog/${post.slug}`} className="block aspect-[16/9] overflow-hidden bg-muted">
+                  <img
+                    src={post.image}
+                    alt={post.imageAlt}
+                    width={1280}
+                    height={720}
+                    loading="lazy"
+                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
+                  />
                 </Link>
+                <div className="p-6 flex flex-col flex-1">
+                  <div className="flex items-center gap-3 text-xs font-body text-muted-foreground mb-3">
+                    <span className="uppercase tracking-[0.15em] text-primary">
+                      {post.category}
+                    </span>
+                    <span>·</span>
+                    <span>{post.readTime}</span>
+                  </div>
+                  <h2 className="font-display text-xl text-foreground mb-3 leading-snug">
+                    <Link to={`/blog/${post.slug}`} className="hover:underline">
+                      {post.title}
+                    </Link>
+                  </h2>
+                  <p className="font-body text-sm text-muted-foreground mb-5 flex-1">
+                    {post.excerpt}
+                  </p>
+                  <Link
+                    to={`/blog/${post.slug}`}
+                    className="inline-flex items-center gap-2 font-body text-sm text-primary hover:gap-3 transition-all"
+                  >
+                    Read article <ArrowRight className="w-4 h-4" />
+                  </Link>
+                </div>
               </motion.article>
             ))}
           </div>
