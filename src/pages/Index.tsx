@@ -17,6 +17,7 @@ const Index = () => {
       <About />
       <Testimonials />
       <Coaching />
+      <RecoveryQuiz />
       <RecoveryPackage />
       <ContactSection />
       <FAQ />
