@@ -4,6 +4,7 @@ import About from "@/components/About";
 import Testimonials from "@/components/Testimonials";
 import Coaching from "@/components/Coaching";
 import RecoveryPackage from "@/components/RecoveryPackage";
+import RecoveryQuiz from "@/components/RecoveryQuiz";
 import Footer from "@/components/Footer";
 import ContactSection from "@/components/ContactSection";
 import FAQ from "@/components/FAQ";
