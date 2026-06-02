@@ -10,6 +10,7 @@ import Contact from "./pages/Contact";
 import BookPascalEmergency from "./pages/BookPascalEmergency";
 import Blog from "./pages/Blog";
 import BlogPost from "./pages/BlogPost";
+import Quiz from "./pages/Quiz";
 import NotFound from "./pages/NotFound";
 import CookieConsent from "./components/CookieConsent";
 
