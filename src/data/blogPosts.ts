@@ -78,11 +78,11 @@ const img = {
 export const blogPosts: BlogPost[] = [
   {
     slug: "self-care-after-a-breakup",
-    seoTitle: "Self-Care After a Breakup: 6 Gentle Rituals for Week One",
+    seoTitle: "Self-Care After a Breakup: 6 Things That Actually Help (Week 1)",
     metaDescription:
-      "Wondering how to take care of yourself after a breakup? A compassionate guide to gentle self-care rituals for the rawest first week.",
+      "Self-care after a breakup: 6 simple, gentle things to do in the first week of heartbreak — even when you can barely get out of bed.",
     h1: "Gentle Self-Care Rituals for the First Week After a Breakup",
-    title: "Gentle Self-Care Rituals for the First Week After a Breakup",
+    title: "Self-Care After a Breakup: 6 Things That Actually Help",
     excerpt:
       "Small, kind acts that can carry you through the rawest days — no productivity required.",
     category: "Self-Care",
@@ -104,11 +104,11 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "healing-after-a-breakup-is-not-linear",
-    seoTitle: "Healing After a Breakup Isn't Linear: Why Setbacks Happen",
+    seoTitle: "Breakup Recovery Timeline: Why You Still Miss Your Ex Months Later",
     metaDescription:
-      "Why does breakup healing feel like one step forward, two back? A compassionate guide to non-linear grief and why setbacks aren't failure.",
+      "Why do I still miss my ex months later? The honest breakup recovery timeline, why healing isn’t linear, and what setbacks actually mean.",
     h1: "Why Healing Isn't Linear (And Why That's Okay)",
-    title: "Why Healing Isn't Linear (And Why That's Okay)",
+    title: "Breakup Recovery Timeline: Why Healing Isn’t Linear",
     excerpt:
       "You can have a good week and then suddenly miss them again. That's not regression — it's how grief actually moves.",
     category: "Healing",
@@ -130,11 +130,11 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "no-contact-rule-after-breakup",
-    seoTitle: "No Contact Rule After a Breakup: A Compassionate Guide",
+    seoTitle: "No Contact Rule After a Breakup: Does It Work? (Full Guide)",
     metaDescription:
-      "Wondering if you should go no contact after your breakup? A compassionate guide to holding the boundary without punishing yourself or your ex.",
+      "Does the no contact rule work after a breakup? How long it takes, why it helps, and how to actually stick to it without feeling cruel.",
     h1: "No Contact, With Compassion: A Kinder Way to Hold the Boundary",
-    title: "No Contact, With Compassion: A Kinder Way to Hold the Boundary",
+    title: "No Contact Rule After a Breakup: Does It Actually Work?",
     excerpt:
       "No contact isn't punishment — for them or for you. It's the space your nervous system needs to come home to itself.",
     category: "Boundaries",
@@ -157,11 +157,11 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "rebuilding-yourself-after-a-long-relationship",
-    seoTitle: "Rebuilding Yourself After a Long Relationship: A Gentle Guide",
+    seoTitle: "How to Rebuild Your Life After a Long-Term Relationship Ends",
     metaDescription:
-      "Lost in who you are after a long relationship ended? A gentle, step-by-step guide to rebuilding your identity, routines, and sense of self.",
+      "Lost yourself after a long-term relationship? A step-by-step guide to rebuilding your identity, routines and confidence after the breakup.",
     h1: "Rebuilding Your Identity After a Long Relationship",
-    title: "Rebuilding Your Identity After a Long Relationship",
+    title: "How to Rebuild Yourself After a Long-Term Relationship Ends",
     excerpt:
       "When 'we' becomes 'I' again, it can feel like losing yourself — and quietly, like finding yourself too.",
     category: "Growth",
@@ -185,11 +185,11 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "racing-thoughts-after-a-breakup",
-    seoTitle: "Racing Thoughts After a Breakup: How to Quiet a Spiraling Mind",
+    seoTitle: "How to Stop Overthinking About Your Ex After a Breakup",
     metaDescription:
-      "Can't stop overthinking after a breakup? Gentle, proven ways to interrupt rumination and finally give your mind a rest.",
+      "Can’t stop thinking about your ex? Why your mind keeps spiraling after a breakup and 5 proven ways to quiet the rumination tonight.",
     h1: "When Your Mind Won't Stop Racing After a Breakup",
-    title: "When Your Mind Won't Stop Racing After a Breakup",
+    title: "How to Stop Overthinking About Your Ex (and Sleep Again)",
     excerpt:
       "Rumination is exhausting. Here's how to gently interrupt the loop and give your nervous system a rest.",
     category: "Anxiety",
@@ -211,11 +211,11 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "guilt-after-a-breakup-moving-on",
-    seoTitle: "Guilt After a Breakup: Why Moving On Can Feel Like Betrayal",
+    seoTitle: "Why Do I Feel Guilty for Moving On After a Breakup?",
     metaDescription:
-      "Feeling guilty for being happy again after your breakup? A kind look at why moving on can feel like betrayal — and how to release the guilt.",
+      "Why do I feel guilty when I start to feel happy again after my breakup? Understanding moving-on guilt and how to release it.",
     h1: "The Guilt of Moving On: Why Feeling Better Can Feel Like Betrayal",
-    title: "The Guilt of Moving On: Why Feeling Better Can Feel Like Betrayal",
+    title: "Why You Feel Guilty for Moving On After a Breakup",
     excerpt:
       "When happiness sneaks back in, it can trigger an unexpected wave of guilt. Here's how to make peace with it.",
     category: "Emotions",
@@ -236,11 +236,11 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "how-to-sleep-after-a-breakup",
-    seoTitle: "How to Sleep After a Breakup: Gentle Strategies That Work",
+    seoTitle: "How to Sleep After a Breakup: 7 Things That Help You Tonight",
     metaDescription:
-      "Can't sleep after a breakup? Compassionate, practical strategies for finding rest when your heart is broken and the nights feel endless.",
+      "Can’t sleep after a breakup? 7 gentle, science-backed strategies for falling (and staying) asleep when your heart is broken.",
     h1: "How to Sleep When Your Heart Is Broken",
-    title: "How to Sleep When Your Heart Is Broken",
+    title: "How to Sleep After a Breakup: 7 Things That Help Tonight",
     excerpt:
       "The nights are often the hardest. Gentle strategies for finding rest when everything feels raw.",
     category: "Self-Care",
@@ -262,11 +262,11 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "anger-after-a-breakup",
-    seoTitle: "Anger After a Breakup: Why You Feel It and How to Heal It",
+    seoTitle: "Why Am I So Angry After My Breakup? Causes & How to Heal",
     metaDescription:
-      "Surprised by how angry you feel after your breakup? A compassionate guide to feeling, channeling, and healing post-breakup anger.",
+      "Why am I so angry after my breakup? Why post-breakup anger hits so hard, what it actually means, and how to channel it without regret.",
     h1: "The Anger You Didn't Expect to Feel",
-    title: "The Anger You Didn't Expect to Feel",
+    title: "Why Am I So Angry After My Breakup? (And How to Heal It)",
     excerpt:
       "Anger after heartbreak is often the emotion we hide — but it's also one of the most healing ones to feel.",
     category: "Emotions",
@@ -288,11 +288,11 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "journaling-prompts-after-a-breakup",
-    seoTitle: "9 Journaling Prompts to Help You Heal After a Breakup",
+    seoTitle: "9 Journaling Prompts for a Breakup That Actually Help You Heal",
     metaDescription:
-      "Need journaling prompts for heartbreak? 9 gentle, structured prompts that help you process a breakup and move forward — without spiraling.",
+      "The best journaling prompts for a breakup — 9 structured prompts that move you through grief instead of keeping you stuck in the same loop.",
     h1: "Journaling Prompts That Actually Help You Heal",
-    title: "Journaling Prompts That Actually Help You Heal",
+    title: "9 Journaling Prompts for a Breakup (That Don’t Make It Worse)",
     excerpt:
       "Not all journaling works. These prompts are designed to move you through grief, not just circle it.",
     category: "Growth",
@@ -315,11 +315,11 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "attachment-styles-and-breakups",
-    seoTitle: "Attachment Styles and Breakups: How Each Style Heals",
+    seoTitle: "Attachment Styles After a Breakup: How Anxious, Avoidant & Secure Heal",
     metaDescription:
-      "Anxious, avoidant, fearful or secure? A compassionate guide to how each attachment style grieves and heals from a breakup.",
+      "Why do anxious and avoidant exes react so differently to a breakup? How each attachment style grieves — and what each one needs to heal.",
     h1: "How Each Attachment Style Heals From a Breakup",
-    title: "How Each Attachment Style Heals From a Breakup",
+    title: "Attachment Styles and Breakups: How Each Style Heals",
     excerpt:
       "Understanding your attachment pattern can change how you move through heartbreak — and how you rebuild afterward.",
     category: "Growth",
@@ -344,11 +344,11 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "how-to-cope-when-you-still-see-your-ex",
-    seoTitle: "How to Cope When You Still Have to See Your Ex",
+    seoTitle: "How to Cope When You Still See Your Ex (Work, Co-Parenting, Friends)",
     metaDescription:
-      "Co-parenting, shared workplace or mutual friends? A compassionate guide to protecting your healing when going no contact isn't possible.",
+      "Have to see your ex at work, school pickup, or in your friend group? How to protect your healing when going no contact isn’t an option.",
     h1: "What to Do When You Still Have to See Them",
-    title: "What to Do When You Still Have to See Them",
+    title: "How to Cope When You Have to See Your Ex Every Day",
     excerpt:
       "Co-parenting, shared workplaces, mutual friends — how to protect your healing when distance isn't an option.",
     category: "Boundaries",
@@ -370,11 +370,11 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "physical-symptoms-of-heartbreak",
-    seoTitle: "Physical Symptoms of Heartbreak: Why Breakups Actually Hurt",
+    seoTitle: "Physical Symptoms of Heartbreak: Why a Breakup Hurts Your Body",
     metaDescription:
-      "Chest pain, no appetite, exhaustion? Why heartbreak shows up in the body — and gentle ways to care for yourself through it.",
+      "Chest pain, no appetite, exhaustion after a breakup? Why heartbreak causes real physical symptoms — and gentle ways to care for your body.",
     h1: "The Breakup Body: Why Heartbreak Actually Hurts",
-    title: "The Breakup Body: Why Heartbreak Actually Hurts",
+    title: "Why Heartbreak Hurts Physically: Symptoms & What Helps",
     excerpt:
       "Tight chest, no appetite, exhaustion, restlessness — the physical side of grief is real, and it deserves real care.",
     category: "Healing",
@@ -396,11 +396,11 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "staying-friends-with-an-ex",
-    seoTitle: "Staying Friends With an Ex: When It Helps and When It Hurts",
+    seoTitle: "Should You Stay Friends With Your Ex? When It Helps & When It Hurts",
     metaDescription:
-      "Should you stay friends with your ex? A non-judgmental guide to knowing when friendship heals — and when it quietly keeps you stuck.",
+      "Should I stay friends with my ex? A non-judgmental guide to knowing when friendship heals — and when it quietly keeps you stuck.",
     h1: "Should You Stay Friends With Your Ex?",
-    title: "Should You Stay Friends With Your Ex?",
+    title: "Should You Stay Friends With Your Ex? How to Know",
     excerpt:
       "A non-judgmental look at when friendship works, when it quietly keeps you stuck, and how to tell the difference.",
     category: "Boundaries",
@@ -422,11 +422,11 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "when-your-ex-moves-on-faster",
-    seoTitle: "When Your Ex Moves On Faster Than You: How to Cope",
+    seoTitle: "My Ex Moved On Fast: Why It Hurts So Much (and How to Cope)",
     metaDescription:
-      "Seeing your ex happy with someone new while you're still grieving? A compassionate guide to carrying the unfairness and protecting your healing.",
+      "“My ex moved on so fast.” Why it hurts so much, what it really means, and how to protect your healing when they seem happier without you.",
     h1: "When They Move On Faster Than You",
-    title: "When They Move On Faster Than You",
+    title: "My Ex Moved On So Fast — Why It Hurts and How to Cope",
     excerpt:
       "Seeing them happy with someone new while you're still grieving is one of the worst feelings. Here's how to carry it.",
     category: "Healing",
@@ -448,11 +448,11 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "rebound-relationships-after-a-breakup",
-    seoTitle: "Rebound Relationships After a Breakup: Are They Always Bad?",
+    seoTitle: "Rebound Relationships: Do They Ever Work? Signs, Risks & Timing",
     metaDescription:
-      "Thinking about a rebound after your breakup? A non-judgmental look at why we reach for someone new — and what we miss when we skip the empty room.",
+      "Are rebound relationships a bad idea after a breakup? Signs you’re in one, when they actually work, and what you miss by skipping the empty room.",
     h1: "Rebounds: The Quiet Risk of Filling the Void Too Soon",
-    title: "Rebounds: The Quiet Risk of Filling the Void Too Soon",
+    title: "Rebound Relationships: Do They Work? (And When to Wait)",
     excerpt:
       "A non-judgmental look at why we reach for someone new — and what we miss when we skip the empty room.",
     category: "Healing",
@@ -474,11 +474,11 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "unexpected-breakup-triggers",
-    seoTitle: "Unexpected Breakup Triggers: Songs, Smells, and Empty Spaces",
+    seoTitle: "Why Random Things Trigger You After a Breakup (Songs, Smells, Places)",
     metaDescription:
-      "A song, a smell, an empty side of the bed — why small breakup triggers hit so hard, and how to gently soften their grip.",
+      "Why does a song, a smell, or an empty side of the bed wreck you weeks later? How unexpected breakup triggers work and how to soften them.",
     h1: "The Things Nobody Warned You About After a Breakup",
-    title: "The Things Nobody Warned You About After a Breakup",
+    title: "Why Random Things Make Me Cry After My Breakup",
     excerpt:
       "The small, strange triggers — a song, a smell, an empty side of the bed — that hit harder than you'd expect.",
     category: "Healing",
@@ -500,11 +500,11 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "how-to-talk-about-your-breakup",
-    seoTitle: "How to Talk About Your Breakup Without Reliving It",
+    seoTitle: "How to Tell People About Your Breakup Without Reliving It",
     metaDescription:
-      "Tired of explaining your breakup to everyone? Kind, simple scripts for setting social boundaries without losing your composure.",
+      "Tired of explaining your breakup to everyone? Simple, kind scripts for telling people you’ve broken up without losing your composure.",
     h1: "How to Answer 'So What Happened?' Without Reliving It",
-    title: "How to Answer 'So What Happened?' Without Reliving It",
+    title: "How to Tell People About Your Breakup (Without Reliving It)",
     excerpt:
       "You don't owe anyone the full story. Here's how to set kind, simple boundaries in social situations.",
     category: "Boundaries",
@@ -526,11 +526,11 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "social-media-after-a-breakup",
-    seoTitle: "Social Media After a Breakup: A Kinder Approach Than 'Don't Look'",
+    seoTitle: "How to Stop Checking Your Ex’s Social Media After a Breakup",
     metaDescription:
-      "Can't stop checking your ex's profile? A gentler, biology-aware approach to social media after a breakup — without relying on willpower alone.",
+      "Can’t stop checking your ex’s Instagram? Why the urge isn’t weakness — and a kinder, biology-aware way to finally break the habit.",
     h1: "Social Media After a Breakup: A Gentler Approach Than 'Just Don't Look'",
-    title: "Social Media After a Breakup: A Gentler Approach Than 'Just Don't Look'",
+    title: "How to Stop Checking Your Ex’s Instagram (A Kinder Way)",
     excerpt:
       "The urge to check isn't weakness — it's biology. Here's how to work with it instead of against it.",
     category: "Self-Care",
@@ -552,11 +552,11 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "grief-when-you-ended-the-relationship",
-    seoTitle: "When You Were the One Who Ended It: Leaver's Grief Explained",
+    seoTitle: "I Broke Up With Them and I’m Devastated: Why It Still Hurts",
     metaDescription:
-      "Being the one who left doesn't mean it doesn't hurt. A compassionate guide to leaver's grief and the guilt that follows.",
+      "\"I broke up with him and I’m devastated.\" Why the person who ended the relationship grieves too, and how to handle the guilt and doubt.",
     h1: "When You Were the One Who Ended It",
-    title: "When You Were the One Who Ended It",
+    title: "I Broke Up With Him and I’m Devastated — Why It Still Hurts",
     excerpt:
       "Being the one who left doesn't mean it doesn't hurt. A kind look at the specific shape of leaver's grief.",
     category: "Healing",
@@ -578,11 +578,11 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "first-date-after-a-breakup",
-    seoTitle: "Your First Date After a Breakup: How to Know You're Ready",
+    seoTitle: "When Is It Okay to Date Again After a Breakup? Signs You’re Ready",
     metaDescription:
-      "When is it okay to date again after heartbreak? A gentle guide to the first date after a breakup — without rushing or pretending.",
+      "How do you know when you’re ready to date after a breakup? Signs you’re ready, signs you’re not, and how to take a gentle first step.",
     h1: "The First Date After Heartbreak",
-    title: "The First Date After Heartbreak",
+    title: "When Is It Okay to Date Again After a Breakup?",
     excerpt:
       "How to know when you're ready, how to take it slowly, and how to be kind to yourself if it stirs everything back up.",
     category: "Healing",
