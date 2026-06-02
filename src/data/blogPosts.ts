@@ -1,9 +1,23 @@
-import selfCareImg from "@/assets/blog-self-care.jpg";
-import healingImg from "@/assets/blog-healing.jpg";
-import boundariesImg from "@/assets/blog-boundaries.jpg";
-import growthImg from "@/assets/blog-growth.jpg";
-import anxietyImg from "@/assets/blog-anxiety.jpg";
-import emotionsImg from "@/assets/blog-emotions.jpg";
+import imgSelfCare from "@/assets/blog/self-care-after-a-breakup.jpg";
+import imgHealingNotLinear from "@/assets/blog/healing-after-a-breakup-is-not-linear.jpg";
+import imgNoContact from "@/assets/blog/no-contact-rule-after-breakup.jpg";
+import imgRebuilding from "@/assets/blog/rebuilding-yourself-after-a-long-relationship.jpg";
+import imgRacingThoughts from "@/assets/blog/racing-thoughts-after-a-breakup.jpg";
+import imgGuilt from "@/assets/blog/guilt-after-a-breakup-moving-on.jpg";
+import imgSleep from "@/assets/blog/how-to-sleep-after-a-breakup.jpg";
+import imgAnger from "@/assets/blog/anger-after-a-breakup.jpg";
+import imgJournaling from "@/assets/blog/journaling-prompts-after-a-breakup.jpg";
+import imgAttachment from "@/assets/blog/attachment-styles-and-breakups.jpg";
+import imgStillSeeEx from "@/assets/blog/how-to-cope-when-you-still-see-your-ex.jpg";
+import imgPhysical from "@/assets/blog/physical-symptoms-of-heartbreak.jpg";
+import imgFriends from "@/assets/blog/staying-friends-with-an-ex.jpg";
+import imgMovedOnFaster from "@/assets/blog/when-your-ex-moves-on-faster.jpg";
+import imgRebound from "@/assets/blog/rebound-relationships-after-a-breakup.jpg";
+import imgTriggers from "@/assets/blog/unexpected-breakup-triggers.jpg";
+import imgTalkAbout from "@/assets/blog/how-to-talk-about-your-breakup.jpg";
+import imgSocialMedia from "@/assets/blog/social-media-after-a-breakup.jpg";
+import imgEndedIt from "@/assets/blog/grief-when-you-ended-the-relationship.jpg";
+import imgFirstDate from "@/assets/blog/first-date-after-a-breakup.jpg";
 
 export type BlogPost = {
   slug: string;
@@ -27,14 +41,39 @@ export type BlogPost = {
   content: string[];
 };
 
+const slugImages: Record<string, string> = {
+  "self-care-after-a-breakup": imgSelfCare,
+  "healing-after-a-breakup-is-not-linear": imgHealingNotLinear,
+  "no-contact-rule-after-breakup": imgNoContact,
+  "rebuilding-yourself-after-a-long-relationship": imgRebuilding,
+  "racing-thoughts-after-a-breakup": imgRacingThoughts,
+  "guilt-after-a-breakup-moving-on": imgGuilt,
+  "how-to-sleep-after-a-breakup": imgSleep,
+  "anger-after-a-breakup": imgAnger,
+  "journaling-prompts-after-a-breakup": imgJournaling,
+  "attachment-styles-and-breakups": imgAttachment,
+  "how-to-cope-when-you-still-see-your-ex": imgStillSeeEx,
+  "physical-symptoms-of-heartbreak": imgPhysical,
+  "staying-friends-with-an-ex": imgFriends,
+  "when-your-ex-moves-on-faster": imgMovedOnFaster,
+  "rebound-relationships-after-a-breakup": imgRebound,
+  "unexpected-breakup-triggers": imgTriggers,
+  "how-to-talk-about-your-breakup": imgTalkAbout,
+  "social-media-after-a-breakup": imgSocialMedia,
+  "grief-when-you-ended-the-relationship": imgEndedIt,
+  "first-date-after-a-breakup": imgFirstDate,
+};
+
+// Placeholder used during array construction; overridden below per slug.
 const img = {
-  "Self-Care": selfCareImg,
-  Healing: healingImg,
-  Boundaries: boundariesImg,
-  Growth: growthImg,
-  Anxiety: anxietyImg,
-  Emotions: emotionsImg,
+  "Self-Care": imgSelfCare,
+  Healing: imgHealingNotLinear,
+  Boundaries: imgNoContact,
+  Growth: imgRebuilding,
+  Anxiety: imgRacingThoughts,
+  Emotions: imgGuilt,
 } as const;
+
 
 export const blogPosts: BlogPost[] = [
   {
