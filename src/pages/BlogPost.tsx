@@ -180,6 +180,26 @@ const BlogPost = () => {
                 return (
                   <div key={i}>
                     {blocks.map((block, j) => {
+                      if (block.startsWith('### ')) {
+                        return (
+                          <h3
+                            key={j}
+                            className="font-display text-lg md:text-xl text-foreground mt-8 mb-3 leading-snug"
+                          >
+                            {block.slice(4)}
+                          </h3>
+                        );
+                      }
+                      if (block.startsWith('## ')) {
+                        return (
+                          <h2
+                            key={j}
+                            className="font-display text-2xl md:text-[1.6rem] text-foreground mt-10 mb-4 leading-snug"
+                          >
+                            {block.slice(3)}
+                          </h2>
+                        );
+                      }
                       const lines = block.split('\n').filter(Boolean);
                       const isNumbered =
                         lines.length > 1 && lines.every((l) => /^\d+\.\s/.test(l));
