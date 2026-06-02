@@ -1,22 +1,59 @@
+import selfCareImg from "@/assets/blog-self-care.jpg";
+import healingImg from "@/assets/blog-healing.jpg";
+import boundariesImg from "@/assets/blog-boundaries.jpg";
+import growthImg from "@/assets/blog-growth.jpg";
+import anxietyImg from "@/assets/blog-anxiety.jpg";
+import emotionsImg from "@/assets/blog-emotions.jpg";
+
 export type BlogPost = {
   slug: string;
+  /** Keyword-rich <title> tag (≤60 chars ideally) */
+  seoTitle: string;
+  /** Unique meta description (≤160 chars) */
+  metaDescription: string;
+  /** Emotional, on-brand H1 shown on the page */
+  h1: string;
+  /** Card / list title (short, browse-friendly) */
   title: string;
   excerpt: string;
   category: string;
   readTime: string;
   date: string;
+  author: "Bruna" | "Pascal";
+  image: string;
+  imageAlt: string;
+  /** Other post slugs to surface as "Related" */
+  related: string[];
   content: string[];
 };
 
+const img = {
+  "Self-Care": selfCareImg,
+  Healing: healingImg,
+  Boundaries: boundariesImg,
+  Growth: growthImg,
+  Anxiety: anxietyImg,
+  Emotions: emotionsImg,
+} as const;
+
 export const blogPosts: BlogPost[] = [
   {
-    slug: "gentle-self-care-after-a-breakup",
+    slug: "self-care-after-a-breakup",
+    seoTitle: "Self-Care After a Breakup: 6 Gentle Rituals for Week One",
+    metaDescription:
+      "Wondering how to take care of yourself after a breakup? A compassionate guide to gentle self-care rituals for the rawest first week.",
+    h1: "Gentle Self-Care Rituals for the First Week After a Breakup",
     title: "Gentle Self-Care Rituals for the First Week After a Breakup",
     excerpt:
       "Small, kind acts that can carry you through the rawest days — no productivity required.",
     category: "Self-Care",
     readTime: "5 min read",
     date: "May 12, 2026",
+    author: "Bruna",
+    image: img["Self-Care"],
+    imageAlt:
+      "A warm cup of herbal tea and a soft blanket on a linen couch — gentle self-care after a breakup",
+    related: ["how-to-sleep-after-a-breakup", "physical-symptoms-of-heartbreak", "social-media-after-a-breakup"],
     content: [
       "The first week after a breakup is rarely about big breakthroughs. It's about getting through the day with a little more softness toward yourself. The goal isn't to feel better immediately — it's to feel held. Most advice you'll find online will push you toward action: delete their number, start a new hobby, hit the gym. But the truth is that the body and the mind need a slower kind of care in the first seven days. They need permission to be tender.",
       "Start with the basics that grief tends to erase. Drink a glass of water before your morning coffee. Eat something warm at least once a day, even if it's only toast and broth. Step outside for five minutes of daylight, ideally in the morning, to help your circadian rhythm find its footing again. These aren't small things when your nervous system is in shock — they're anchors. They tell your body, again and again, that it is still being looked after.",
@@ -27,13 +64,22 @@ export const blogPosts: BlogPost[] = [
     ],
   },
   {
-    slug: "why-healing-is-not-linear",
+    slug: "healing-after-a-breakup-is-not-linear",
+    seoTitle: "Healing After a Breakup Isn't Linear: Why Setbacks Happen",
+    metaDescription:
+      "Why does breakup healing feel like one step forward, two back? A compassionate guide to non-linear grief and why setbacks aren't failure.",
+    h1: "Why Healing Isn't Linear (And Why That's Okay)",
     title: "Why Healing Isn't Linear (And Why That's Okay)",
     excerpt:
       "You can have a good week and then suddenly miss them again. That's not regression — it's how grief actually moves.",
     category: "Healing",
     readTime: "6 min read",
     date: "April 28, 2026",
+    author: "Pascal",
+    image: img.Healing,
+    imageAlt:
+      "Hands holding a kintsugi bowl with gold cracks — symbol of non-linear healing after a breakup",
+    related: ["physical-symptoms-of-heartbreak", "self-care-after-a-breakup", "racing-thoughts-after-a-breakup"],
     content: [
       "One of the most disorienting parts of heartbreak is the way it loops. You wake up feeling clear and strong, certain that you've turned a corner. By the afternoon, a song on the radio, the smell of their cologne on a stranger, or an old photo surfacing in your camera roll pulls you under again. Many people read this as failure. They think, 'I was doing so well — what's wrong with me?' Nothing is wrong with you. This is exactly how healing actually works.",
       "Healing moves in spirals, not straight lines. Picture a spiral staircase: each time you come around, you pass the same view from the window, but you're standing at a different height. You're meeting the same pain from a slightly different place — with a little more capacity, a little more perspective, a little more of yourself intact. The wave looks the same, but you are not the same person meeting it.",
@@ -44,13 +90,22 @@ export const blogPosts: BlogPost[] = [
     ],
   },
   {
-    slug: "no-contact-with-compassion",
+    slug: "no-contact-rule-after-breakup",
+    seoTitle: "No Contact Rule After a Breakup: A Compassionate Guide",
+    metaDescription:
+      "Wondering if you should go no contact after your breakup? A compassionate guide to holding the boundary without punishing yourself or your ex.",
+    h1: "No Contact, With Compassion: A Kinder Way to Hold the Boundary",
     title: "No Contact, With Compassion: A Kinder Way to Hold the Boundary",
     excerpt:
       "No contact isn't punishment — for them or for you. It's the space your nervous system needs to come home to itself.",
     category: "Boundaries",
     readTime: "7 min read",
     date: "April 9, 2026",
+    author: "Pascal",
+    image: img.Boundaries,
+    imageAlt:
+      "An open door letting in soft light — symbolizing the boundary of going no contact after a breakup",
+    related: ["how-to-cope-when-you-still-see-your-ex", "social-media-after-a-breakup", "staying-friends-with-an-ex"],
     content: [
       "No contact often gets framed as a cold, strategic move — a way to 'win' the breakup or make the other person miss you. That framing keeps you tethered. At its best, no contact is something much quieter and much kinder. It's an act of self-respect, a way of saying, 'I love myself enough to stop reopening the wound every time it tries to close.'",
       "The reason no contact works isn't manipulation. It's biology. Your brain formed an attachment to this person over months or years, and that attachment lives in the same neural pathways as physical addiction. Every text, every story view, every 'just checking in' message floods your system with a small dose of the very thing it's trying to detox from. The brain can't begin to rewire while it's still being fed.",
@@ -62,13 +117,22 @@ export const blogPosts: BlogPost[] = [
     ],
   },
   {
-    slug: "rebuilding-identity-after-a-relationship",
+    slug: "rebuilding-yourself-after-a-long-relationship",
+    seoTitle: "Rebuilding Yourself After a Long Relationship: A Gentle Guide",
+    metaDescription:
+      "Lost in who you are after a long relationship ended? A gentle, step-by-step guide to rebuilding your identity, routines, and sense of self.",
+    h1: "Rebuilding Your Identity After a Long Relationship",
     title: "Rebuilding Your Identity After a Long Relationship",
     excerpt:
       "When 'we' becomes 'I' again, it can feel like losing yourself — and quietly, like finding yourself too.",
     category: "Growth",
     readTime: "8 min read",
     date: "March 22, 2026",
+    author: "Bruna",
+    image: img.Growth,
+    imageAlt:
+      "A small green sprout growing in a terracotta pot — rebuilding yourself after a long relationship",
+    related: ["journaling-prompts-after-a-breakup", "attachment-styles-and-breakups", "first-date-after-a-breakup"],
     content: [
       "Long relationships shape us in ways we don't always notice. Your routines, your taste in music, the restaurants you frequent, the way you spend Sundays — so much of it can carry the imprint of the other person. When they leave, those imprints suddenly stand out in sharp relief. You open the fridge and see foods you only bought because they liked them. You hear a song and don't know if you still love it or only loved it through their ears.",
       "This is one of the strangest griefs of a breakup: not just losing them, but losing the version of yourself that existed alongside them. The 'we' had its own gravity, and now that it's gone, you're left figuring out what orbits around just you.",
@@ -81,13 +145,22 @@ export const blogPosts: BlogPost[] = [
     ],
   },
   {
-    slug: "when-the-mind-wont-stop-racing",
+    slug: "racing-thoughts-after-a-breakup",
+    seoTitle: "Racing Thoughts After a Breakup: How to Quiet a Spiraling Mind",
+    metaDescription:
+      "Can't stop overthinking after a breakup? Gentle, proven ways to interrupt rumination and finally give your mind a rest.",
+    h1: "When Your Mind Won't Stop Racing After a Breakup",
     title: "When Your Mind Won't Stop Racing After a Breakup",
     excerpt:
       "Rumination is exhausting. Here's how to gently interrupt the loop and give your nervous system a rest.",
     category: "Anxiety",
     readTime: "6 min read",
     date: "May 20, 2026",
+    author: "Bruna",
+    image: img.Anxiety,
+    imageAlt:
+      "A silhouette by a sunlit window — quieting racing thoughts after a breakup",
+    related: ["how-to-sleep-after-a-breakup", "healing-after-a-breakup-is-not-linear", "journaling-prompts-after-a-breakup"],
     content: [
       "After a breakup, the mind becomes an echo chamber. Why did they leave? What if I had said something different? What did that last text really mean? Will I ever stop thinking about this? The questions are endless, and the answers — even when you find them — are never quite satisfying. You answer one and three more appear.",
       "Rumination isn't weakness, and it isn't a character flaw. It's the brain trying to solve an emotional problem with logic. Your mind is treating the breakup like a puzzle it can crack if it just thinks hard enough. But heartbreak doesn't resolve in the mind. It resolves in the body, in time, in being witnessed by people who care about you. No amount of replaying the last conversation is going to change what happened.",
@@ -98,13 +171,22 @@ export const blogPosts: BlogPost[] = [
     ],
   },
   {
-    slug: "the-guilt-of-moving-on",
+    slug: "guilt-after-a-breakup-moving-on",
+    seoTitle: "Guilt After a Breakup: Why Moving On Can Feel Like Betrayal",
+    metaDescription:
+      "Feeling guilty for being happy again after your breakup? A kind look at why moving on can feel like betrayal — and how to release the guilt.",
+    h1: "The Guilt of Moving On: Why Feeling Better Can Feel Like Betrayal",
     title: "The Guilt of Moving On: Why Feeling Better Can Feel Like Betrayal",
     excerpt:
       "When happiness sneaks back in, it can trigger an unexpected wave of guilt. Here's how to make peace with it.",
     category: "Emotions",
     readTime: "5 min read",
     date: "May 24, 2026",
+    author: "Pascal",
+    image: img.Emotions,
+    imageAlt:
+      "Open journal beside dried flowers in soft light — guilt and moving on after a breakup",
+    related: ["when-your-ex-moves-on-faster", "grief-when-you-ended-the-relationship", "first-date-after-a-breakup"],
     content: [
       "It happens quietly. You laugh at a joke, enjoy a meal, forget to check your phone for an afternoon — and then it hits you. A pang of guilt. How can you feel good when something so important ended? How can you be okay when, just weeks ago, you weren't sure you'd ever be okay again? Some people even describe a strange panic when joy returns, as if feeling better means the love wasn't real.",
       "That guilt is a sign of love, not disloyalty. It means the relationship mattered, that the person mattered, that you took it seriously. But it doesn't mean you're not allowed to feel alive again. Moving on isn't forgetting. It's choosing to live alongside the memory, not underneath it.",
@@ -114,13 +196,22 @@ export const blogPosts: BlogPost[] = [
     ],
   },
   {
-    slug: "sleep-after-heartbreak",
+    slug: "how-to-sleep-after-a-breakup",
+    seoTitle: "How to Sleep After a Breakup: Gentle Strategies That Work",
+    metaDescription:
+      "Can't sleep after a breakup? Compassionate, practical strategies for finding rest when your heart is broken and the nights feel endless.",
+    h1: "How to Sleep When Your Heart Is Broken",
     title: "How to Sleep When Your Heart Is Broken",
     excerpt:
       "The nights are often the hardest. Gentle strategies for finding rest when everything feels raw.",
     category: "Self-Care",
     readTime: "5 min read",
     date: "May 27, 2026",
+    author: "Bruna",
+    image: img["Self-Care"],
+    imageAlt:
+      "Soft linen blanket and warm tea by a sunlit window — sleeping better after a breakup",
+    related: ["racing-thoughts-after-a-breakup", "physical-symptoms-of-heartbreak", "self-care-after-a-breakup"],
     content: [
       "There's something about the stillness of night that makes heartbreak louder. During the day, there are tasks, conversations, errands, small distractions that keep the pain at a manageable volume. At night, it's just you and everything you haven't processed yet. The bed that used to be shared. The silence that used to be a voice. The 3 a.m. mind that won't stop replaying the last conversation.",
       "Start by accepting that your sleep might be messy for a while. Fighting it creates a second layer of anxiety — the original pain plus the panic of 'I have to sleep or tomorrow will be even worse.' Instead, lower the bar. Aim for rest, not perfect sleep. Make your bedroom a soft place to be awake, not a battleground you have to win.",
@@ -132,12 +223,21 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "anger-after-a-breakup",
+    seoTitle: "Anger After a Breakup: Why You Feel It and How to Heal It",
+    metaDescription:
+      "Surprised by how angry you feel after your breakup? A compassionate guide to feeling, channeling, and healing post-breakup anger.",
+    h1: "The Anger You Didn't Expect to Feel",
     title: "The Anger You Didn't Expect to Feel",
     excerpt:
       "Anger after heartbreak is often the emotion we hide — but it's also one of the most healing ones to feel.",
     category: "Emotions",
     readTime: "6 min read",
     date: "May 30, 2026",
+    author: "Pascal",
+    image: img.Emotions,
+    imageAlt:
+      "Journal and dried flowers in warm light — sitting with anger after a breakup",
+    related: ["guilt-after-a-breakup-moving-on", "journaling-prompts-after-a-breakup", "grief-when-you-ended-the-relationship"],
     content: [
       "We tend to romanticize heartbreak as sadness. Tears, longing, quiet grief, staring out of windows to melancholy music. But often, what shows up first — or out of nowhere weeks later — is anger. Hot, sharp, sometimes shocking anger. And most of us weren't taught what to do with it, especially toward someone we loved.",
       "Anger isn't the opposite of love. It's a response to having your boundaries crossed, your time wasted, your trust broken, or your needs minimized. It's a signal that something mattered to you — and that you deserved better. Many people feel guilty for being angry, as if the anger erases the good parts of the relationship. It doesn't. You can love someone deeply and still be furious at how things ended.",
@@ -148,13 +248,22 @@ export const blogPosts: BlogPost[] = [
     ],
   },
   {
-    slug: "journaling-for-healing",
+    slug: "journaling-prompts-after-a-breakup",
+    seoTitle: "9 Journaling Prompts to Help You Heal After a Breakup",
+    metaDescription:
+      "Need journaling prompts for heartbreak? 9 gentle, structured prompts that help you process a breakup and move forward — without spiraling.",
+    h1: "Journaling Prompts That Actually Help You Heal",
     title: "Journaling Prompts That Actually Help You Heal",
     excerpt:
       "Not all journaling works. These prompts are designed to move you through grief, not just circle it.",
     category: "Growth",
     readTime: "7 min read",
     date: "June 1, 2026",
+    author: "Bruna",
+    image: img.Growth,
+    imageAlt:
+      "A sprout in a terracotta pot — journaling prompts for healing after a breakup",
+    related: ["rebuilding-yourself-after-a-long-relationship", "racing-thoughts-after-a-breakup", "anger-after-a-breakup"],
     content: [
       "Blank pages can feel intimidating, especially when your emotions are already overwhelming. 'Just write how you feel' is well-meaning advice that often leaves people staring at the page or, worse, looping endlessly through the same painful thoughts in ink. The right prompt can turn journaling from a spiral into a bridge — something that moves you forward instead of keeping you stuck.",
       "Below are nine prompts grouped into three stages of healing. You don't have to do them in order, and you don't have to answer them all. Pick the one that makes you slightly uncomfortable in a curious way — that's usually where the work is.",
@@ -167,12 +276,21 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "attachment-styles-and-breakups",
+    seoTitle: "Attachment Styles and Breakups: How Each Style Heals",
+    metaDescription:
+      "Anxious, avoidant, fearful or secure? A compassionate guide to how each attachment style grieves and heals from a breakup.",
+    h1: "How Each Attachment Style Heals From a Breakup",
     title: "How Each Attachment Style Heals From a Breakup",
     excerpt:
       "Understanding your attachment pattern can change how you move through heartbreak — and how you rebuild afterward.",
     category: "Growth",
     readTime: "9 min read",
     date: "May 22, 2026",
+    author: "Bruna",
+    image: img.Growth,
+    imageAlt:
+      "A small sprout in a sunlit pot — attachment styles and how each one heals from a breakup",
+    related: ["rebuilding-yourself-after-a-long-relationship", "no-contact-rule-after-breakup", "first-date-after-a-breakup"],
     content: [
       "Most breakup advice is written as if we all react the same way to loss. We don't. The way you grieve, panic, shut down, or rebound is shaped by something deeper than willpower — it's shaped by your attachment style, the emotional blueprint you developed early in life for how love, safety, and separation feel. Learning your pattern doesn't mean labeling yourself. It means understanding why you do what you do, so you can meet yourself with the right kind of care.",
       "If you have an anxious attachment style, a breakup can feel like freefall. The relationship was probably a primary source of reassurance, and without it, the mind spins into worst-case scenarios: they're already with someone else, they're happier without you, you weren't enough. The urge to reach out, check their social media, or seek closure repeatedly isn't weakness — it's a nervous system in search of the safety it lost.",
@@ -186,13 +304,22 @@ export const blogPosts: BlogPost[] = [
     ],
   },
   {
-    slug: "when-you-still-have-to-see-them",
+    slug: "how-to-cope-when-you-still-see-your-ex",
+    seoTitle: "How to Cope When You Still Have to See Your Ex",
+    metaDescription:
+      "Co-parenting, shared workplace or mutual friends? A compassionate guide to protecting your healing when going no contact isn't possible.",
+    h1: "What to Do When You Still Have to See Them",
     title: "What to Do When You Still Have to See Them",
     excerpt:
       "Co-parenting, shared workplaces, mutual friends — how to protect your healing when distance isn't an option.",
     category: "Boundaries",
     readTime: "7 min read",
     date: "May 14, 2026",
+    author: "Pascal",
+    image: img.Boundaries,
+    imageAlt:
+      "An open door framed in warm light — coping when you still have to see your ex",
+    related: ["no-contact-rule-after-breakup", "staying-friends-with-an-ex", "how-to-talk-about-your-breakup"],
     content: [
       "One of the cruelest parts of certain breakups is that the person you most need space from is still woven into your daily life. Maybe you share children, an office, a friend group, a band, a building. The advice to 'go no contact and focus on yourself' doesn't quite fit when you'll see them at school pickup on Tuesday. If that's your situation, you're not failing at healing — you're doing something genuinely harder than most breakup guides acknowledge.",
       "The first thing to know is that healing is still possible, even with contact. What changes is the strategy. Instead of full distance, you're aiming for emotional distance inside necessary proximity. That means narrowing the relationship down to its essential function — co-parent, colleague, fellow human in a shared room — and gently letting go of all the other roles you used to play for each other. You are no longer their confidant, their emotional support, or their soft place to land. You are something more limited now, and that's okay.",
@@ -203,13 +330,22 @@ export const blogPosts: BlogPost[] = [
     ],
   },
   {
-    slug: "the-breakup-body",
+    slug: "physical-symptoms-of-heartbreak",
+    seoTitle: "Physical Symptoms of Heartbreak: Why Breakups Actually Hurt",
+    metaDescription:
+      "Chest pain, no appetite, exhaustion? Why heartbreak shows up in the body — and gentle ways to care for yourself through it.",
+    h1: "The Breakup Body: Why Heartbreak Actually Hurts",
     title: "The Breakup Body: Why Heartbreak Actually Hurts",
     excerpt:
       "Tight chest, no appetite, exhaustion, restlessness — the physical side of grief is real, and it deserves real care.",
     category: "Healing",
     readTime: "7 min read",
     date: "May 16, 2026",
+    author: "Bruna",
+    image: img.Healing,
+    imageAlt:
+      "Hands cradling a kintsugi bowl — physical symptoms of heartbreak and how to care for the body",
+    related: ["how-to-sleep-after-a-breakup", "self-care-after-a-breakup", "healing-after-a-breakup-is-not-linear"],
     content: [
       "Heartbreak isn't just an emotional event — it's a full-body one. In the days and weeks after a breakup, you may notice your chest feels tight, your stomach is in knots, your appetite has vanished or doubled, your sleep is wrecked, your shoulders are pulled up around your ears. None of this is in your head. Grief activates the same stress systems that respond to physical danger, and your body is doing exactly what it's built to do under threat.",
       "When attachment is suddenly severed, the brain treats it a lot like a wound. The same regions that light up during physical pain get involved. Cortisol and adrenaline rise; oxytocin and dopamine drop. Your nervous system shifts into a vigilant, low-grade state of alarm. That's why you can feel exhausted and wired at the same time, why food can taste like nothing, why you can cry without warning when you sit down on the couch. Your body is grieving in its own language.",
@@ -220,13 +356,22 @@ export const blogPosts: BlogPost[] = [
     ],
   },
   {
-    slug: "should-you-stay-friends",
+    slug: "staying-friends-with-an-ex",
+    seoTitle: "Staying Friends With an Ex: When It Helps and When It Hurts",
+    metaDescription:
+      "Should you stay friends with your ex? A non-judgmental guide to knowing when friendship heals — and when it quietly keeps you stuck.",
+    h1: "Should You Stay Friends With Your Ex?",
     title: "Should You Stay Friends With Your Ex?",
     excerpt:
       "A non-judgmental look at when friendship works, when it quietly keeps you stuck, and how to tell the difference.",
     category: "Boundaries",
     readTime: "7 min read",
     date: "May 18, 2026",
+    author: "Pascal",
+    image: img.Boundaries,
+    imageAlt:
+      "An open door letting in light — deciding whether to stay friends with an ex",
+    related: ["no-contact-rule-after-breakup", "how-to-cope-when-you-still-see-your-ex", "when-your-ex-moves-on-faster"],
     content: [
       "Few breakup questions are as loaded as this one. Some people swear that staying friends is mature, evolved, the right thing to do. Others insist it's denial dressed up as kindness. The truth, as usual, is more personal than either camp suggests. Whether friendship with an ex is healing or harmful depends less on the rule and more on the specific people, the specific relationship, and the specific moment in time.",
       "The first honest question to ask yourself is: what do I actually want from this friendship? If the answer is 'to keep them in my life because losing them entirely feels unbearable,' that's not a friendship yet — that's grief in a friendlier costume. Real friendship can come later, but it usually can't be the bridge over the grief. Trying to skip the loss by staying close often just stretches the loss out over a much longer period.",
@@ -237,13 +382,22 @@ export const blogPosts: BlogPost[] = [
     ],
   },
   {
-    slug: "when-they-move-on-faster",
+    slug: "when-your-ex-moves-on-faster",
+    seoTitle: "When Your Ex Moves On Faster Than You: How to Cope",
+    metaDescription:
+      "Seeing your ex happy with someone new while you're still grieving? A compassionate guide to carrying the unfairness and protecting your healing.",
+    h1: "When They Move On Faster Than You",
     title: "When They Move On Faster Than You",
     excerpt:
       "Seeing them happy with someone new while you're still grieving is one of the worst feelings. Here's how to carry it.",
     category: "Healing",
     readTime: "7 min read",
     date: "May 20, 2026",
+    author: "Bruna",
+    image: img.Healing,
+    imageAlt:
+      "Hands holding a kintsugi bowl — coping when your ex moves on faster than you",
+    related: ["social-media-after-a-breakup", "rebound-relationships-after-a-breakup", "guilt-after-a-breakup-moving-on"],
     content: [
       "Few things sting like discovering your ex seems to be doing fine — better than fine — while you're still piecing yourself back together. New partner. New photos. New trips. New version of the life you thought you'd share. Meanwhile you're trying to remember to eat lunch. The unfairness of it can make grief sharpen into something close to rage. None of that means you're petty. It means you loved them, and now you're watching someone else hold the space you used to.",
       "The first thing worth knowing is that what you're seeing is almost never the full picture. Posts, stories, and updates are highlight reels, often curated specifically to broadcast 'I'm okay.' People in pain post the most carefully composed photos. New relationships that follow long ones are frequently softer than they look from the outside — sometimes a rebound, sometimes a distraction, sometimes the real thing, but almost always more complicated than a smiling beach photo suggests. You are comparing your inside to their outside.",
@@ -254,13 +408,22 @@ export const blogPosts: BlogPost[] = [
     ],
   },
   {
-    slug: "rebounds-and-filling-the-void",
+    slug: "rebound-relationships-after-a-breakup",
+    seoTitle: "Rebound Relationships After a Breakup: Are They Always Bad?",
+    metaDescription:
+      "Thinking about a rebound after your breakup? A non-judgmental look at why we reach for someone new — and what we miss when we skip the empty room.",
+    h1: "Rebounds: The Quiet Risk of Filling the Void Too Soon",
     title: "Rebounds: The Quiet Risk of Filling the Void Too Soon",
     excerpt:
       "A non-judgmental look at why we reach for someone new — and what we miss when we skip the empty room.",
     category: "Healing",
     readTime: "7 min read",
     date: "May 22, 2026",
+    author: "Pascal",
+    image: img.Healing,
+    imageAlt:
+      "Hands holding a small ceramic bowl — rebound relationships and filling the void after a breakup",
+    related: ["first-date-after-a-breakup", "when-your-ex-moves-on-faster", "attachment-styles-and-breakups"],
     content: [
       "The instinct to fill the empty space after a breakup is one of the most human things there is. The bed feels too big. The phone is too quiet. The future you'd half-imagined together has gone blank. So you open the dating apps, you accept the drink, you text the person who has always been a little in love with you. There's no shame in any of this. The urge isn't a character flaw — it's the nervous system trying to soothe an unbearable absence as fast as possible.",
       "The trouble with rebounds isn't that they're morally wrong. It's that they often don't do what we hope they'll do. A new person can briefly turn down the volume on grief, but they can't actually metabolize it. The feelings get postponed, not resolved. Many people describe rebounds as a kind of emotional credit card: you get to feel okay now, but the bill comes due later, often when the rebound itself ends and both losses arrive at once.",
@@ -271,13 +434,22 @@ export const blogPosts: BlogPost[] = [
     ],
   },
   {
-    slug: "things-nobody-warned-you-about",
+    slug: "unexpected-breakup-triggers",
+    seoTitle: "Unexpected Breakup Triggers: Songs, Smells, and Empty Spaces",
+    metaDescription:
+      "A song, a smell, an empty side of the bed — why small breakup triggers hit so hard, and how to gently soften their grip.",
+    h1: "The Things Nobody Warned You About After a Breakup",
     title: "The Things Nobody Warned You About After a Breakup",
     excerpt:
       "The small, strange triggers — a song, a smell, an empty side of the bed — that hit harder than you'd expect.",
     category: "Healing",
     readTime: "6 min read",
     date: "May 24, 2026",
+    author: "Bruna",
+    image: img.Healing,
+    imageAlt:
+      "Kintsugi bowl in soft light — unexpected breakup triggers and gentle ways to soften them",
+    related: ["healing-after-a-breakup-is-not-linear", "social-media-after-a-breakup", "racing-thoughts-after-a-breakup"],
     content: [
       "Most people are ready for the obvious kinds of pain after a breakup: the crying, the missing them, the lonely nights. What catches us off guard are the quieter ambushes. The way a particular song you used to skip together now stops you in the supermarket. The smell of their shampoo on a stranger in the elevator. The half-empty side of the bed that somehow takes up the whole room. Nobody really warns you about these, and they can feel disproportionately painful when they hit.",
       "Part of why these moments hurt so much is that they bypass thought entirely. They land in the body before the mind catches up. The brain stored the relationship not just as memories, but as sensory associations — sounds, smells, textures, routines. When one of those associations is triggered, the whole emotional package opens at once. That's why a thirty-second song clip can floor you more than a long, deliberate conversation about the breakup.",
@@ -288,13 +460,22 @@ export const blogPosts: BlogPost[] = [
     ],
   },
   {
-    slug: "what-happened-question",
+    slug: "how-to-talk-about-your-breakup",
+    seoTitle: "How to Talk About Your Breakup Without Reliving It",
+    metaDescription:
+      "Tired of explaining your breakup to everyone? Kind, simple scripts for setting social boundaries without losing your composure.",
+    h1: "How to Answer 'So What Happened?' Without Reliving It",
     title: "How to Answer 'So What Happened?' Without Reliving It",
     excerpt:
       "You don't owe anyone the full story. Here's how to set kind, simple boundaries in social situations.",
     category: "Boundaries",
     readTime: "6 min read",
     date: "May 26, 2026",
+    author: "Pascal",
+    image: img.Boundaries,
+    imageAlt:
+      "A door opening to a garden — gentle boundaries when talking about your breakup",
+    related: ["no-contact-rule-after-breakup", "how-to-cope-when-you-still-see-your-ex", "social-media-after-a-breakup"],
     content: [
       "One of the more underrated forms of breakup fatigue is the social one: the slow drain of telling the story over and over. A coworker who didn't know. A relative at a family lunch. An old friend who only just found out. Each time, you're asked to summarize one of the most painful experiences of your life in a few sentences, often while standing near a snack table. By the third or fourth retelling, you can feel something crack a little.",
       "The first thing worth knowing is that you don't owe anyone a complete account. Politeness doesn't require self-exposure. People often ask out of genuine care, but the question 'what happened?' is also a reflex — something to say when they don't know what else to say. You're allowed to answer the spirit of it (you care) without answering the literal of it (give me the whole story right now).",
@@ -306,12 +487,21 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "social-media-after-a-breakup",
+    seoTitle: "Social Media After a Breakup: A Kinder Approach Than 'Don't Look'",
+    metaDescription:
+      "Can't stop checking your ex's profile? A gentler, biology-aware approach to social media after a breakup — without relying on willpower alone.",
+    h1: "Social Media After a Breakup: A Gentler Approach Than 'Just Don't Look'",
     title: "Social Media After a Breakup: A Gentler Approach Than 'Just Don't Look'",
     excerpt:
       "The urge to check isn't weakness — it's biology. Here's how to work with it instead of against it.",
     category: "Self-Care",
     readTime: "7 min read",
     date: "May 28, 2026",
+    author: "Bruna",
+    image: img["Self-Care"],
+    imageAlt:
+      "Soft morning light over a calm space — managing social media after a breakup",
+    related: ["no-contact-rule-after-breakup", "when-your-ex-moves-on-faster", "unexpected-breakup-triggers"],
     content: [
       "Almost every breakup guide says the same thing about social media: don't look. It's good advice, and it's also nearly impossible to follow on willpower alone. Checking their profile in the middle of the night doesn't mean you're weak or obsessed. It means your brain has lost access to a person it had wired itself around, and it's reaching for the only window it has left. The urge is biological. The strategy needs to account for that.",
       "Start by making the urge harder to act on rather than relying on resisting it. Unfollow or mute them — not as a dramatic statement, but as basic hygiene. Unfollow their best friend, their sister, their dog account if you have to. Move the apps off your home screen. Log out so each check requires a password. Each small piece of friction gives the rational part of your brain a few extra seconds to catch up with the impulsive part. Those seconds matter.",
@@ -322,13 +512,22 @@ export const blogPosts: BlogPost[] = [
     ],
   },
   {
-    slug: "when-you-ended-it",
+    slug: "grief-when-you-ended-the-relationship",
+    seoTitle: "When You Were the One Who Ended It: Leaver's Grief Explained",
+    metaDescription:
+      "Being the one who left doesn't mean it doesn't hurt. A compassionate guide to leaver's grief and the guilt that follows.",
+    h1: "When You Were the One Who Ended It",
     title: "When You Were the One Who Ended It",
     excerpt:
       "Being the one who left doesn't mean it doesn't hurt. A kind look at the specific shape of leaver's grief.",
     category: "Healing",
     readTime: "7 min read",
     date: "May 30, 2026",
+    author: "Pascal",
+    image: img.Healing,
+    imageAlt:
+      "Hands cradling a kintsugi bowl — leaver's grief after ending the relationship",
+    related: ["guilt-after-a-breakup-moving-on", "anger-after-a-breakup", "rebuilding-yourself-after-a-long-relationship"],
     content: [
       "There's an unspoken assumption that the person who ends the relationship doesn't get to grieve it. You made the choice, so you must be okay, right? In reality, breakup grief on the leaving side is often just as deep — sometimes deeper — than on the receiving side. It's just shaped differently. There's a particular kind of pain that comes with being the one who let go, and it deserves to be named.",
       "Leaver's grief usually shows up later. In the first days or weeks, there's often relief, even a strange sense of lightness. You've finally done the thing you'd been turning over for months. Then, slowly, the second wave arrives: the missing them, the doubt, the guilt, the questioning. By the time it hits, your support system has often moved on, assuming you're doing fine because you were the one with the agency.",
@@ -339,13 +538,22 @@ export const blogPosts: BlogPost[] = [
     ],
   },
   {
-    slug: "first-date-after-heartbreak",
+    slug: "first-date-after-a-breakup",
+    seoTitle: "Your First Date After a Breakup: How to Know You're Ready",
+    metaDescription:
+      "When is it okay to date again after heartbreak? A gentle guide to the first date after a breakup — without rushing or pretending.",
+    h1: "The First Date After Heartbreak",
     title: "The First Date After Heartbreak",
     excerpt:
       "How to know when you're ready, how to take it slowly, and how to be kind to yourself if it stirs everything back up.",
     category: "Healing",
     readTime: "7 min read",
     date: "June 1, 2026",
+    author: "Bruna",
+    image: img.Healing,
+    imageAlt:
+      "A kintsugi bowl in warm light — first date after a breakup and knowing you're ready",
+    related: ["rebound-relationships-after-a-breakup", "attachment-styles-and-breakups", "rebuilding-yourself-after-a-long-relationship"],
     content: [
       "The first date after a breakup is rarely just a date. It's a small referendum on whether you can do this again — whether your heart still works, whether someone new can hold your attention, whether you can sit across from a stranger without comparing them to a ghost. It can be exciting, nauseating, hopeful, and grief-tinged all in the same hour. Whatever you feel, you're not doing it wrong.",
       "Start with an honest question: am I going on this date because I'm genuinely curious about someone new, or because I'm trying to prove something — to myself, to my ex, to my friends? Both reasons are very human, but they lead to different experiences. Dating to prove tends to leave you depleted no matter how the night goes. Dating from curiosity, even cautious curiosity, leaves room for the evening to actually surprise you.",
@@ -356,3 +564,26 @@ export const blogPosts: BlogPost[] = [
     ],
   },
 ];
+
+/** Old slug → new slug, so previously-shared URLs don't 404. */
+export const legacySlugMap: Record<string, string> = {
+  "gentle-self-care-after-a-breakup": "self-care-after-a-breakup",
+  "why-healing-is-not-linear": "healing-after-a-breakup-is-not-linear",
+  "no-contact-with-compassion": "no-contact-rule-after-breakup",
+  "rebuilding-identity-after-a-relationship": "rebuilding-yourself-after-a-long-relationship",
+  "when-the-mind-wont-stop-racing": "racing-thoughts-after-a-breakup",
+  "the-guilt-of-moving-on": "guilt-after-a-breakup-moving-on",
+  "sleep-after-heartbreak": "how-to-sleep-after-a-breakup",
+  "journaling-for-healing": "journaling-prompts-after-a-breakup",
+  "when-you-still-have-to-see-them": "how-to-cope-when-you-still-see-your-ex",
+  "the-breakup-body": "physical-symptoms-of-heartbreak",
+  "should-you-stay-friends": "staying-friends-with-an-ex",
+  "when-they-move-on-faster": "when-your-ex-moves-on-faster",
+  "rebounds-and-filling-the-void": "rebound-relationships-after-a-breakup",
+  "things-nobody-warned-you-about": "unexpected-breakup-triggers",
+  "what-happened-question": "how-to-talk-about-your-breakup",
+  "when-you-ended-it": "grief-when-you-ended-the-relationship",
+  "first-date-after-heartbreak": "first-date-after-a-breakup",
+};
+
+export const SITE_URL = "https://breakup-recovery.org";
