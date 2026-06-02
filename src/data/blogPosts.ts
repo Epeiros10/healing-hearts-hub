@@ -604,6 +604,13 @@ export const blogPosts: BlogPost[] = [
   },
 ];
 
+// Assign a unique, topic-matched image per post (overrides category placeholders).
+for (const post of blogPosts) {
+  if (slugImages[post.slug]) post.image = slugImages[post.slug];
+}
+
+
+
 /** Old slug → new slug, so previously-shared URLs don't 404. */
 export const legacySlugMap: Record<string, string> = {
   "gentle-self-care-after-a-breakup": "self-care-after-a-breakup",
