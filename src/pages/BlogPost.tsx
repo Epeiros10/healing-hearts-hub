@@ -178,32 +178,84 @@ const BlogPost = () => {
             </figure>
 
             <div className="space-y-5">
-              {post.content.map((p, i) => (
-                <div key={i}>
-                  <p className="font-body text-foreground/85 leading-relaxed whitespace-pre-line">
-                    {p}
-                  </p>
-                  {i === midpoint && (
-                    <aside className="my-10 p-5 sm:p-6 bg-muted/40 border-l-4 border-primary rounded-r-xl">
-                      <p className="font-body text-sm text-foreground/85 leading-relaxed mb-3">
-                        Struggling with this on your own? You don't have to. A 45-minute
-                        1:1 session with{" "}
-                        <Link to="/#coaching" className="text-primary underline underline-offset-4">
-                          a breakup recovery coach
-                        </Link>{" "}
-                        can help you move through it with support.
-                      </p>
-                      <button
-                        onClick={() => setBookingOpen(true)}
-                        className="inline-flex items-center gap-2 text-sm font-body font-medium text-primary hover:gap-3 transition-all"
+              {post.content.map((p, i) => {
+                const blocks = p.split(/\n{2,}/);
+                return (
+                  <div key={i}>
+                    {blocks.map((block, j) => {
+                      const lines = block.split('\n').filter(Boolean);
+                      const isNumbered =
+                        lines.length > 1 && lines.every((l) => /^\d+\.\s/.test(l));
+                      const isBullet =
+                        lines.length > 1 && lines.every((l) => /^[-•]\s/.test(l));
+                      if (isNumbered) {
+                        return (
+                          <ol
+                            key={j}
+                            className="list-decimal pl-6 space-y-2 font-body text-foreground/85 leading-relaxed marker:text-primary marker:font-medium"
+                          >
+                            {lines.map((l, k) => (
+                              <li key={k}>{l.replace(/^\d+\.\s/, '')}</li>
+                            ))}
+                          </ol>
+                        );
+                      }
+                      if (isBullet) {
+                        return (
+                          <ul
+                            key={j}
+                            className="list-disc pl-6 space-y-2 font-body text-foreground/85 leading-relaxed marker:text-primary"
+                          >
+                            {lines.map((l, k) => (
+                              <li key={k}>{l.replace(/^[-•]\s/, '')}</li>
+                            ))}
+                          </ul>
+                        );
+                      }
+                      return (
+                        <p
+                          key={j}
+                          className="font-body text-foreground/85 leading-relaxed"
+                        >
+                          {block}
+                        </p>
+                      );
+                    })}
+
+                    {i > 0 && i < post.content.length - 1 && i % 3 === 0 && i !== midpoint && (
+                      <div
+                        className="flex items-center justify-center gap-2 my-8"
+                        aria-hidden="true"
                       >
-                        Book a session <ArrowRight className="w-4 h-4" />
-                      </button>
-                    </aside>
-                  )}
-                </div>
-              ))}
+                        <span className="h-px w-10 bg-border" />
+                        <span className="w-1.5 h-1.5 rounded-full bg-[hsl(var(--accent-gold,42_55%_55%))] opacity-70" />
+                        <span className="h-px w-10 bg-border" />
+                      </div>
+                    )}
+
+                    {i === midpoint && (
+                      <aside className="my-10 p-5 sm:p-6 bg-muted/40 border-l-4 border-primary rounded-r-xl">
+                        <p className="font-body text-sm text-foreground/85 leading-relaxed mb-3">
+                          Struggling with this on your own? You don't have to. A 45-minute
+                          1:1 session with{" "}
+                          <Link to="/#coaching" className="text-primary underline underline-offset-4">
+                            a breakup recovery coach
+                          </Link>{" "}
+                          can help you move through it with support.
+                        </p>
+                        <button
+                          onClick={() => setBookingOpen(true)}
+                          className="inline-flex items-center gap-2 text-sm font-body font-medium text-primary hover:gap-3 transition-all"
+                        >
+                          Book a session <ArrowRight className="w-4 h-4" />
+                        </button>
+                      </aside>
+                    )}
+                  </div>
+                );
+              })}
             </div>
+
 
             <div className="mt-14 p-6 sm:p-8 bg-card border border-border rounded-2xl text-center">
               <h2 className="font-display text-xl text-foreground mb-2">
