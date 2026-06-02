@@ -111,9 +111,12 @@ const BlogPost = () => {
               <span>{post.date}</span>
             </div>
 
-            <h1 className="font-display text-3xl md:text-4xl text-foreground mb-6 leading-tight">
+            <h1 className="font-display text-3xl md:text-4xl text-foreground mb-4 leading-tight">
               {post.h1}
             </h1>
+            <p className="font-body text-lg text-muted-foreground leading-relaxed mb-8 italic">
+              {post.excerpt}
+            </p>
 
             <div className="flex items-center justify-between gap-4 mb-8">
               <div className="flex items-center gap-3">
