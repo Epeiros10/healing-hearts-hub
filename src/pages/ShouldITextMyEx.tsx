@@ -102,7 +102,7 @@ const ShouldITextMyEx = () => {
             Should I Text My Ex?
           </h1>
           <p className="text-muted-foreground font-body max-w-xl mx-auto text-lg">
-            A gentle, judgment-free decision tool. Answer a few honest questions and find out if reaching out is a good idea right now, or something you'll regret tomorrow.
+            Let this tool make the decision for you. Answer a few honest questions and find out if reaching out is a good idea right now, or something you'll regret tomorrow.
           </p>
         </header>
 
