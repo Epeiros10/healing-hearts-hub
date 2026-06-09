@@ -1,3 +1,4 @@
+import { useMemo, useState } from "react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import { motion } from "framer-motion";
@@ -7,6 +8,23 @@ import Footer from "@/components/Footer";
 import { blogPosts, SITE_URL } from "@/data/blogPosts";
 
 const Blog = () => {
+  const [activeCategory, setActiveCategory] = useState<string>("All");
+
+  const categories = useMemo(() => {
+    const counts = new Map<string, number>();
+    blogPosts.forEach((p) => counts.set(p.category, (counts.get(p.category) ?? 0) + 1));
+    return [
+      { name: "All", count: blogPosts.length },
+      ...Array.from(counts.entries())
+        .sort((a, b) => a[0].localeCompare(b[0]))
+        .map(([name, count]) => ({ name, count })),
+    ];
+  }, []);
+
+  const visiblePosts = useMemo(
+    () => (activeCategory === "All" ? blogPosts : blogPosts.filter((p) => p.category === activeCategory)),
+    [activeCategory],
+  );
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
