@@ -110,37 +110,115 @@ const Quiz = () => {
             Healing after heartbreak is not a straight line. Our quiz helps you identify which phase you are in right now, so you can focus on what actually helps.
           </p>
 
-          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            <div className="bg-card border border-border rounded-2xl p-5">
-              <h3 className="font-display text-lg text-foreground mb-2">Shock Phase</h3>
-              <p className="font-body text-sm text-muted-foreground leading-relaxed">
-                Numbness, disbelief, and autopilot. You may feel frozen or detached. The priority here is safety and basic self-care.
+          <div className="relative">
+            {/* Vertical timeline line */}
+            <div className="absolute left-4 sm:left-1/2 top-2 bottom-2 w-0.5 bg-border sm:-translate-x-1/2" aria-hidden="true" />
+
+            <ol className="space-y-10">
+              {[
+                {
+                  n: "01",
+                  title: "Shock Phase",
+                  desc: "Numbness, disbelief, and autopilot. You may feel frozen, detached, or unable to fully register what happened. The priority here is safety, sleep, and basic self-care while your nervous system catches up with reality.",
+                },
+                {
+                  n: "02",
+                  title: "Grief Phase",
+                  desc: "Deep sadness, longing, and emptiness. This is where you feel the loss most acutely. Tears, waves of memory, and low energy are all normal. Witness and expression, not distraction, are what help most.",
+                },
+                {
+                  n: "03",
+                  title: "Anger Phase",
+                  desc: "Frustration, resentment, or righteous indignation. Anger is information: it often signals a boundary that was crossed or a need that went unmet. Channelled well, it becomes fuel for change.",
+                },
+                {
+                  n: "04",
+                  title: "Bargaining Phase",
+                  desc: "What-ifs, idealising the past, and searching for ways to undo the breakup. This phase needs clarity and gentle reality-checking. It is where most people feel the urge to reach out to their ex.",
+                },
+                {
+                  n: "05",
+                  title: "Rebuilding Phase",
+                  desc: "Rediscovering who you are outside the relationship. New routines, deeper self-trust, confidence, and hope begin to emerge. You start looking forward more than backward.",
+                },
+              ].map((phase, idx) => {
+                const leftSide = idx % 2 === 0;
+                return (
+                  <li key={phase.n} className="relative sm:grid sm:grid-cols-2 sm:gap-12 sm:items-start">
+                    {/* Dot on the line */}
+                    <span
+                      className="absolute left-4 sm:left-1/2 top-2 -translate-x-1/2 w-4 h-4 rounded-full bg-primary ring-4 ring-background"
+                      aria-hidden="true"
+                    />
+
+                    <div className={`pl-12 sm:pl-0 ${leftSide ? "sm:text-right sm:pr-12 sm:col-start-1" : "sm:pl-12 sm:col-start-2"}`}>
+                      <span className="font-body text-xs tracking-[0.2em] uppercase text-primary">Phase {phase.n}</span>
+                      <h3 className="font-display text-xl md:text-2xl text-foreground mt-1 mb-2">{phase.title}</h3>
+                      <p className="font-body text-sm md:text-base text-muted-foreground leading-relaxed">
+                        {phase.desc}
+                      </p>
+                    </div>
+                  </li>
+                );
+              })}
+            </ol>
+          </div>
+
+          {/* Extended SEO content */}
+          <div className="mt-20 space-y-12">
+            <article>
+              <h2 className="font-display text-2xl md:text-3xl text-foreground mb-4">
+                How the Breakup Recovery Quiz Works
+              </h2>
+              <p className="font-body text-muted-foreground leading-relaxed mb-3">
+                Our free breakup recovery quiz takes about two minutes. Seven short questions explore how you are sleeping, how often you think about your ex, how you feel about the future, and how you are coping day to day. Based on your answers, we identify which of the five phases of breakup recovery, shock, grief, anger, bargaining, or rebuilding, best describes where you are right now.
               </p>
-            </div>
-            <div className="bg-card border border-border rounded-2xl p-5">
-              <h3 className="font-display text-lg text-foreground mb-2">Grief Phase</h3>
-              <p className="font-body text-sm text-muted-foreground leading-relaxed">
-                Deep sadness, longing, and emptiness. This is where you feel the loss most acutely. Witness and expression help most.
+              <p className="font-body text-muted-foreground leading-relaxed">
+                The result is not a diagnosis. It is a mirror. Knowing your phase helps you stop fighting your feelings and start working with them. Each phase needs a different kind of support, and the quiz points you to concrete, gentle next steps tailored to yours.
               </p>
-            </div>
-            <div className="bg-card border border-border rounded-2xl p-5">
-              <h3 className="font-display text-lg text-foreground mb-2">Anger Phase</h3>
-              <p className="font-body text-sm text-muted-foreground leading-relaxed">
-                Frustration, resentment, or righteous indignation. Anger is information, it often signals a boundary was crossed.
+            </article>
+
+            <article>
+              <h2 className="font-display text-2xl md:text-3xl text-foreground mb-4">
+                Why Knowing Your Breakup Phase Matters
+              </h2>
+              <p className="font-body text-muted-foreground leading-relaxed mb-3">
+                Heartbreak is disorienting because it does not move in a straight line. One day you feel free, the next you cannot get out of bed. Without a map, it is easy to assume you are broken, regressing, or failing at healing. You are not. You are moving through phases that millions of people have moved through before you.
               </p>
-            </div>
-            <div className="bg-card border border-border rounded-2xl p-5">
-              <h3 className="font-display text-lg text-foreground mb-2">Bargaining Phase</h3>
-              <p className="font-body text-sm text-muted-foreground leading-relaxed">
-                What-ifs, idealising the past, and searching for ways to undo the breakup. This phase needs clarity and reality-checking.
+              <p className="font-body text-muted-foreground leading-relaxed">
+                When you know your phase, you can stop applying advice meant for someone three months ahead of you. You can give yourself the right thing at the right time: rest in shock, expression in grief, boundaries in anger, clarity in bargaining, and action in rebuilding.
               </p>
-            </div>
-            <div className="bg-card border border-border rounded-2xl p-5 sm:col-span-2 lg:col-span-1">
-              <h3 className="font-display text-lg text-foreground mb-2">Rebuilding Phase</h3>
-              <p className="font-body text-sm text-muted-foreground leading-relaxed">
-                Rediscovering who you are outside the relationship. New routines, confidence, and hope begin to emerge.
+            </article>
+
+            <article>
+              <h2 className="font-display text-2xl md:text-3xl text-foreground mb-4">
+                How Long Does Breakup Recovery Take?
+              </h2>
+              <p className="font-body text-muted-foreground leading-relaxed mb-3">
+                There is no fixed timeline. Research suggests most people feel meaningfully better within three to six months, with deeper integration continuing over a year or more. The length of the relationship, your attachment style, whether the breakup was sudden, and the support you have all influence the pace.
               </p>
-            </div>
+              <p className="font-body text-muted-foreground leading-relaxed">
+                What matters more than speed is direction. People who move through the phases consciously, with support, tend to come out stronger, clearer about what they want, and more grounded in themselves. People who try to skip phases often loop back to them later.
+              </p>
+            </article>
+
+            <article>
+              <h2 className="font-display text-2xl md:text-3xl text-foreground mb-4">
+                Is It Normal to Move Back and Forth Between Phases?
+              </h2>
+              <p className="font-body text-muted-foreground leading-relaxed">
+                Yes. The five phases of breakup recovery are not a staircase, they are more like tides. You might feel rebuilding energy on Monday and slip into grief on Friday when a song plays. A birthday, a shared place, or seeing your ex online can pull you back temporarily. This is not regression. It is integration. Each return is usually gentler and shorter than the last.
+              </p>
+            </article>
+
+            <article>
+              <h2 className="font-display text-2xl md:text-3xl text-foreground mb-4">
+                When to Consider Breakup Recovery Coaching
+              </h2>
+              <p className="font-body text-muted-foreground leading-relaxed">
+                Coaching is not therapy. It is structured, compassionate support for people who want to move through heartbreak with intention. If you feel stuck in one phase, keep breaking no-contact, struggle to see a future, or simply want someone in your corner who has helped hundreds of people through this, a 1:1 session can compress months of confusion into clarity.
+              </p>
+            </article>
           </div>
 
           <div className="mt-14 p-6 sm:p-8 bg-card border border-border rounded-2xl text-center">
