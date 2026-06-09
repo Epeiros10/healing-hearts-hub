@@ -45,7 +45,7 @@ const BookingDialog = ({ open, onOpenChange }: BookingDialogProps) => {
               <div className="aspect-[3/4] bg-muted">
                 <img
                   src={coach.image}
-                  alt={`${coach.name} — ${coach.role}`}
+                  alt={`${coach.name}, ${coach.role}`}
                   className="w-full h-full object-contain"
                 />
               </div>

@@ -65,7 +65,7 @@ const TalkToSomeone = () => {
 
             <p className="text-muted-foreground font-body text-base md:text-lg max-w-lg mx-auto mb-8 leading-relaxed">
               Talk to someone who truly understands heartbreak. 
-              No judgment, no rushed advice — just real support 
+              No judgment, no rushed advice, just real support 
               when you need it most.
             </p>
 
@@ -100,7 +100,7 @@ const TalkToSomeone = () => {
                 <div className="aspect-[4/3] overflow-hidden">
                   <img
                     src={coach.image}
-                    alt={`${coach.name} — ${coach.role}`}
+                    alt={`${coach.name}, ${coach.role}`}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   />
                 </div>
@@ -153,7 +153,7 @@ const TalkToSomeone = () => {
               Not ready to book?
             </p>
             <p className="text-muted-foreground font-body text-sm mb-4 leading-relaxed">
-              Talk to our AI Recovery Assistant first — it's free, anonymous, and available 24/7.
+              Talk to our AI Recovery Assistant first, it's free, anonymous, and available 24/7.
             </p>
             <Link
               to="/#ai-chat"

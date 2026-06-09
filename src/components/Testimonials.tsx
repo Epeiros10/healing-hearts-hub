@@ -30,7 +30,7 @@ const testimonials = [
     name: "David K.",
     location: "Berlin",
     when: "3 weeks ago",
-    text: "I booked a session with Pascal on one of the worst days I'd had in months. One call genuinely shifted things — I left with a plan, and for the first time in weeks I could actually breathe.",
+    text: "I booked a session with Pascal on one of the worst days I'd had in months. One call genuinely shifted things, I left with a plan, and for the first time in weeks I could actually breathe.",
     coach: "Worked with Pascal",
     stars: 5,
   },

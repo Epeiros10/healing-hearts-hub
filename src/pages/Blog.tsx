@@ -31,13 +31,13 @@ const Blog = () => {
         <title>Breakup Recovery Blog: Gentle Guides to Heal After Heartbreak</title>
         <meta
           name="description"
-          content="Compassionate, in-depth articles on healing after a breakup — no contact, attachment styles, rebuilding yourself, and more. Written by certified coaches."
+          content="Compassionate, in-depth articles on healing after a breakup, no contact, attachment styles, rebuilding yourself, and more. Written by certified coaches."
         />
         <link rel="canonical" href={`${SITE_URL}/blog`} />
         <meta property="og:title" content="Breakup Recovery Blog: Gentle Guides to Heal After Heartbreak" />
         <meta
           property="og:description"
-          content="Compassionate, in-depth articles on healing after a breakup — written by certified coaches."
+          content="Compassionate, in-depth articles on healing after a breakup, written by certified coaches."
         />
         <meta property="og:url" content={`${SITE_URL}/blog`} />
         <meta property="og:type" content="website" />

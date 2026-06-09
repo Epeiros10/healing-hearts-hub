@@ -128,7 +128,7 @@ const AIChat = () => {
           </h2>
           <p className="text-muted-foreground font-body max-w-xl mx-auto">
             Share what you're going through. Our AI Recovery Assistant is here to listen,
-            validate your feelings, and offer gentle guidance — anytime, day or night.
+            validate your feelings, and offer gentle guidance, anytime, day or night.
           </p>
         </motion.div>
 
@@ -147,7 +147,7 @@ const AIChat = () => {
                   <Heart className="w-10 h-10 mx-auto mb-3 text-primary/40" />
                   <p className="text-lg font-display">You're not alone in this.</p>
                   <p className="text-sm mt-1">
-                    Tell me what's on your heart — I'm here to help.
+                    Tell me what's on your heart, I'm here to help.
                   </p>
                 </div>
               </div>

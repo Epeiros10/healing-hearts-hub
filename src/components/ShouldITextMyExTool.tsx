@@ -225,7 +225,7 @@ const tree: Record<NodeId, Node> = {
   result_safe_check: {
     type: "result",
     verdict: "yes-carefully",
-    headline: "Yes, respond — safety comes first.",
+    headline: "Yes, respond, safety comes first.",
     body: "If this is a genuine emergency or safety concern, respond. Keep it brief, calm, and focused on the situation.",
     bullets: [
       "Address the immediate concern only.",

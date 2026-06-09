@@ -50,7 +50,7 @@ const BlogPost = () => {
     articleSection: post.category,
   };
 
-  const shareText = encodeURIComponent(`${post.title} — `);
+  const shareText = encodeURIComponent(`${post.title}, `);
   const shareUrl = encodeURIComponent(url);
   const shareImg = encodeURIComponent(`${SITE_URL}${post.image}`);
 
