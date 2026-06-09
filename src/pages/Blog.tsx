@@ -1,3 +1,4 @@
+import { useMemo, useState } from "react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import { motion } from "framer-motion";
@@ -7,6 +8,23 @@ import Footer from "@/components/Footer";
 import { blogPosts, SITE_URL } from "@/data/blogPosts";
 
 const Blog = () => {
+  const [activeCategory, setActiveCategory] = useState<string>("All");
+
+  const categories = useMemo(() => {
+    const counts = new Map<string, number>();
+    blogPosts.forEach((p) => counts.set(p.category, (counts.get(p.category) ?? 0) + 1));
+    return [
+      { name: "All", count: blogPosts.length },
+      ...Array.from(counts.entries())
+        .sort((a, b) => a[0].localeCompare(b[0]))
+        .map(([name, count]) => ({ name, count })),
+    ];
+  }, []);
+
+  const visiblePosts = useMemo(
+    () => (activeCategory === "All" ? blogPosts : blogPosts.filter((p) => p.category === activeCategory)),
+    [activeCategory],
+  );
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
@@ -45,8 +63,40 @@ const Blog = () => {
             </p>
           </motion.div>
 
+          <motion.div
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.1 }}
+            className="flex flex-wrap justify-center gap-2 mb-12"
+            role="tablist"
+            aria-label="Filter articles by category"
+          >
+            {categories.map((cat) => {
+              const isActive = activeCategory === cat.name;
+              return (
+                <button
+                  key={cat.name}
+                  type="button"
+                  role="tab"
+                  aria-selected={isActive}
+                  onClick={() => setActiveCategory(cat.name)}
+                  className={`font-body text-sm px-4 py-2 rounded-full border transition-colors ${
+                    isActive
+                      ? "bg-primary text-primary-foreground border-primary"
+                      : "bg-card text-foreground border-border hover:border-primary/40"
+                  }`}
+                >
+                  {cat.name}
+                  <span className={`ml-2 text-xs ${isActive ? "opacity-80" : "text-muted-foreground"}`}>
+                    {cat.count}
+                  </span>
+                </button>
+              );
+            })}
+          </motion.div>
+
           <div className="grid gap-8 md:grid-cols-2">
-            {blogPosts.map((post, i) => (
+            {visiblePosts.map((post, i) => (
               <motion.article
                 key={post.slug}
                 initial={{ opacity: 0, y: 20 }}
