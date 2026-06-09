@@ -39,7 +39,7 @@ const offerings: Offering[] = [
     icon: Zap,
     tag: "Crisis Mode",
     title: "Emergency Call",
-    description: "For when you need to talk to someone — fast. A single 45-minute call to help you through the hardest moments.",
+    description: "For when you need to talk to someone, fast. A single 45-minute call to help you through the hardest moments.",
     price: "€79",
     priceNote: "/ 45 min",
     benefits: [
@@ -191,7 +191,7 @@ const RecoveryPackage = () => {
                       >
                         <img
                           src={coach.image}
-                          alt={`${coach.name} — ${coach.role}`}
+                          alt={`${coach.name}, ${coach.role}`}
                           className="w-9 h-9 rounded-full object-cover flex-shrink-0"
                         />
                         <div className="flex-1 min-w-0">

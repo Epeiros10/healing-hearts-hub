@@ -8,7 +8,7 @@ const SITE_URL = "https://breakup-recovery.org";
 const Quiz = () => {
   const title = "Breakup Recovery Quiz: Where Are You in Your Healing Journey?";
   const description =
-    "Take our free 2-minute breakup recovery quiz. Discover which healing phase you are in — shock, grief, anger, bargaining, or rebuilding — and get personalized next steps to move forward.";
+    "Take our free 2-minute breakup recovery quiz. Discover which healing phase you are in, shock, grief, anger, bargaining, or rebuilding, and get personalized next steps to move forward.";
   const url = `${SITE_URL}/quiz`;
   const ogImage = `${SITE_URL}/og-image.jpg?v=2`;
 
@@ -35,7 +35,7 @@ const Quiz = () => {
           name: "How long does it take to heal from a breakup?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "There is no fixed timeline. Studies suggest it can take anywhere from a few months to over a year depending on the relationship length, attachment style, and support system. The key is not speed — it is understanding where you are and giving yourself what that phase needs."
+            text: "There is no fixed timeline. Studies suggest it can take anywhere from a few months to over a year depending on the relationship length, attachment style, and support system. The key is not speed, it is understanding where you are and giving yourself what that phase needs."
           }
         },
         {
@@ -126,7 +126,7 @@ const Quiz = () => {
             <div className="bg-card border border-border rounded-2xl p-5">
               <h3 className="font-display text-lg text-foreground mb-2">Anger Phase</h3>
               <p className="font-body text-sm text-muted-foreground leading-relaxed">
-                Frustration, resentment, or righteous indignation. Anger is information — it often signals a boundary was crossed.
+                Frustration, resentment, or righteous indignation. Anger is information, it often signals a boundary was crossed.
               </p>
             </div>
             <div className="bg-card border border-border rounded-2xl p-5">

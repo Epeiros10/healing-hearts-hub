@@ -20,7 +20,7 @@ const About = () => {
             We've been where you are.
           </h2>
           <p className="text-muted-foreground font-body max-w-xl mx-auto">
-            Two coaches who understand heartbreak firsthand — here to walk beside you on your healing journey.
+            Two coaches who understand heartbreak firsthand, here to walk beside you on your healing journey.
           </p>
         </motion.div>
 
@@ -49,7 +49,7 @@ const About = () => {
             <div className="space-y-3 text-muted-foreground font-body text-sm leading-relaxed">
               <p>
                 I know how it feels. The sleepless nights, the constant replaying
-                of memories. I've been there — and I found my way through.
+                of memories. I've been there, and I found my way through.
               </p>
               <p>
                 As a relationship and attachment coach, I specialize in helping
@@ -111,7 +111,7 @@ const About = () => {
             <div className="space-y-3 text-muted-foreground font-body text-sm leading-relaxed">
               <p>
                 Breakups can shake everything you thought you knew about yourself.
-                I've been through that darkness — and I know the way out.
+                I've been through that darkness, and I know the way out.
               </p>
               <p>
                 I help people rebuild their sense of self, master the no-contact

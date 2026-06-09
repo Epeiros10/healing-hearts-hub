@@ -35,7 +35,7 @@ const faqLd = {
       name: "What if I'm not ready to talk to someone?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "That's completely okay. There's no pressure and no timeline — healing happens at your pace. When you're ready, even reaching out with a short message is a meaningful first step.",
+        text: "That's completely okay. There's no pressure and no timeline, healing happens at your pace. When you're ready, even reaching out with a short message is a meaningful first step.",
       },
     },
     {
@@ -59,7 +59,7 @@ const faqLd = {
       name: "Can I choose my coach?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Yes. When you click to book, you can pick between Bruna and Pascal. Read a little about each and go with whoever resonates most — you can always switch later.",
+        text: "Yes. When you click to book, you can pick between Bruna and Pascal. Read a little about each and go with whoever resonates most, you can always switch later.",
       },
     },
     {
@@ -75,7 +75,7 @@ const faqLd = {
       name: "Do you offer ongoing support programs?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Yes. Beyond one-off sessions, many clients work with us across a series of calls to go deeper — through no-contact, rebuilding self-worth, or preparing for what's next. Mention it on your first call and your coach will tailor a plan with you.",
+        text: "Yes. Beyond one-off sessions, many clients work with us across a series of calls to go deeper, through no-contact, rebuilding self-worth, or preparing for what's next. Mention it on your first call and your coach will tailor a plan with you.",
       },
     },
   ],

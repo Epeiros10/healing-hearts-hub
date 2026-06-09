@@ -7,7 +7,7 @@ const highlights = [
   {
     icon: Heart,
     title: "A safe space to feel",
-    description: "Be heard without judgment. We hold space for whatever you're carrying — grief, anger, confusion, or hope.",
+    description: "Be heard without judgment. We hold space for whatever you're carrying, grief, anger, confusion, or hope.",
   },
   {
     icon: Compass,
@@ -49,7 +49,7 @@ const Coaching = () => {
           </h2>
           <p className="text-muted-foreground font-body max-w-xl mx-auto">
             Everyone's healing journey is unique. Work face-to-face with Bruna or Pascal
-            in a private video session — and let's start moving through this together.
+            in a private video session, and let's start moving through this together.
           </p>
         </motion.div>
 
@@ -117,7 +117,7 @@ const Coaching = () => {
                 className="inline-flex items-center justify-center px-6 py-3 rounded-xl bg-primary text-primary-foreground font-body font-medium text-sm hover:opacity-90 transition-opacity"
                 style={{ boxShadow: "var(--shadow-warm)" }}
               >
-                Book Your Session — €79
+                Book Your Session, €79
               </button>
             </div>
 
@@ -138,7 +138,7 @@ const Coaching = () => {
                 "You don't have to walk through this alone."
               </p>
               <p className="font-body text-xs text-muted-foreground mt-2">
-                — Bruna & Pascal
+               , Bruna & Pascal
               </p>
             </div>
           </div>

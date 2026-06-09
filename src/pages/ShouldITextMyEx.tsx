@@ -8,7 +8,7 @@ const SITE_URL = "https://breakup-recovery.org";
 const ShouldITextMyEx = () => {
   const title = "Should I Text My Ex? Free Decision Tool (2026)";
   const description =
-    "Should I text my ex? Take this free 60-second decision tool to find out if reaching out is a good idea right now — or if you'll regret it tomorrow.";
+    "Should I text my ex? Take this free 60-second decision tool to find out if reaching out is a good idea right now, or if you'll regret it tomorrow.";
   const url = `${SITE_URL}/should-i-text-my-ex`;
   const ogImage = `${SITE_URL}/og-image.jpg?v=2`;
 
@@ -29,7 +29,7 @@ const ShouldITextMyEx = () => {
         name: "How long should I wait before texting my ex?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Most coaches recommend at least 30 to 60 days of no contact after a breakup. This gives your nervous system time to recalibrate, prevents impulsive messages you'll regret, and gives you space to figure out what you actually want — not what you want in the middle of a craving.",
+          text: "Most coaches recommend at least 30 to 60 days of no contact after a breakup. This gives your nervous system time to recalibrate, prevents impulsive messages you'll regret, and gives you space to figure out what you actually want, not what you want in the middle of a craving.",
         },
       },
       {
@@ -115,7 +115,7 @@ const ShouldITextMyEx = () => {
               Should you text your ex? The honest answer.
             </h2>
             <p className="text-muted-foreground leading-relaxed mb-4">
-              Almost everyone who's been through a breakup has stared at their phone at 11pm wondering the same thing: should I text my ex? You're not weak for wanting to. The urge is normal, biological even — your brain is processing a real loss and trying to soothe itself the fastest way it knows how.
+              Almost everyone who's been through a breakup has stared at their phone at 11pm wondering the same thing: should I text my ex? You're not weak for wanting to. The urge is normal, biological even, your brain is processing a real loss and trying to soothe itself the fastest way it knows how.
             </p>
             <p className="text-muted-foreground leading-relaxed mb-4">
               But the honest answer is: most of the time, the message you want to send tonight is not the message that will help you tomorrow. This tool exists to help you slow down for 60 seconds, get clear on why you want to reach out, and decide with your prefrontal cortex instead of your panic.
@@ -163,7 +163,7 @@ const ShouldITextMyEx = () => {
               Talk it through with someone who gets it
             </h2>
             <p className="font-body text-sm text-muted-foreground mb-5 max-w-md mx-auto">
-              Book a judgment-free 45-minute 1:1 session with Bruna or Pascal — far cheaper than the emotional cost of sending the wrong message.
+              Book a judgment-free 45-minute 1:1 session with Bruna or Pascal, far cheaper than the emotional cost of sending the wrong message.
             </p>
             <a
               href="/#coaching"
