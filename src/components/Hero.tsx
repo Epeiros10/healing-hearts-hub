@@ -64,8 +64,7 @@ const Hero = () => {
           </a>
         </motion.div>
       </div>
-      <BookingDialog open={bookingOpen} onOpenChange={setBookingOpen} />
-    </section>);
+      </section>);
 
 };
 
