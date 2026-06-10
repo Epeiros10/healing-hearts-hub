@@ -29,14 +29,10 @@ const Hero = () => {
 
 
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-display font-semibold leading-tight mb-10">
-            Heartbreak is
-            <span className="italic text-primary"> temporary.</span>
-            <br />
-            Your strength is{" "}
-            <span className="italic text-secondary">forever.</span>
+            Struggling after a breakup?
           </h1>
           <p className="text-lg md:text-xl text-muted-foreground font-body max-w-xl mx-auto mb-10 leading-relaxed">
-            Private 1:1 coaching sessions with Bruna & Pascal. Emergency calls available today, €79.
+            Talk to someone who gets it. Book a free 15-min call with a certified breakup coach.
           </p>
 
           <div className="flex flex-col gap-4 justify-center items-center">
@@ -44,7 +40,7 @@ const Hero = () => {
               onClick={() => setBookingOpen(true)}
               className="inline-flex items-center justify-center px-8 py-4 rounded-xl bg-primary text-primary-foreground font-body font-medium text-base hover:opacity-90 transition-opacity w-full sm:w-auto"
               style={{ boxShadow: "var(--shadow-warm)" }}>
-              Book 1:1 Call, €79
+              Book Your Free 15-Min Call
             </button>
             <a
               href="https://wa.me/351960155044?text=Hi%2C%20I%27d%20like%20to%20talk%20about%20coaching."
