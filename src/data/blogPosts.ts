@@ -18,6 +18,16 @@ import imgTalkAbout from "@/assets/blog/how-to-talk-about-your-breakup.jpg";
 import imgSocialMedia from "@/assets/blog/social-media-after-a-breakup.jpg";
 import imgEndedIt from "@/assets/blog/grief-when-you-ended-the-relationship.jpg";
 import imgFirstDate from "@/assets/blog/first-date-after-a-breakup.jpg";
+import imgHowLong from "@/assets/blog/how-long-does-it-take-to-get-over-a-breakup.jpg";
+import imgCrying from "@/assets/blog/crying-after-a-breakup.jpg";
+import imgStopLoving from "@/assets/blog/how-to-stop-loving-someone.jpg";
+import imgDreaming from "@/assets/blog/dreaming-about-your-ex.jpg";
+import imgClosure from "@/assets/blog/closure-after-a-breakup.jpg";
+import imgLoneliness from "@/assets/blog/loneliness-after-a-breakup.jpg";
+import imgNoReason from "@/assets/blog/breakup-without-a-reason.jpg";
+import imgCheated from "@/assets/blog/getting-over-being-cheated-on.jpg";
+import imgMovingOut from "@/assets/blog/moving-out-after-a-breakup.jpg";
+import imgReconnecting from "@/assets/blog/reconnecting-with-yourself-after-a-breakup.jpg";
 
 export type BlogPost = {
   slug: string;
@@ -62,6 +72,16 @@ const slugImages: Record<string, string> = {
   "social-media-after-a-breakup": imgSocialMedia,
   "grief-when-you-ended-the-relationship": imgEndedIt,
   "first-date-after-a-breakup": imgFirstDate,
+  "how-long-does-it-take-to-get-over-a-breakup": imgHowLong,
+  "crying-after-a-breakup": imgCrying,
+  "how-to-stop-loving-someone": imgStopLoving,
+  "dreaming-about-your-ex": imgDreaming,
+  "closure-after-a-breakup": imgClosure,
+  "loneliness-after-a-breakup": imgLoneliness,
+  "breakup-without-a-reason": imgNoReason,
+  "getting-over-being-cheated-on": imgCheated,
+  "moving-out-after-a-breakup": imgMovingOut,
+  "reconnecting-with-yourself-after-a-breakup": imgReconnecting,
 };
 
 // Placeholder used during array construction; overridden below per slug.
@@ -664,6 +684,326 @@ export const blogPosts: BlogPost[] = [
       "Keep the first date small. Coffee, a walk, a drink, something with a built-in exit. Long dinners, weekend trips, and 'let's spend the whole day together' plans put more weight on a first meeting than is fair to either of you. A short, low-stakes date lets you notice how you feel without committing to feeling it for six hours.",
       "Be gentle with yourself afterward, regardless of how it went. A good first date can stir up unexpected grief, a reminder of how much you miss the easy intimacy you used to have with someone who already knew you. A bad first date can make you wonder if you'll ever feel anything again. Neither reaction is a verdict. They're just data points in a much longer process. Whatever you feel on the way home, treat yourself the way you'd treat a friend who'd just done something brave.",
       "And if dating turns out to be more than you can hold right now, you're allowed to step back. You can delete the apps for a month, cancel the second date, return to the slow work of being with yourself. There's no medal for being the first one back out there. The goal isn't to date as soon as possible, it's to date in a way that feels honest to who you are now. When you do, the right people will be able to meet you there.",
+    ],
+  },
+  {
+    slug: "how-long-does-it-take-to-get-over-a-breakup",
+    seoTitle: "How Long Does It Take to Get Over a Breakup? (Honest Answer)",
+    metaDescription:
+      "How long does it really take to get over a breakup? What the research says, what shapes your timeline, and why there's no fixed number of months.",
+    h1: "How Long Does It Actually Take to Get Over a Breakup?",
+    title: "How Long Does It Take to Get Over a Breakup?",
+    excerpt:
+      "The honest answer isn't a number. It's a slow softening that depends on more than time alone.",
+    category: "Healing",
+    readTime: "6 min read",
+    date: "June 5, 2026",
+    author: "Pascal",
+    image: img.Healing,
+    imageAlt:
+      "Open journal and a warm cup of tea in morning light, marking the slow passage of time after a breakup",
+    related: ["healing-after-a-breakup-is-not-linear", "closure-after-a-breakup", "reconnecting-with-yourself-after-a-breakup"],
+    content: [
+      "There's a number that gets thrown around a lot online: three months for a short relationship, six months to a year for a longer one, half the length of the relationship for marriages. It's a comforting formula, but it's also misleading. Heartbreak doesn't run on a calendar. Some people feel mostly themselves again in eight weeks. Others are still finding new layers a year and a half later. Neither group is doing it wrong.",
+      "## What the research actually says about breakup recovery time",
+      "The most-cited study on this, from researchers at the University of Arizona, found that the average person felt significantly better about eleven weeks after a breakup. But 'significantly better' isn't the same as 'over it.' Other research on divorce and long-term relationships suggests the deeper integration, where the loss stops shaping your daily decisions, usually takes closer to a year, sometimes longer. The honest answer is that the acute pain often passes in months, but the rewiring of who you are without them takes longer than most people expect.",
+      "## What actually shapes your timeline",
+      "A few things matter more than the length of the relationship. How the breakup happened, whether it was sudden, whether you were blindsided, whether there was betrayal. How entangled your lives were, shared home, shared finances, shared children, shared social circle. Your attachment style, your support system, your own history with loss. Whether you're keeping any contact with them. Whether you're sleeping. Whether you have somewhere to put the feelings other than your own head.",
+      "Things that tend to lengthen the timeline:\n- Ongoing contact, even friendly contact\n- Checking their social media\n- Replaying conversations on a loop with no outlet\n- Suppressing the grief to look fine for other people\n- Jumping into a rebound before you've felt the loss",
+      "## Why progress doesn't feel like progress",
+      "One of the most disorienting parts of recovery is that it rarely feels like you're getting better while it's happening. The day-to-day texture changes so slowly that you only notice the progress in hindsight. You'll suddenly realize you went a whole afternoon without thinking about them. You'll notice an old song doesn't gut you anymore. You'll catch yourself laughing without first checking whether you're allowed to. Recovery is mostly made of small, quiet moments like that, stacked on top of each other.",
+      "## When to be patient with yourself, and when to ask for help",
+      "If, six months in, you're still unable to function, still crying every day, still avoiding work and friends, it doesn't mean you're broken. It usually means the grief is bigger than what one person can hold alone. That's not a failure of healing, it's a signal to bring more support in: a coach, a therapist, a group, someone who can help you carry it. Some breakups touch older wounds, and those wounds need their own kind of care.",
+      "The most useful reframe is this: you're not trying to 'get over' them on a deadline. You're slowly becoming someone whose life no longer organizes itself around their absence. That happens in weeks for some people and years for others. Both are okay. The point isn't the speed, it's that you keep, gently, going.",
+    ],
+  },
+  {
+    slug: "crying-after-a-breakup",
+    seoTitle: "Crying After a Breakup: Why You Can't Stop (and Why It Helps)",
+    metaDescription:
+      "Why you can't stop crying after a breakup, what the tears are actually doing for your body, and when crying is healthy vs a sign you need support.",
+    h1: "Why You Can't Stop Crying After a Breakup",
+    title: "Crying After a Breakup: Why It Happens (and Why It Helps)",
+    excerpt:
+      "Tears aren't weakness. They're one of the ways your body metabolizes a loss too big to think your way through.",
+    category: "Emotions",
+    readTime: "5 min read",
+    date: "June 8, 2026",
+    author: "Bruna",
+    image: img.Emotions,
+    imageAlt:
+      "A crumpled tissue and a single dried flower on warm linen, the tenderness of crying after a breakup",
+    related: ["physical-symptoms-of-heartbreak", "self-care-after-a-breakup", "loneliness-after-a-breakup"],
+    content: [
+      "You're standing in the kitchen, or driving, or in the middle of a meeting, and suddenly your eyes are full again. Maybe you've been crying for days. Maybe you can't cry at all and you're worried about that too. Both are normal. Tears after a breakup don't follow any schedule we'd choose, and trying to control them often makes them harder to move through.",
+      "## What crying actually does for your body",
+      "Emotional tears are chemically different from the tears your eyes make to flush out dust. They contain stress hormones and natural painkillers, and crying is one of the ways your body literally drains some of the cortisol that builds up under grief. That heavy, slightly hollowed-out calm you sometimes feel after a long cry isn't your imagination. Your nervous system has just done something it needed to do.",
+      "Suppressing tears, especially in the first weeks, tends to keep the grief sitting in the body instead of moving through it. Many people who 'didn't cry' after a breakup find it surfacing months later in the form of insomnia, chest tightness, exhaustion, or panic. The body keeps the score either way, it's gentler when you let the tears come.",
+      "## Why the tears feel disproportionate",
+      "A song lyric, a familiar smell, the way the light hits the kitchen counter, the smallest thing can set you off. That's because heartbreak isn't only grieving the person. It's grieving the future you'd quietly built around them, the version of yourself that existed in the relationship, the small daily intimacies, the inside jokes, the sense of being known. All of that gets activated by ordinary cues, and the tears are your system processing layer after layer of what's been lost.",
+      "## How to cry in a way that helps, not depletes",
+      "Try to give yourself permission to cry without immediately trying to fix or analyze what's happening. Put a hand on your chest. Breathe slow into your belly. Let the sound out if there's sound. Curling up under a blanket, holding a warm drink, or being held by someone safe can all help the cry move through and then settle, rather than spiraling into hours of rumination.",
+      "Three small things that help after a long cry:\n- A glass of water and something warm to eat\n- A short walk outside, even just to the doorstep\n- A shower or a wash of the face with cool water",
+      "## When crying becomes a signal to ask for more support",
+      "Crying every day for the first month or two is normal. Crying that doesn't loosen at all over time, or that comes with thoughts of hurting yourself, of not wanting to be here, of being unable to eat or get out of bed for weeks, is a signal to bring more support in, a coach, a therapist, your doctor. You don't have to white-knuckle this alone. Reaching out isn't an admission of weakness, it's the same gesture as the crying itself: letting the weight be witnessed so it can finally start to move.",
+    ],
+  },
+  {
+    slug: "how-to-stop-loving-someone",
+    seoTitle: "How to Stop Loving Someone Who Doesn't Love You Back",
+    metaDescription:
+      "How to stop loving someone after a breakup, without forcing yourself to hate them. A gentle guide to letting love quiet on its own.",
+    h1: "How to Stop Loving Someone (Without Forcing Yourself to Hate Them)",
+    title: "How to Stop Loving Someone Who Doesn't Love You Back",
+    excerpt:
+      "You don't have to flip a switch from love to indifference. You just have to stop watering it.",
+    category: "Healing",
+    readTime: "6 min read",
+    date: "June 10, 2026",
+    author: "Pascal",
+    image: img.Healing,
+    imageAlt:
+      "Hands gently releasing a paper boat onto calm water at golden hour, letting love quietly go",
+    related: ["no-contact-rule-after-breakup", "social-media-after-a-breakup", "closure-after-a-breakup"],
+    content: [
+      "One of the cruelest parts of a breakup is that the love doesn't end when the relationship does. You can know with full clarity that someone isn't right for you, that they hurt you, that they don't want what you want, and still feel your chest soften when you think of them. That's not stupidity. It's how attachment actually works. Love is slow to leave, and trying to force it out only makes it cling harder.",
+      "## You don't have to stop loving them in order to move on",
+      "The first relief is this: you don't actually have to stop loving them to heal. You only have to stop organizing your life around that love. Many people are still tender about an ex years later and have built full, happy lives anyway. The goal isn't to scrub the feeling out, it's to take its power to run your decisions away from it.",
+      "Trying to flip yourself from love to hate almost never works. Hate is just love with its hand still on the doorknob. It keeps the other person at the center of your inner world. The quieter, slower work is letting the love settle into something more like a memory, present, but no longer in charge.",
+      "## Stop watering it",
+      "Love is a plant. It dies down when you stop feeding it. After a breakup, the most useful thing you can do isn't try to feel less, it's stop doing the things that keep the feeling fresh. Rereading old messages, looking at photos, checking their profile, replaying memories on a loop, telling the story of the relationship over and over to friends, all of these keep the love watered. None of them are evil. They're just keeping you stuck.",
+      "Things that quietly keep love alive longer than it needs to:\n- Daily social media checks\n- Keeping their playlists or photos accessible\n- Replaying conversations to find new meanings\n- Imagining who they're with now\n- Holding onto the hope that they'll change",
+      "## Build a life the love can shrink inside of",
+      "The other half of the work is expansion. Love doesn't disappear, but it gets smaller relative to a life that's getting bigger. New routines, new friends, new interests, new places, all of these dilute the relationship's gravity. You're not replacing them. You're growing around the absence the way a tree grows around a stake until the stake doesn't matter anymore.",
+      "## What it actually looks like when love quiets",
+      "It rarely happens in a single moment. One day you'll notice you went a whole week without thinking of them. You'll see a photo and feel a soft pang instead of a punch. You'll hear their name and your stomach won't drop. The love isn't gone, it's just no longer running the show. That's what 'over it' actually feels like for most people, not coldness, but a quiet, settled tenderness toward something that used to be everything.",
+    ],
+  },
+  {
+    slug: "dreaming-about-your-ex",
+    seoTitle: "Why Am I Dreaming About My Ex? What Breakup Dreams Mean",
+    metaDescription:
+      "Why you keep dreaming about your ex after a breakup, what the dreams might mean, and how to stop them disrupting your sleep and mood.",
+    h1: "Why You Keep Dreaming About Your Ex (and What It Means)",
+    title: "Dreaming About Your Ex: What It Means After a Breakup",
+    excerpt:
+      "The dreams don't mean you should go back. They mean your brain is still doing the slow work of letting go.",
+    category: "Anxiety",
+    readTime: "5 min read",
+    date: "June 12, 2026",
+    author: "Bruna",
+    image: img.Anxiety,
+    imageAlt:
+      "Soft morning light on rumpled linen sheets, the dreamy in-between state of waking up after dreaming of an ex",
+    related: ["how-to-sleep-after-a-breakup", "racing-thoughts-after-a-breakup", "unexpected-breakup-triggers"],
+    content: [
+      "You go to bed feeling okay. Then you wake up at 5 a.m. with their face still vivid behind your eyes, and a whole day of sadness ahead of you that you weren't planning on. Dreams about an ex are one of the most disorienting parts of a breakup, especially when they start happening weeks or months after you thought you were past the worst.",
+      "## Why your brain keeps replaying them at night",
+      "Dreams are partly how the brain processes unfinished emotional material. During REM sleep, your mind sorts through the day's experiences, but it also revisits anything still unresolved, including the loss of someone who used to be central to your life. The more emotionally significant the relationship was, the longer the brain tends to keep returning to it at night, even after the conscious mind has moved on quite a bit.",
+      "Dreaming about an ex isn't a sign from the universe. It isn't proof that you're meant to be with them. It's almost always your nervous system doing maintenance, integrating a loss that was big enough to need overnight processing time.",
+      "## The three most common types of ex dreams",
+      "Most breakup dreams fall into a few patterns:\n- Reconciliation dreams, where everything is good again. These often surface when you're missing the version of yourself you got to be with them.\n- Conflict dreams, where you're arguing or trying to be heard. These often surface when something was left unsaid.\n- Indifference dreams, where you see them and feel nothing, or they don't see you. These tend to show up later in the recovery process, as the brain integrates the new emotional reality.",
+      "## How to handle the morning after",
+      "Try not to read the dream as instruction. Your sleeping brain is not a wise oracle, it's a tired filing system. When you wake up rattled, give yourself a few minutes before reaching for your phone. Sit up, drink water, splash your face, do something that puts you firmly back in your real life. Write the dream down in a sentence or two if it helps, then close the notebook and let it go.",
+      "Treat the rest of the day like you would after a rough night. A little more rest, a little less scrolling, a little more kindness with yourself. You haven't slipped backward. Your mind is just doing in the night what it didn't have room to do in the day.",
+      "## When the dreams should ease",
+      "For most people, ex dreams get less frequent and less emotionally loaded over the first six months. If they stay vivid, distressing, and disruptive long past that, it can be worth talking to a coach or therapist, especially if the dreams center on conflict, betrayal, or trauma. That's not because anything is wrong with you. It's because some losses take more than a brain on its own to fully metabolize.",
+    ],
+  },
+  {
+    slug: "closure-after-a-breakup",
+    seoTitle: "How to Get Closure After a Breakup (Without Them)",
+    metaDescription:
+      "How to find closure after a breakup when you didn't get the conversation you needed. Closure isn't something they give you, it's something you build.",
+    h1: "How to Find Closure After a Breakup, Even Without Their Answers",
+    title: "How to Get Closure After a Breakup Without Them",
+    excerpt:
+      "Closure isn't a final conversation you're owed. It's the quiet moment you stop needing one.",
+    category: "Healing",
+    readTime: "7 min read",
+    date: "June 15, 2026",
+    author: "Pascal",
+    image: img.Healing,
+    imageAlt:
+      "A sealed envelope tied with twine beside a candle on a warm wooden table, a private gesture of closure",
+    related: ["how-to-stop-loving-someone", "no-contact-rule-after-breakup", "guilt-after-a-breakup-moving-on"],
+    content: [
+      "Almost everyone, at some point after a breakup, finds themselves rehearsing a conversation they'll probably never have. The one where you finally get to say what you needed to say. The one where they finally explain. The one where it all makes sense. We call this 'needing closure,' but most of the time, what we're actually craving is for the pain to stop, and we believe that one more conversation could be the thing that unlocks it.",
+      "## Why the closure conversation rarely delivers what you hope",
+      "Most closure conversations don't go well. Either the other person doesn't have the self-awareness to give you the answers you want, or they do, and the answers don't soothe what hurts the way you expected. People who reach out to an ex 'just for closure' often end up with more confusion, not less, a fresh wave of grief, a relapse into hope, an argument that adds new wounds on top of the old ones.",
+      "Even in the rare case where you get a clear, honest explanation, it doesn't usually take the pain away. Understanding why someone left doesn't undo the fact that they did. The mind hopes that knowing will fix the feeling. It almost never does.",
+      "## What closure actually is",
+      "Closure isn't an event. It's a slow shift inside you, from needing the relationship to make sense, to being able to live with the fact that some parts of it never will. It's the quiet day you realize you stopped writing imaginary speeches in the shower. It's the morning you notice you didn't check their profile yesterday. It's the moment you accept the story doesn't need one more chapter to be complete.",
+      "## Building your own closure",
+      "Some things that help people find closure on their own:\n- Writing the letter you'd send if you could, then not sending it\n- Saying the unsaid thing out loud, to an empty chair, to the sky, to a friend\n- Burning, burying, or boxing up the things that keep pulling you back\n- Making a list of what you'll do differently next time, and a list of what you wouldn't change\n- Naming, honestly, what you've already grieved and what's still ahead",
+      "These rituals work not because they're magical, but because they let your body experience an ending. They give the part of you that's still waiting for something something to actually do.",
+      "## When the wait for closure becomes its own trap",
+      "If you've been telling yourself 'I'll feel better once they explain' for months, it's worth being honest about whether the explanation will actually arrive, and whether you'd even believe it if it did. Sometimes the bravest closure is admitting that no answer they could give would undo what happened, and choosing to grieve the not-knowing alongside the loss itself.",
+      "You're allowed to stop waiting. You're allowed to give yourself the ending. Closure isn't something they hand you, it's something you slowly, quietly build, until one day you realize the door has been closed for a while and you didn't even notice when it shut.",
+    ],
+  },
+  {
+    slug: "loneliness-after-a-breakup",
+    seoTitle: "How to Deal With Loneliness After a Breakup (Without Rushing Back)",
+    metaDescription:
+      "How to cope with the loneliness that follows a breakup, especially at night and on weekends, without rushing into rebounds or going back to your ex.",
+    h1: "How to Sit With the Loneliness After a Breakup",
+    title: "How to Cope With Loneliness After a Breakup",
+    excerpt:
+      "Loneliness isn't proof you should reach out to them. It's just a part of being newly on your own.",
+    category: "Emotions",
+    readTime: "6 min read",
+    date: "June 18, 2026",
+    author: "Bruna",
+    image: img.Emotions,
+    imageAlt:
+      "A single chair by a sunlit window in a warm, empty room, the soft loneliness after a breakup",
+    related: ["self-care-after-a-breakup", "no-contact-rule-after-breakup", "reconnecting-with-yourself-after-a-breakup"],
+    content: [
+      "Loneliness after a breakup has a particular texture. It's not just being alone, it's being alone in a space that used to be shared. The empty side of the bed. The Saturday morning with no one to make coffee for. The thought you used to text them at 11 a.m., that now has nowhere to go. It can hit hardest in the moments that used to be the most ordinary, which is exactly what makes it so disorienting.",
+      "## Why loneliness feels worse than just being single",
+      "If you were single before the relationship, you may notice this loneliness feels different from anything you experienced then. That's because your nervous system formed an attachment to a specific person, and a specific rhythm with them. You're not just missing company in general, you're missing a particular voice, a particular smell, a particular feeling of being known. That kind of loneliness can't be filled by being around other people, at least not at first.",
+      "## The trap of treating loneliness as an emergency",
+      "Loneliness is uncomfortable enough that we tend to treat it like an emergency that requires immediate fixing. We text the ex. We open the dating apps. We accept plans we don't actually want. We drink more than we meant to. None of these are evil, but they often leave us lonelier underneath, because they distract from the feeling instead of helping us metabolize it.",
+      "Loneliness, like grief, moves through faster when it's allowed to be felt. It doesn't kill you. It softens, if you let it surface without immediately drowning it.",
+      "## Small things that genuinely help",
+      "A few practices that tend to ease post-breakup loneliness:\n- Building one or two predictable points of human contact each week, a class, a walk with a friend, a regular dinner\n- Letting a low-stakes background sound, podcast, music, audiobook, fill silences that used to be filled by them\n- Spending time in 'third places,' cafes, libraries, parks, where you're not alone but not socially performing\n- Volunteering, where being needed by someone else quietly rebuilds your sense of mattering\n- Petting an animal, your own or someone else's, since physical contact with mammals actually lowers cortisol",
+      "## The harder kind of company you might be avoiding",
+      "Sometimes the loneliness you're feeling isn't only about missing them. It's about being newly forced to spend time with yourself. If that's part of what's hard, the answer isn't to keep distracting from it, it's to slowly get more comfortable in your own company. Cook a real meal for yourself. Take yourself to a film. Sit on a bench and notice what's around you. You're not waiting for the loneliness to end so your real life can start. This time alone is part of building the relationship with yourself that the next chapter will rest on.",
+      "## When loneliness becomes something more",
+      "Persistent loneliness that comes with hopelessness, sleeplessness, loss of appetite, or thoughts of not wanting to be here, deserves more than self-help. Reach out to a coach, therapist, doctor, or trusted friend. Loneliness is meant to be a signal that drives connection, not a wall you have to live behind alone.",
+    ],
+  },
+  {
+    slug: "breakup-without-a-reason",
+    seoTitle: "When They Break Up With You Without a Reason: How to Cope",
+    metaDescription:
+      "How to cope when your partner ends the relationship without giving you a real reason. Understanding the silence and finding peace without their answers.",
+    h1: "When They Break Up With You Without a Reason",
+    title: "How to Cope When They Break Up Without a Reason",
+    excerpt:
+      "Not getting an explanation feels unbearable. The absence of an answer can become its own kind of answer.",
+    category: "Healing",
+    readTime: "6 min read",
+    date: "June 20, 2026",
+    author: "Pascal",
+    image: img.Healing,
+    imageAlt:
+      "A softly lit hallway with a single open door, the unsettling quiet of a breakup with no explanation",
+    related: ["closure-after-a-breakup", "racing-thoughts-after-a-breakup", "no-contact-rule-after-breakup"],
+    content: [
+      "Few things are harder than being left without a real explanation. 'I just don't feel it anymore.' 'It's not you, it's me.' 'I need space.' Or, worse, total silence, a slow fade, a sudden block. Without a reason to hold onto, the mind goes hunting. Every conversation gets re-examined. Every old text gets reread. You become a detective in your own life, trying to find the clue that will finally make it make sense.",
+      "## Why the lack of a reason hurts so much",
+      "Human brains are meaning-making machines. When something painful happens, we instinctively look for a why, because a why feels like the first step toward making sure it never happens again. When the person who hurt you refuses to give you that why, your brain doesn't simply accept the absence. It fills the silence with theories, and most of those theories center on the worst possible answer: that something is wrong with you.",
+      "That self-blame isn't truth, it's just the most accessible explanation when no one will give you a better one. The mind would rather have a painful answer than no answer at all.",
+      "## Why they may not be giving you the real reason",
+      "There are usually one of a few things going on when someone won't explain themselves:\n- They genuinely don't know yet. People can leave a relationship because of a vague, unnameable sense that something isn't right, and only understand it months later.\n- They know, but they don't have the language. Emotional fluency varies enormously between people.\n- They know, and they don't want to say it because they're afraid of hurting you, or of being judged, or of being argued with.\n- They've already emotionally checked out and explaining now feels pointless to them.",
+      "None of these are flattering, and none of them are about you being unlovable. They're about the other person's capacity, which was always its own limit, even when the relationship was good.",
+      "## The story you're telling yourself in the silence",
+      "Notice the story your mind keeps writing in the empty space. Is it 'I wasn't enough'? 'I was too much'? 'I should have known'? These narratives feel true because they're loud and consistent, but they're guesses dressed up as conclusions. Try writing the cruelest version down, then writing three alternative explanations next to it. The point isn't to find the right one, it's to remind yourself that yours is one possibility among many.",
+      "## Building peace without their answer",
+      "You can grieve the loss without ever solving the mystery. In fact, that's what most people end up doing. The peace eventually comes not from finally understanding why they left, but from realizing that the answer would not change what you have to do next: take care of yourself, rebuild, and let the relationship close even though the file isn't tidy.",
+      "What helps is a gentle, repeated mantra in those spiraling moments: 'I don't have to know why to be able to move on.' Said often enough, the mind starts to settle for it, not because you've stopped being curious, but because you've stopped making your healing conditional on something they were never going to give you.",
+    ],
+  },
+  {
+    slug: "getting-over-being-cheated-on",
+    seoTitle: "How to Heal After Being Cheated On (and Not Lose Yourself)",
+    metaDescription:
+      "How to recover from being cheated on without losing your trust, your confidence, or your sense of self. A compassionate guide to healing after betrayal.",
+    h1: "How to Heal After Being Cheated On",
+    title: "How to Heal After Being Cheated On",
+    excerpt:
+      "Betrayal doesn't just end a relationship. It rewrites your sense of what was real. Healing means gently sorting truth from doubt again.",
+    category: "Healing",
+    readTime: "8 min read",
+    date: "June 22, 2026",
+    author: "Bruna",
+    image: img.Healing,
+    imageAlt:
+      "A kintsugi bowl mended with gold sitting in soft window light, healing after the breakage of betrayal",
+    related: ["healing-after-a-breakup-is-not-linear", "anger-after-a-breakup", "attachment-styles-and-breakups"],
+    content: [
+      "Being cheated on doesn't just end the relationship. It edits the past. Suddenly you're going back through memories, holidays, conversations, late nights, trying to figure out which moments were real and which ones you were the only person fully present for. That re-reading of your own life is one of the most exhausting parts of infidelity, and it's why this kind of breakup often takes longer to recover from than others, even when you logically know the relationship had to end.",
+      "## Why betrayal hits the nervous system differently",
+      "Cheating activates two losses at the same time: the loss of the person, and the loss of your sense of reality. The mind has to update everything it thought it knew about the relationship, often without all the information. That kind of update is destabilizing in a way that even painful but honest breakups aren't. It's normal to feel hypervigilant, jumpy, full of intrusive thoughts, unable to sleep, and quick to spiral. Your nervous system is treating this like the threat it was.",
+      "Betrayal trauma is a real thing. It's not weakness, and it's not 'making it bigger than it is.' Some research compares the symptoms to acute trauma responses, which is why it often needs more support, not less.",
+      "## The hardest thing: not making it mean something about you",
+      "When someone cheats, the brain almost always goes first to: I wasn't enough. Not attractive enough, not interesting enough, not present enough. This is a near-universal reaction, and it's almost always wrong. People cheat for reasons that live inside them, their patterns, their wounds, their unwillingness to be honest about what they wanted, not because the partner they had failed some test of worth.",
+      "Holding onto 'they did this because of who they are, not who I am' is hard, especially in the middle of the night. Say it out loud anyway. Say it until your nervous system starts to believe it, even just a little. That sentence is the spine of recovery from betrayal.",
+      "## Things that genuinely help in the first months",
+      "- Limited contact, ideally none, until your nervous system has settled\n- A trusted person or coach who knows the full story and won't ask you to perform okayness\n- A boundary on detective work: a set time of day to think about it, then put it down\n- Movement, walks, swims, anything that lets the body discharge the activation\n- Sleep support, even basic things like a phone-free hour before bed\n- Avoiding big decisions, moves, jobs, new relationships, for the first three months if possible",
+      "## When to bring in real support",
+      "If you're stuck in obsessive replay months later, if you can't sleep, if you find yourself unable to trust anyone, or if you're checking new partners' phones in a way that scares you, you're not broken. You're carrying a trauma response that needs professional help to fully metabolize. A trauma-informed therapist, or coaching specifically for betrayal recovery, can shorten this enormously.",
+      "## Trusting again, slowly and on your own terms",
+      "You don't have to choose between never trusting again and naively trusting everyone. The middle path is learning to trust yourself, your instincts, your willingness to leave when something feels wrong, your right to ask hard questions, your capacity to handle the truth. When that internal trust comes back, trusting other people again stops feeling like a leap of faith and starts feeling like a series of small, observable decisions. You won't be 'over it' on a timeline, but you will, slowly, be your own person again, and that person will know more than the one who walked into the last relationship did.",
+    ],
+  },
+  {
+    slug: "moving-out-after-a-breakup",
+    seoTitle: "Moving Out After a Breakup: How to Survive the First Month",
+    metaDescription:
+      "How to handle moving out after a breakup: dividing belongings, the emotional weight of an empty new place, and how to make somewhere new feel like home.",
+    h1: "Moving Out After a Breakup: The Quiet Grief of a New Space",
+    title: "Moving Out After a Breakup: How to Get Through It",
+    excerpt:
+      "An empty apartment after a breakup can feel louder than any argument. Here's how to slowly make a new space your own.",
+    category: "Self-Care",
+    readTime: "7 min read",
+    date: "June 25, 2026",
+    author: "Pascal",
+    image: img["Self-Care"],
+    imageAlt:
+      "Cardboard moving boxes stacked in a sunlit empty room with hardwood floor, the start of a new home after a breakup",
+    related: ["rebuilding-yourself-after-a-long-relationship", "loneliness-after-a-breakup", "self-care-after-a-breakup"],
+    content: [
+      "Moving out after a breakup is logistically draining and emotionally enormous, often at the same time. There's a strange grief in choosing which mugs are yours, in seeing the indentations in the carpet where the bed used to be, in standing in an empty apartment that smells like nothing yet. Even when you wanted the move, the body registers it as a loss. That's not weakness. That's just how attachment to a shared home actually works.",
+      "## The week before the move",
+      "Try to give yourself more time than you think you'll need. Underestimating the emotional load of packing a shared life is one of the most common mistakes people make. Things you haven't thought about in years will surface, the card from a third anniversary, a t-shirt of theirs you slept in, the bowl you bought together at a weekend market. You don't have to process every memory in real time. It's fine to put things in a box marked 'later' and deal with them after the dust settles.",
+      "Ask for help. Movers if you can afford them. Friends if you can't. Do not try to do this alone if there's any way around it, both because lifting heavy things by yourself in this emotional state is genuinely risky, and because having one other body in the room can keep the grief from swallowing the day.",
+      "## Dividing belongings without losing your mind",
+      "A few rules of thumb that tend to keep this from getting uglier than it has to:\n- If you bought it together, decide one item at a time and let small things go\n- Photograph anything contested before you leave, so the conversation can happen later, calmly\n- Don't punish yourself by leaving things you actually need, kitchen basics, towels, lamps, decent sheets\n- Don't punish them by taking things you don't need just to make a point\n- Get the keys handover right: time, place, who's present, in writing",
+      "If communication is impossible, it's almost always worth using a neutral third party, a mutual friend, a mediator, or for bigger things, a lawyer. The cost of fighting over a sofa is rarely worth the emotional toll.",
+      "## The first night in the new place",
+      "Plan it. Don't let it just happen. Bring or set up: clean sheets, a lamp, a kettle, a candle, a few things that smell like you, and one comfort food. The first night in a new home after a breakup is one of the most vulnerable evenings most of us ever have. Treat it the way you'd treat a friend's first night in the same situation, with low expectations and tender care.",
+      "It's okay to cry. It's okay to feel a flicker of relief and feel guilty about the relief. It's okay to sleep on the floor with takeaway and a podcast, or to invite one person over who knows how to just sit with you. There's no right way to do this evening.",
+      "## Slowly making it feel like yours",
+      "In the first weeks, resist the urge to either over-decorate to prove you're fine, or live in suitcases because committing to the space feels too final. The middle path: one small thing at a time. A plant. A rug. A single piece of art. A bowl on the kitchen counter that's only yours. The space becomes home not in a single dramatic redecoration, but in the quiet accumulation of choices that no one else gets a vote on.",
+      "A simple rhythm for the first month:\n- One small new thing for the home each week\n- One regular evening ritual you build only for yourself\n- One person you check in with each week, briefly\n- One walk in the new neighborhood, no headphones, just to learn it",
+      "## The relief that creeps in",
+      "Somewhere around week three or four, most people notice a strange new feeling under all the grief: a quiet pleasure in coming home to a space that's entirely theirs. The pleasure doesn't replace the loss. It sits alongside it. You can miss the old life and also feel the first hints of liking the new one, sometimes in the same hour. Both are true. Both are part of how a new home, and a new chapter, slowly settles into place.",
+    ],
+  },
+  {
+    slug: "reconnecting-with-yourself-after-a-breakup",
+    seoTitle: "How to Reconnect With Yourself After a Breakup",
+    metaDescription:
+      "How to reconnect with yourself after a breakup: simple practices to rediscover who you are, what you love, and what you want, when 'we' becomes 'I' again.",
+    h1: "How to Reconnect With Yourself After a Breakup",
+    title: "How to Reconnect With Yourself After a Breakup",
+    excerpt:
+      "When the relationship ends, the question 'who am I now?' isn't a problem. It's an invitation.",
+    category: "Growth",
+    readTime: "6 min read",
+    date: "June 28, 2026",
+    author: "Bruna",
+    image: img.Growth,
+    imageAlt:
+      "A silhouette walking alone through a soft meadow at sunrise, quietly reconnecting with herself after a breakup",
+    related: ["rebuilding-yourself-after-a-long-relationship", "journaling-prompts-after-a-breakup", "first-date-after-a-breakup"],
+    content: [
+      "After a breakup, many people describe the same strange feeling: that they've lost track of who they are when no one is watching. The relationship had a shape. You knew your role in it, your routines, the version of yourself you played. Now the room is empty, and the question 'who am I, actually?' starts whispering at quiet moments. That question can feel terrifying. It's also one of the most generous invitations a breakup ever offers.",
+      "## Why you feel like a stranger to yourself",
+      "In any long-term relationship, your identity slowly braids with the other person's. Your taste in food, music, weekends, all of it gets shaped by being around them. That's not weakness, it's how intimacy works. When the relationship ends, the braid unravels, and the parts of you that had been shaped around the relationship suddenly stand exposed. It's normal to look at your own life and not recognize the shape of it.",
+      "Many people respond to this by frantically reinventing themselves, new haircut, new gym, new wardrobe, new city. Some of that energy is healthy. A lot of it is a way to avoid sitting still with the quieter, harder question: not who do I want to become to prove I'm okay, but who actually am I when no one is watching.",
+      "## Small practices to come home to yourself",
+      "Reconnecting with yourself isn't really a project. It's a series of small returns to your own preferences, body, and attention. Some practices that help:\n- A weekly 'date with yourself' that's actually planned, not just 'I'll figure something out'\n- Cooking one meal a week purely to your own taste, no compromises\n- A short morning check-in: how does my body feel, what would today need to feel like a good day\n- A walk without headphones, once or twice a week, just to hear your own thoughts again\n- A journaling prompt: 'what did I stop doing because they didn't enjoy it'",
+      "## Listen to your body, not just your mind",
+      "Your body tends to be more honest than your mind in the months after a breakup. Notice when you feel light, energized, curious, expansive, and notice when you feel heavy, tight, dull, or contracted. Those are signals about what's actually right for you, often clearer than your overthinking can be. The people, places, and activities that consistently leave you feeling lighter are part of the version of you that's emerging. The ones that don't, even if you 'should' love them, are worth questioning.",
+      "## Don't rush to know who you are yet",
+      "There's a quiet cultural pressure, especially online, to come out of a breakup with a clear new identity, a brand, a glow-up, a clean before-and-after story. Real reconnection with yourself is messier and slower. You'll have weeks where you feel sharp and certain, and weeks where you feel like a stranger again. Both are part of it. You don't have to have your new self figured out by month three to be doing this well.",
+      "## What it feels like when it starts to click",
+      "It's not a single moment. It's a slow accumulation of small things: opinions that feel like yours, a Saturday morning that feels like a good shape, a meal that tastes exactly how you like it, a song you discovered without their input that you play on repeat, a feeling, after a few quiet hours alone, that the quiet is no longer empty. That's what coming home to yourself actually looks like. It doesn't undo the loss. It just slowly makes a life on the other side of it feel like yours.",
     ],
   },
 ];
