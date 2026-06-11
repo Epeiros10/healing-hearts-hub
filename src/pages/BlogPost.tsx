@@ -122,6 +122,8 @@ const BlogPost = () => {
                     src={brunaImg}
                     alt=""
                     aria-hidden="true"
+                    loading="lazy"
+                    decoding="async"
                     className="w-full h-full object-cover opacity-70"
                   />
                 </div>
