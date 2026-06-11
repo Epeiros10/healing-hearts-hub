@@ -7,7 +7,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import BookingDialog from "@/components/BookingDialog";
 import { blogPosts, legacySlugMap, SITE_URL } from "@/data/blogPosts";
-import brunaImg from "@/assets/blog-emotions.jpg";
+import brunaImg from "@/assets/blog-emotions.webp";
 
 const BlogPost = () => {
   const { slug } = useParams();
@@ -122,6 +122,8 @@ const BlogPost = () => {
                     src={brunaImg}
                     alt=""
                     aria-hidden="true"
+                    loading="lazy"
+                    decoding="async"
                     className="w-full h-full object-cover opacity-70"
                   />
                 </div>
@@ -170,6 +172,8 @@ const BlogPost = () => {
                 alt={post.imageAlt}
                 width={1280}
                 height={720}
+                fetchPriority="high"
+                decoding="async"
                 className="w-full h-full object-cover"
               />
             </figure>

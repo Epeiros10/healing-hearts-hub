@@ -8,13 +8,13 @@ const coaches = [
   {
     name: "Bruna",
     role: "Certified Relationship Coach",
-    image: "/lovable-uploads/fcd8f7c5-6bdb-4624-9f54-70365fb58964.png",
+    image: "/lovable-uploads/fcd8f7c5-6bdb-4624-9f54-70365fb58964.webp",
     calLink: "https://cal.com/bruna-friggi-zjnhgp/45-min-call",
   },
   {
     name: "Pascal",
     role: "Certified Relationship Coach",
-    image: "/lovable-uploads/4fbc4fcb-b5cf-4789-87e6-02b5b67ee9ab.png",
+    image: "/lovable-uploads/4fbc4fcb-b5cf-4789-87e6-02b5b67ee9ab.webp",
     calLink: "https://cal.com/pascal-niggli-uenxj0/45-min-coaching-call",
     emergencyLink: "https://cal.com/pascal-niggli-uenxj0/45-min-coaching-call?overlayCalendar=true",
   },
@@ -192,6 +192,8 @@ const RecoveryPackage = () => {
                         <img
                           src={coach.image}
                           alt={`${coach.name}, ${coach.role}`}
+                          loading="lazy"
+                          decoding="async"
                           className="w-9 h-9 rounded-full object-cover flex-shrink-0"
                         />
                         <div className="flex-1 min-w-0">

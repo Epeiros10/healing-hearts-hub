@@ -8,14 +8,14 @@ const coaches = [
   {
     name: "Bruna",
     role: "Certified Relationship Coach",
-    image: "/lovable-uploads/fcd8f7c5-6bdb-4624-9f54-70365fb58964.png",
+    image: "/lovable-uploads/fcd8f7c5-6bdb-4624-9f54-70365fb58964.webp",
     calendly: "#contact",
     style: "Warm, intuitive, specializing in attachment patterns and emotional processing.",
   },
   {
     name: "Pascal",
     role: "Certified Relationship Coach",
-    image: "/lovable-uploads/4fbc4fcb-b5cf-4789-87e6-02b5b67ee9ab.png",
+    image: "/lovable-uploads/4fbc4fcb-b5cf-4789-87e6-02b5b67ee9ab.webp",
     calendly: "#contact",
     style: "Grounded, practical, focused on rebuilding confidence and moving forward.",
   },
@@ -101,6 +101,8 @@ const TalkToSomeone = () => {
                   <img
                     src={coach.image}
                     alt={`${coach.name}, ${coach.role}`}
+                    loading="lazy"
+                    decoding="async"
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   />
                 </div>

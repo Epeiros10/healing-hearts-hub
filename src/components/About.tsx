@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { Heart, Sparkles, Shield, Calendar } from "lucide-react";
-import brunaImg from "@/assets/bruna-coach.jpg";
-import pascalImg from "@/assets/pascal-coach.jpg";
+import brunaImg from "@/assets/bruna-coach.webp";
+import pascalImg from "@/assets/pascal-coach.webp";
 
 const About = () => {
   return (
@@ -36,10 +36,13 @@ const About = () => {
 
             <div className="relative mb-6">
               <img
-
+                loading="lazy"
+                decoding="async"
+                width={400}
+                height={400}
                 alt="Bruna - Certified Relationship Coach"
                 className="rounded-2xl w-full max-w-xs mx-auto object-cover aspect-square"
-                style={{ boxShadow: "var(--shadow-warm)" }} src="/lovable-uploads/fcd8f7c5-6bdb-4624-9f54-70365fb58964.png" />
+                style={{ boxShadow: "var(--shadow-warm)" }} src="/lovable-uploads/fcd8f7c5-6bdb-4624-9f54-70365fb58964.webp" />
 
               <div className="absolute -bottom-3 left-1/2 -translate-x-1/2 bg-primary text-primary-foreground rounded-xl px-4 py-2 font-body text-sm font-medium whitespace-nowrap">
                 Certified Relationship Coach 💛
@@ -98,10 +101,13 @@ const About = () => {
 
             <div className="relative mb-6">
               <img
-
+                loading="lazy"
+                decoding="async"
+                width={400}
+                height={400}
                 alt="Pascal - Certified Relationship Coach"
                 className="rounded-2xl w-full max-w-xs mx-auto object-cover aspect-square"
-                style={{ boxShadow: "var(--shadow-warm)" }} src="/lovable-uploads/4fbc4fcb-b5cf-4789-87e6-02b5b67ee9ab.png" />
+                style={{ boxShadow: "var(--shadow-warm)" }} src="/lovable-uploads/4fbc4fcb-b5cf-4789-87e6-02b5b67ee9ab.webp" />
 
               <div className="absolute -bottom-3 left-1/2 -translate-x-1/2 bg-secondary text-secondary-foreground rounded-xl px-4 py-2 font-body text-sm font-medium whitespace-nowrap">
                 Certified Relationship Coach 🤍
