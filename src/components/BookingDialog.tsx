@@ -46,6 +46,8 @@ const BookingDialog = ({ open, onOpenChange }: BookingDialogProps) => {
                 <img
                   src={coach.image}
                   alt={`${coach.name}, ${coach.role}`}
+                  loading="lazy"
+                  decoding="async"
                   className="w-full h-full object-contain"
                 />
               </div>
