@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { ArrowDown, MessageCircle } from "lucide-react";
-import heroBg from "@/assets/hero-bg.jpg";
+import heroBg from "@/assets/hero-bg.webp";
 
 const Hero = () => {
 

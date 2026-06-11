@@ -7,7 +7,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import BookingDialog from "@/components/BookingDialog";
 import { blogPosts, legacySlugMap, SITE_URL } from "@/data/blogPosts";
-import brunaImg from "@/assets/blog-emotions.jpg";
+import brunaImg from "@/assets/blog-emotions.webp";
 
 const BlogPost = () => {
   const { slug } = useParams();
