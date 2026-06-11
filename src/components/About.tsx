@@ -101,7 +101,10 @@ const About = () => {
 
             <div className="relative mb-6">
               <img
-
+                loading="lazy"
+                decoding="async"
+                width={400}
+                height={400}
                 alt="Pascal - Certified Relationship Coach"
                 className="rounded-2xl w-full max-w-xs mx-auto object-cover aspect-square"
                 style={{ boxShadow: "var(--shadow-warm)" }} src="/lovable-uploads/4fbc4fcb-b5cf-4789-87e6-02b5b67ee9ab.webp" />
