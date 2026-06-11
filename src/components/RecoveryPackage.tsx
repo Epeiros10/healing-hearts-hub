@@ -192,6 +192,8 @@ const RecoveryPackage = () => {
                         <img
                           src={coach.image}
                           alt={`${coach.name}, ${coach.role}`}
+                          loading="lazy"
+                          decoding="async"
                           className="w-9 h-9 rounded-full object-cover flex-shrink-0"
                         />
                         <div className="flex-1 min-w-0">
