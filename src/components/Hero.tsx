@@ -11,6 +11,10 @@ const Hero = () => {
         <img
           src={heroBg}
           alt="Warm sunrise symbolizing hope and healing"
+          fetchPriority="high"
+          decoding="async"
+          width={1600}
+          height={900}
           className="w-full h-full object-cover" />
 
         <div className="absolute inset-0 bg-gradient-to-b from-background/70 via-background/50 to-background" />
