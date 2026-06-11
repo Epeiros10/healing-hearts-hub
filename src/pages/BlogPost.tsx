@@ -170,6 +170,8 @@ const BlogPost = () => {
                 alt={post.imageAlt}
                 width={1280}
                 height={720}
+                fetchPriority="high"
+                decoding="async"
                 className="w-full h-full object-cover"
               />
             </figure>
