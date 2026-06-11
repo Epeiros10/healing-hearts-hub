@@ -36,7 +36,10 @@ const About = () => {
 
             <div className="relative mb-6">
               <img
-
+                loading="lazy"
+                decoding="async"
+                width={400}
+                height={400}
                 alt="Bruna - Certified Relationship Coach"
                 className="rounded-2xl w-full max-w-xs mx-auto object-cover aspect-square"
                 style={{ boxShadow: "var(--shadow-warm)" }} src="/lovable-uploads/fcd8f7c5-6bdb-4624-9f54-70365fb58964.webp" />
