@@ -1,9 +1,70 @@
+import { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
 import { Heart, Sparkles, Shield, Calendar } from "lucide-react";
 import brunaImg from "@/assets/bruna-coach.webp";
 import pascalImg from "@/assets/pascal-coach.webp";
+import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 
 const About = () => {
+  const [pascalOpen, setPascalOpen] = useState(false);
+  const pascalInitRef = useRef(false);
+
+  useEffect(() => {
+    if (!pascalOpen || pascalInitRef.current) return;
+
+    (function (C: any, A: string, L: string) {
+      let p = function (a: any, ar: any) {
+        a.q.push(ar);
+      };
+      let d = C.document;
+      C.Cal =
+        C.Cal ||
+        function () {
+          let cal = C.Cal;
+          let ar = arguments;
+          if (!cal.loaded) {
+            cal.ns = {};
+            cal.q = cal.q || [];
+            d.head.appendChild(d.createElement("script")).src = A;
+            cal.loaded = true;
+          }
+          if (ar[0] === L) {
+            const api: any = function () {
+              p(api, arguments);
+            };
+            const namespace = ar[1];
+            api.q = api.q || [];
+            if (typeof namespace === "string") {
+              cal.ns[namespace] = cal.ns[namespace] || api;
+              p(cal.ns[namespace], ar);
+              p(cal, ["initNamespace", namespace]);
+            } else p(cal, ar);
+            return;
+          }
+          p(cal, ar);
+        };
+    })(window as any, "https://app.cal.com/embed/embed.js", "init");
+
+    const Cal = (window as any).Cal;
+    Cal("init", "45-min-coaching-call", { origin: "https://app.cal.com" });
+    Cal.config = Cal.config || {};
+    Cal.config.forwardQueryParams = true;
+
+    setTimeout(() => {
+      Cal.ns["45-min-coaching-call"]("inline", {
+        elementOrSelector: "#my-cal-inline-45-min-coaching-call",
+        config: { layout: "month_view", useSlotsViewOnSmallScreen: "true", theme: "light" },
+        calLink: "breakup-recovery/45-min-coaching-call",
+      });
+      Cal.ns["45-min-coaching-call"]("ui", {
+        theme: "light",
+        hideEventTypeDetails: false,
+        layout: "month_view",
+      });
+      pascalInitRef.current = true;
+    }, 50);
+  }, [pascalOpen]);
+
   return (
     <section id="about" className="py-24 px-4">
       <div className="max-w-5xl mx-auto">
@@ -143,19 +204,31 @@ const About = () => {
               <p className="text-sm font-body font-semibold text-foreground">
                 €79 <span className="text-muted-foreground font-normal">/ 45-min emergency talk session</span>
               </p>
-              <a
-                href="https://cal.com/pascal-niggli-uenxj0/45-min-coaching-call?overlayCalendar=true"
-                target="_blank"
-                rel="noopener noreferrer"
+              <button
+                type="button"
+                onClick={() => setPascalOpen(true)}
                 className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-secondary text-secondary-foreground font-body text-sm font-medium hover:opacity-90 transition-opacity">
-                
                 <Calendar className="w-4 h-4" />
                 Book Now
-              </a>
+              </button>
             </div>
           </motion.div>
         </div>
       </div>
+
+      <Dialog open={pascalOpen} onOpenChange={setPascalOpen}>
+        <DialogContent className="max-w-4xl w-[95vw] p-0 overflow-hidden">
+          <DialogHeader className="px-6 pt-6 pb-2">
+            <DialogTitle className="font-display text-2xl">
+              Book a 45-Min Call with Pascal
+            </DialogTitle>
+          </DialogHeader>
+          <div
+            id="my-cal-inline-45-min-coaching-call"
+            style={{ width: "100%", height: "75vh", overflow: "scroll" }}
+          />
+        </DialogContent>
+      </Dialog>
     </section>);
 
 };
