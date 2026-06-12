@@ -56,7 +56,7 @@ const BookPascalEmergency = () => {
         useSlotsViewOnSmallScreen: "true",
         theme: "auto",
       },
-      calLink: "pascal-niggli-uenxj0/45-min-coaching-call",
+      calLink: "breakup-recovery/45-min-coaching-call",
     });
     Cal.ns["45-min-coaching-call"]("ui", {
       cssVarsPerTheme: { light: { "cal-brand": "#D97757" } },
