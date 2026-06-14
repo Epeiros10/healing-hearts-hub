@@ -72,6 +72,8 @@ const Hero = () => {
       <div className="absolute inset-0">
         <img
           src={heroBg}
+          srcSet={`${heroBgMobile} 800w, ${heroBg} 1600w`}
+          sizes="(max-width: 768px) 100vw, 1600px"
           alt="Warm sunrise symbolizing hope and healing"
           fetchPriority="high"
           decoding="async"
