@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
 import { ArrowDown, MessageCircle } from "lucide-react";
 import heroBg from "@/assets/hero-bg.webp";
+import heroBgMobile from "@/assets/hero-bg-mobile.webp";
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 
 const Hero = () => {
@@ -71,6 +72,8 @@ const Hero = () => {
       <div className="absolute inset-0">
         <img
           src={heroBg}
+          srcSet={`${heroBgMobile} 800w, ${heroBg} 1600w`}
+          sizes="(max-width: 768px) 100vw, 1600px"
           alt="Warm sunrise symbolizing hope and healing"
           fetchPriority="high"
           decoding="async"
