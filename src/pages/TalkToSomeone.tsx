@@ -29,6 +29,11 @@ const TalkToSomeone = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <Helmet>
+        <title>Talk to Someone — Break Up Recovery Coaching</title>
+        <meta name="description" content="Talk to a certified breakup recovery coach. 45-minute sessions with Bruna or Pascal. No judgment, just real support when you need it most." />
+        <link rel="canonical" href={`${SITE_URL}/talk`} />
+      </Helmet>
       <BookingDialog open={bookingOpen} onOpenChange={setBookingOpen} />
       {/* Minimal top bar */}
       <div className="w-full px-4 py-4 flex items-center justify-between max-w-3xl mx-auto">
