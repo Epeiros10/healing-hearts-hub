@@ -1,8 +1,16 @@
+import { Helmet } from "react-helmet-async";
 import { Mail } from "lucide-react";
+
+const SITE_URL = "https://breakup-recovery.org";
 
 const Contact = () => {
   return (
     <div className="min-h-screen bg-background px-4 py-20">
+      <Helmet>
+        <title>Contact — Break Up Recovery</title>
+        <meta name="description" content="Get in touch with Break Up Recovery. Have a question, feedback, or need someone to point you in the right direction? We'd love to hear from you." />
+        <link rel="canonical" href={`${SITE_URL}/contact`} />
+      </Helmet>
       <div className="max-w-3xl mx-auto font-body text-center">
         <a href="/" className="text-sm text-muted-foreground hover:text-foreground transition-colors mb-8 inline-block">← Back to home</a>
         
