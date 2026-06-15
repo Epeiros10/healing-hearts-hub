@@ -1,8 +1,11 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { Phone, MessageCircle, Shield, Clock, Heart, ArrowRight } from "lucide-react";
+import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 import BookingDialog from "@/components/BookingDialog";
+
+const SITE_URL = "https://breakup-recovery.org";
 
 const coaches = [
   {
