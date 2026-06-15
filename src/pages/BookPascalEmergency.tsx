@@ -9,7 +9,6 @@ const BookPascalEmergency = () => {
   useEffect(() => {
     // Load Cal.com embed
     (function (C: any, A: string, L: string) {
-    (function (C: any, A: string, L: string) {
       let p = function (a: any, ar: any) {
         a.q.push(ar);
       };
@@ -62,6 +61,11 @@ const BookPascalEmergency = () => {
 
   return (
     <main className="min-h-screen bg-background py-10 px-4">
+      <Helmet>
+        <title>Book Emergency Call with Pascal | 45-min Coaching</title>
+        <meta name="description" content="Book a 45-minute emergency coaching call with Pascal. Same-week availability for immediate breakup recovery support." />
+        <link rel="canonical" href={`${SITE_URL}/book/pascal-emergency`} />
+      </Helmet>
       <div className="max-w-5xl mx-auto">
         <Link
           to="/"
