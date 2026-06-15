@@ -1,18 +1,12 @@
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { ArrowLeft } from "lucide-react";
+import { Helmet } from "react-helmet-async";
+
+const SITE_URL = "https://breakup-recovery.org";
 
 const BookPascalEmergency = () => {
   useEffect(() => {
-    document.title = "Book Emergency Call with Pascal | 45-min Coaching";
-    const metaDesc = document.querySelector('meta[name="description"]');
-    if (metaDesc) {
-      metaDesc.setAttribute(
-        "content",
-        "Book a 45-minute emergency coaching call with Pascal. Same-week availability for immediate breakup recovery support."
-      );
-    }
-
     // Load Cal.com embed
     (function (C: any, A: string, L: string) {
       let p = function (a: any, ar: any) {
@@ -67,6 +61,11 @@ const BookPascalEmergency = () => {
 
   return (
     <main className="min-h-screen bg-background py-10 px-4">
+      <Helmet>
+        <title>Book Emergency Call with Pascal | 45-min Coaching</title>
+        <meta name="description" content="Book a 45-minute emergency coaching call with Pascal. Same-week availability for immediate breakup recovery support." />
+        <link rel="canonical" href={`${SITE_URL}/book/pascal-emergency`} />
+      </Helmet>
       <div className="max-w-5xl mx-auto">
         <Link
           to="/"

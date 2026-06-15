@@ -1,6 +1,15 @@
+import { Helmet } from "react-helmet-async";
+
+const SITE_URL = "https://breakup-recovery.org";
+
 const PrivacyPolicy = () => {
   return (
     <div className="min-h-screen bg-background px-4 py-20">
+      <Helmet>
+        <title>Privacy Policy — Break Up Recovery</title>
+        <meta name="description" content="Break Up Recovery respects your privacy. Read our privacy policy to learn how we collect, use, and protect your information." />
+        <link rel="canonical" href={`${SITE_URL}/privacy`} />
+      </Helmet>
       <div className="max-w-3xl mx-auto font-body">
         <a href="/" className="text-sm text-muted-foreground hover:text-foreground transition-colors mb-8 inline-block">← Back to home</a>
         <h1 className="text-3xl font-serif font-semibold text-foreground mb-2">Privacy Policy</h1>

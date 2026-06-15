@@ -81,10 +81,13 @@ const faqLd = {
   ],
 };
 
+const SITE_URL = "https://breakup-recovery.org";
+
 const Index = () => {
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
+        <link rel="canonical" href={`${SITE_URL}/`} />
         <script type="application/ld+json">{JSON.stringify(faqLd)}</script>
       </Helmet>
       <Navbar />
