@@ -9,6 +9,7 @@ import RecoveryQuiz from "@/components/RecoveryQuiz";
 import Footer from "@/components/Footer";
 import ContactSection from "@/components/ContactSection";
 import FAQ from "@/components/FAQ";
+import LeadMagnetPopup from "@/components/LeadMagnetPopup";
 
 const faqLd = {
   "@context": "https://schema.org",
@@ -100,6 +101,7 @@ const Index = () => {
       <ContactSection />
       <FAQ />
       <Footer />
+      <LeadMagnetPopup />
     </div>
   );
 };
