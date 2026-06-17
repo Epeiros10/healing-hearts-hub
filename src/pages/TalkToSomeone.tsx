@@ -15,13 +15,6 @@ const coaches = [
     calendly: "#contact",
     style: "Warm, intuitive, specializing in attachment patterns and emotional processing.",
   },
-  {
-    name: "Pascal",
-    role: "Certified Relationship Coach",
-    image: "/lovable-uploads/4fbc4fcb-b5cf-4789-87e6-02b5b67ee9ab.webp",
-    calendly: "#contact",
-    style: "Grounded, practical, focused on rebuilding confidence and moving forward.",
-  },
 ];
 
 const TalkToSomeone = () => {
@@ -31,7 +24,7 @@ const TalkToSomeone = () => {
     <div className="min-h-screen bg-background">
       <Helmet>
         <title>Talk to Someone — Break Up Recovery Coaching</title>
-        <meta name="description" content="Talk to a certified breakup recovery coach. 45-minute sessions with Bruna or Pascal. No judgment, just real support when you need it most." />
+        <meta name="description" content="Talk to a certified breakup recovery coach. 45-minute sessions with Bruna. No judgment, just real support when you need it most." />
         <link rel="canonical" href={`${SITE_URL}/talk`} />
       </Helmet>
       <BookingDialog open={bookingOpen} onOpenChange={setBookingOpen} />
@@ -92,10 +85,11 @@ const TalkToSomeone = () => {
       <section className="px-4 pb-16 md:pb-24">
         <div className="max-w-2xl mx-auto">
           <p className="text-center text-sm text-muted-foreground font-body mb-8">
-            Choose your coach
+            Meet your coach
           </p>
 
-          <div className="grid md:grid-cols-2 gap-5">
+          <div className="grid gap-5 max-w-md mx-auto">
+
             {coaches.map((coach, i) => (
               <motion.div
                 key={coach.name}

@@ -9,13 +9,6 @@ const coaches = [
     calendly: "https://cal.com/bruna-friggi-zjnhgp/45-min-call",
     style: "Warm, intuitive, specializing in attachment patterns and emotional processing.",
   },
-  {
-    name: "Pascal",
-    role: "Certified Relationship Coach",
-    image: "/lovable-uploads/4fbc4fcb-b5cf-4789-87e6-02b5b67ee9ab.webp",
-    calendly: "https://cal.com/breakup-recovery/45-min-coaching-call",
-    style: "Grounded, practical, focused on rebuilding confidence and moving forward.",
-  },
 ];
 
 interface BookingDialogProps {
@@ -31,12 +24,10 @@ const BookingDialog = ({ open, onOpenChange }: BookingDialogProps) => {
           <DialogTitle className="text-xl sm:text-2xl font-display font-semibold text-center">
             Book Your First Session
           </DialogTitle>
-          <p className="text-sm text-muted-foreground font-body text-center mt-1">
-            Choose your coach
-          </p>
         </DialogHeader>
 
-        <div className="grid sm:grid-cols-2 gap-4 px-4 sm:px-6 pb-6">
+        <div className="grid gap-4 px-4 sm:px-6 pb-6 max-w-sm mx-auto w-full">
+
           {coaches.map((coach) => (
             <div
               key={coach.name}
