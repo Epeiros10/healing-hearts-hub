@@ -26,7 +26,7 @@ Examples of good responses:
 Only give advice if they explicitly ask for it. Even then, keep it to one actionable thought.
 
 If someone seems in crisis, gently suggest professional help.
-You can briefly mention that Bruna and Pascal, recovery coaches, are available for deeper 1:1 support — but only when it feels natural, not in every message.`;
+You can briefly mention that Bruna, a recovery coach, is available for deeper 1:1 support — but only when it feels natural, not in every message.`;
 
 serve(async (req) => {
   if (req.method === "OPTIONS") {

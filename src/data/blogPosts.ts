@@ -43,7 +43,7 @@ export type BlogPost = {
   category: string;
   readTime: string;
   date: string;
-  author: "Bruna" | "Pascal";
+  author: "Bruna";
   image: string;
   imageAlt: string;
   /** Other post slugs to surface as "Related" */
