@@ -21,15 +21,15 @@ const faqs = [
   },
   {
     q: "How much does a session cost?",
-    a: "A 45-minute 1:1 coaching call with Bruna or Pascal is €79. One session is often enough to feel lighter, clearer, and more grounded, and many people return when they need extra support along the way.",
+    a: "A 45-minute 1:1 coaching call with Bruna is €79. One session is often enough to feel lighter, clearer, and more grounded, and many people return when they need extra support along the way.",
   },
   {
     q: "How quickly can I book a session?",
-    a: "Usually within the same day. Bruna and Pascal both keep regular availability, and you can see real-time open slots when you book through their calendars. If you're in an urgent moment, grab the soonest spot, we'll make it work.",
+    a: "Usually within the same day. Bruna keeps regular availability, and you can see real-time open slots when you book through her calendar. If you're in an urgent moment, grab the soonest spot, we'll make it work.",
   },
   {
-    q: "Can I choose my coach?",
-    a: "Absolutely. When you click to book, you'll be able to pick between Bruna and Pascal. Read a little about each of them and go with whoever resonates most, there's no wrong choice, and you can always switch later.",
+    q: "Who will I be working with?",
+    a: "You'll work directly with Bruna, a certified relationship coach who specializes in heartbreak recovery, attachment patterns, and helping people rebuild after a breakup.",
   },
   {
     q: "What happens after the first call?",

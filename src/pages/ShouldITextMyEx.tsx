@@ -154,7 +154,7 @@ const ShouldITextMyEx = () => {
               If you still need to talk
             </h2>
             <p className="text-muted-foreground leading-relaxed mb-6">
-              Sometimes the real need underneath "I want to text my ex" is "I need to be heard right now." A 45-minute coaching session with Bruna or Pascal can give you that, without the regret hangover.
+              Sometimes the real need underneath "I want to text my ex" is "I need to be heard right now." A 45-minute coaching session with Bruna can give you that, without the regret hangover.
             </p>
           </div>
 
@@ -163,7 +163,7 @@ const ShouldITextMyEx = () => {
               Talk it through with someone who gets it
             </h2>
             <p className="font-body text-sm text-muted-foreground mb-5 max-w-md mx-auto">
-              Book a judgment-free 45-minute 1:1 session with Bruna or Pascal, far cheaper than the emotional cost of sending the wrong message.
+              Book a judgment-free 45-minute 1:1 session with Bruna, far cheaper than the emotional cost of sending the wrong message.
             </p>
             <a
               href="/#coaching"

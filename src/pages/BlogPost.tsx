@@ -283,7 +283,7 @@ const BlogPost = () => {
                 Need someone to walk through this with you?
               </h2>
               <p className="font-body text-sm text-muted-foreground mb-5 max-w-md mx-auto">
-                Book a 45-minute 1:1 session with Bruna or Pascal. Compassionate,
+                Book a 45-minute 1:1 session with Bruna. Compassionate,
                 judgment-free, and built around where you are right now.
               </p>
               <button
