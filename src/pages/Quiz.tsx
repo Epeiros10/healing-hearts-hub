@@ -226,7 +226,7 @@ const Quiz = () => {
               Want personalised support for your phase?
             </h2>
             <p className="font-body text-sm text-muted-foreground mb-5 max-w-md mx-auto">
-              Book a 45-minute 1:1 session with Bruna or Pascal. Compassionate, judgment-free, and tailored to exactly where you are right now.
+              Book a 45-minute 1:1 session with Bruna. Compassionate, judgment-free, and tailored to exactly where you are right now.
             </p>
             <a
               href="/#coaching"

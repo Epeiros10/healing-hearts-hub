@@ -11,13 +11,6 @@ const coaches = [
     image: "/lovable-uploads/fcd8f7c5-6bdb-4624-9f54-70365fb58964.webp",
     calLink: "https://cal.com/bruna-friggi-zjnhgp/45-min-call",
   },
-  {
-    name: "Pascal",
-    role: "Certified Relationship Coach",
-    image: "/lovable-uploads/4fbc4fcb-b5cf-4789-87e6-02b5b67ee9ab.webp",
-    calLink: "https://cal.com/pascal-niggli-uenxj0/45-min-coaching-call",
-    emergencyLink: "https://cal.com/pascal-niggli-uenxj0/45-min-coaching-call?overlayCalendar=true",
-  },
 ];
 
 type Offering = {
@@ -49,7 +42,7 @@ const offerings: Offering[] = [
       "No commitment required",
     ],
     ctaLabel: "Book with",
-    getHref: (i) => coaches[i].emergencyLink ?? coaches[i].calLink,
+    getHref: (i) => coaches[i].calLink,
   },
   {
     icon: Sprout,

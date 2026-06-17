@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { Video, Calendar, Heart, Compass, Sparkles, Check } from "lucide-react";
+import { Video, Heart, Compass, Sparkles, Check } from "lucide-react";
 import BookingDialog from "./BookingDialog";
 
 const highlights = [
@@ -22,8 +22,7 @@ const highlights = [
 ];
 
 const includes = [
-  "45-minute private video session",
-  "Choose Bruna or Pascal as your coach",
+  "45-minute private video session with Bruna",
   "Same-day booking possible",
   "100% confidential & judgment-free",
 ];
@@ -42,15 +41,16 @@ const Coaching = () => {
           className="text-center mb-14"
         >
           <span className="text-primary font-body text-sm font-medium tracking-wide uppercase mb-3 block">
-            1:1 Coaching with Bruna & Pascal
+            1:1 Coaching with Bruna
           </span>
           <h2 className="text-3xl md:text-4xl font-display font-semibold mb-4">
             Personalized Support, Just for You
           </h2>
           <p className="text-muted-foreground font-body max-w-xl mx-auto">
-            Everyone's healing journey is unique. Work face-to-face with Bruna or Pascal
+            Everyone's healing journey is unique. Work face-to-face with Bruna
             in a private video session, and let's start moving through this together.
           </p>
+
         </motion.div>
 
         {/* Highlights */}
@@ -138,32 +138,13 @@ const Coaching = () => {
                 "You don't have to walk through this alone."
               </p>
               <p className="font-body text-xs text-muted-foreground mt-2">
-               , Bruna & Pascal
+               , Bruna
               </p>
+
             </div>
           </div>
         </motion.div>
 
-        {/* Discovery call */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          className="mt-10 text-center"
-        >
-          <a
-            href="https://cal.com/pascal-niggli-uenxj0/15min"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-3 bg-primary/5 border border-primary/10 rounded-2xl px-6 py-4 hover:bg-primary/10 transition-colors cursor-pointer"
-          >
-            <Calendar className="w-5 h-5 text-primary" />
-            <p className="font-body text-sm text-foreground">
-              <span className="font-medium">Not sure where to start?</span>{" "}
-              Book a free 15-minute discovery call.
-            </p>
-          </a>
-        </motion.div>
       </div>
     </section>
   );

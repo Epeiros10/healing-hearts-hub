@@ -43,7 +43,7 @@ export type BlogPost = {
   category: string;
   readTime: string;
   date: string;
-  author: "Bruna" | "Pascal";
+  author: "Bruna";
   image: string;
   imageAlt: string;
   /** Other post slugs to surface as "Related" */
@@ -138,7 +138,7 @@ export const blogPosts: BlogPost[] = [
     category: "Healing",
     readTime: "6 min read",
     date: "April 28, 2026",
-    author: "Pascal",
+    author: "Bruna",
     image: img.Healing,
     imageAlt:
       "Hands holding a kintsugi bowl with gold cracks, symbol of non-linear healing after a breakup",
@@ -167,7 +167,7 @@ export const blogPosts: BlogPost[] = [
     category: "Boundaries",
     readTime: "7 min read",
     date: "April 9, 2026",
-    author: "Pascal",
+    author: "Bruna",
     image: img.Boundaries,
     imageAlt:
       "An open door letting in soft light, symbolizing the boundary of going no contact after a breakup",
@@ -258,7 +258,7 @@ export const blogPosts: BlogPost[] = [
     category: "Emotions",
     readTime: "5 min read",
     date: "May 24, 2026",
-    author: "Pascal",
+    author: "Bruna",
     image: img.Emotions,
     imageAlt:
       "Open journal beside dried flowers in soft light, guilt and moving on after a breakup",
@@ -316,7 +316,7 @@ export const blogPosts: BlogPost[] = [
     category: "Emotions",
     readTime: "6 min read",
     date: "May 30, 2026",
-    author: "Pascal",
+    author: "Bruna",
     image: img.Emotions,
     imageAlt:
       "Journal and dried flowers in warm light, sitting with anger after a breakup",
@@ -407,7 +407,7 @@ export const blogPosts: BlogPost[] = [
     category: "Boundaries",
     readTime: "7 min read",
     date: "May 14, 2026",
-    author: "Pascal",
+    author: "Bruna",
     image: img.Boundaries,
     imageAlt:
       "An open door framed in warm light, coping when you still have to see your ex",
@@ -465,7 +465,7 @@ export const blogPosts: BlogPost[] = [
     category: "Boundaries",
     readTime: "7 min read",
     date: "May 18, 2026",
-    author: "Pascal",
+    author: "Bruna",
     image: img.Boundaries,
     imageAlt:
       "An open door letting in light, deciding whether to stay friends with an ex",
@@ -523,7 +523,7 @@ export const blogPosts: BlogPost[] = [
     category: "Healing",
     readTime: "7 min read",
     date: "May 22, 2026",
-    author: "Pascal",
+    author: "Bruna",
     image: img.Healing,
     imageAlt:
       "Hands holding a small ceramic bowl, rebound relationships and filling the void after a breakup",
@@ -581,7 +581,7 @@ export const blogPosts: BlogPost[] = [
     category: "Boundaries",
     readTime: "6 min read",
     date: "May 26, 2026",
-    author: "Pascal",
+    author: "Bruna",
     image: img.Boundaries,
     imageAlt:
       "A door opening to a garden, gentle boundaries when talking about your breakup",
@@ -640,7 +640,7 @@ export const blogPosts: BlogPost[] = [
     category: "Healing",
     readTime: "7 min read",
     date: "May 30, 2026",
-    author: "Pascal",
+    author: "Bruna",
     image: img.Healing,
     imageAlt:
       "Hands cradling a kintsugi bowl, leaver's grief after ending the relationship",
@@ -698,7 +698,7 @@ export const blogPosts: BlogPost[] = [
     category: "Healing",
     readTime: "6 min read",
     date: "June 5, 2026",
-    author: "Pascal",
+    author: "Bruna",
     image: img.Healing,
     imageAlt:
       "Open journal and a warm cup of tea in morning light, marking the slow passage of time after a breakup",
@@ -760,7 +760,7 @@ export const blogPosts: BlogPost[] = [
     category: "Healing",
     readTime: "6 min read",
     date: "June 10, 2026",
-    author: "Pascal",
+    author: "Bruna",
     image: img.Healing,
     imageAlt:
       "Hands gently releasing a paper boat onto calm water at golden hour, letting love quietly go",
@@ -822,7 +822,7 @@ export const blogPosts: BlogPost[] = [
     category: "Healing",
     readTime: "7 min read",
     date: "June 15, 2026",
-    author: "Pascal",
+    author: "Bruna",
     image: img.Healing,
     imageAlt:
       "A sealed envelope tied with twine beside a candle on a warm wooden table, a private gesture of closure",
@@ -886,7 +886,7 @@ export const blogPosts: BlogPost[] = [
     category: "Healing",
     readTime: "6 min read",
     date: "June 20, 2026",
-    author: "Pascal",
+    author: "Bruna",
     image: img.Healing,
     imageAlt:
       "A softly lit hallway with a single open door, the unsettling quiet of a breakup with no explanation",
@@ -951,7 +951,7 @@ export const blogPosts: BlogPost[] = [
     category: "Self-Care",
     readTime: "7 min read",
     date: "June 25, 2026",
-    author: "Pascal",
+    author: "Bruna",
     image: img["Self-Care"],
     imageAlt:
       "Cardboard moving boxes stacked in a sunlit empty room with hardwood floor, the start of a new home after a breakup",

@@ -14,8 +14,8 @@ const testimonials = [
     name: "James T.",
     location: "London",
     when: "2 months ago",
-    text: "Pascal's no-contact framework saved me. I was constantly checking my ex's social media, spiraling. He gave me structure, accountability, and real talk when I needed it most.",
-    coach: "Worked with Pascal",
+    text: "Bruna's no-contact framework saved me. I was constantly checking my ex's social media, spiraling. She gave me structure, accountability, and real talk when I needed it most.",
+    coach: "Worked with Bruna",
     stars: 5,
   },
   {
@@ -30,8 +30,8 @@ const testimonials = [
     name: "David K.",
     location: "Berlin",
     when: "3 weeks ago",
-    text: "I booked a session with Pascal on one of the worst days I'd had in months. One call genuinely shifted things, I left with a plan, and for the first time in weeks I could actually breathe.",
-    coach: "Worked with Pascal",
+    text: "I booked a session with Bruna on one of the worst days I'd had in months. One call genuinely shifted things, I left with a plan, and for the first time in weeks I could actually breathe.",
+    coach: "Worked with Bruna",
     stars: 5,
   },
 ];
