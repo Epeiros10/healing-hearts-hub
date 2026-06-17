@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { Video, Calendar, Heart, Compass, Sparkles, Check } from "lucide-react";
+import { Video, Heart, Compass, Sparkles, Check } from "lucide-react";
 import BookingDialog from "./BookingDialog";
 
 const highlights = [
