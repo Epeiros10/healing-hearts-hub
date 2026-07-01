@@ -239,11 +239,14 @@ const RecoveryQuiz = ({ variant = "section" }: RecoveryQuizProps) => {
                 <div className="w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center mx-auto mb-5">
                   <Sparkles className="w-6 h-6 text-primary" />
                 </div>
+                <span className="inline-block text-primary font-body text-[10px] font-medium tracking-[0.2em] uppercase mb-3 px-2.5 py-1 rounded-full bg-primary/10">
+                  A Relationship Coaching Specialty
+                </span>
                 <h3 className="text-2xl font-display font-semibold mb-3">
                   Breakup Recovery Quiz
                 </h3>
                 <p className="text-muted-foreground font-body mb-8 max-w-md mx-auto">
-                  Healing isn't one thing. Find out which phase you're in, and what helps most right now.
+                  Healing isn't one thing. Find out which phase you're in, and what helps most, one of Bruna's core coaching specialties.
                 </p>
                 <button
                   onClick={() => setStarted(true)}
@@ -352,15 +355,20 @@ const RecoveryQuiz = ({ variant = "section" }: RecoveryQuizProps) => {
                   </div>
 
                   <div className="border-t border-border pt-6">
-                    <p className="font-body text-sm text-muted-foreground mb-4 text-center">
-                      Based on where you are, we recommend starting with the{" "}
-                      <span className="font-medium text-foreground">{result.recommendation}</span>.
-                    </p>
+                    <div className="text-center mb-4">
+                      <span className="inline-block text-primary font-body text-[10px] font-medium tracking-[0.2em] uppercase mb-2 px-2.5 py-1 rounded-full bg-primary/10">
+                        Relationship Coaching with Bruna
+                      </span>
+                      <p className="font-body text-sm text-muted-foreground">
+                        Breakup recovery is one of Bruna's coaching specialties. Based on where you are, we recommend starting with the{" "}
+                        <span className="font-medium text-foreground">{result.recommendation}</span>.
+                      </p>
+                    </div>
                     <button
                       onClick={() => setBookingOpen(true)}
                       className="w-full inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-primary text-primary-foreground font-body text-sm font-medium hover:opacity-90 transition-opacity"
                     >
-                      Book a session with a coach
+                      Book a 1:1 session with Bruna
                       <ArrowRight className="w-4 h-4" />
                     </button>
                     <button
