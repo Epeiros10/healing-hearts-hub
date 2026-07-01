@@ -3,27 +3,27 @@ import { Star, Quote } from "lucide-react";
 
 const testimonials = [
   {
-    name: "Sarah M.",
+    name: "Marta & Luis",
     location: "Lisbon",
-    when: "4 months ago",
-    text: "After my 5-year relationship ended, I felt completely lost. Bruna helped me understand my attachment patterns and gave me the tools to heal. I'm stronger now than I ever was.",
-    coach: "Worked with Bruna",
-    stars: 5,
-  },
-  {
-    name: "James T.",
-    location: "London",
     when: "2 months ago",
-    text: "Bruna's no-contact framework saved me. I was constantly checking my ex's social media, spiraling. She gave me structure, accountability, and real talk when I needed it most.",
-    coach: "Worked with Bruna",
+    text: "We were stuck in the same argument for over a year. After a few sessions with Bruna, we finally understood what was underneath it. We're talking again like teammates, not opponents.",
+    coach: "Couples coaching with Bruna",
     stars: 5,
   },
   {
-    name: "Elena R.",
-    location: "Barcelona",
-    when: "8 months ago",
-    text: "I never thought I'd say this, but my breakup was the best thing that happened to me. The coaching helped me rediscover who I am outside of a relationship.",
-    coach: "Worked with Bruna",
+    name: "Sarah M.",
+    location: "London",
+    when: "4 months ago",
+    text: "Bruna helped me see my anxious attachment for the first time without shame. She gave me practical tools I actually use in my relationship, not just theory. I feel calmer and more secure.",
+    coach: "1:1 coaching with Bruna",
+    stars: 5,
+  },
+  {
+    name: "Ana & Tomás",
+    location: "Porto",
+    when: "6 weeks ago",
+    text: "After a breach of trust, we didn't know if we could come back from it. Bruna held space for both of us without taking sides and gave us a real roadmap to rebuild. We're closer now than before.",
+    coach: "Couples coaching with Bruna",
     stars: 5,
   },
   {
@@ -31,7 +31,7 @@ const testimonials = [
     location: "Berlin",
     when: "3 weeks ago",
     text: "I booked a session with Bruna on one of the worst days I'd had in months. One call genuinely shifted things, I left with a plan, and for the first time in weeks I could actually breathe.",
-    coach: "Worked with Bruna",
+    coach: "1:1 coaching with Bruna",
     stars: 5,
   },
 ];
