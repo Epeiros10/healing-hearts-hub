@@ -44,18 +44,18 @@ const Hero = () => {
     })(window as any, "https://app.cal.com/embed/embed.js", "init");
 
     const Cal = (window as any).Cal;
-    Cal("init", "15min", { origin: "https://app.cal.com" });
+    Cal("init", "45min", { origin: "https://app.cal.com" });
     Cal.config = Cal.config || {};
     Cal.config.forwardQueryParams = true;
 
     // Defer until dialog content is mounted
     setTimeout(() => {
-      Cal.ns["15min"]("inline", {
+      Cal.ns["45min"]("inline", {
         elementOrSelector: "#my-cal-inline-15min",
         config: { layout: "month_view", useSlotsViewOnSmallScreen: "true", theme: "light" },
-        calLink: "breakup-recovery/15min",
+        calLink: "bruna-friggi-zjnhgp/45-min-call",
       });
-      Cal.ns["15min"]("ui", {
+      Cal.ns["45min"]("ui", {
         theme: "light",
         hideEventTypeDetails: false,
         layout: "month_view",
