@@ -18,7 +18,7 @@ const PrivacyPolicy = () => {
         <div className="space-y-8 text-sm text-muted-foreground leading-relaxed">
           <section>
             <h2 className="text-lg font-medium text-foreground mb-2">1. Introduction</h2>
-            <p>Break Up Recovery ("we", "our", "us") respects your privacy. This policy explains how we collect, use, and protect your information when you use our website and coaching services.</p>
+            <p>Coaching with Bruna ("we", "our", "us") respects your privacy. This policy explains how we collect, use, and protect your information when you use our website and coaching services.</p>
           </section>
 
           <section>
