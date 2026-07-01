@@ -21,9 +21,14 @@ const Blog = () => {
     ];
   }, []);
 
+  const sortedPosts = useMemo(
+    () => [...blogPosts].sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()),
+    [],
+  );
+
   const visiblePosts = useMemo(
-    () => (activeCategory === "All" ? blogPosts : blogPosts.filter((p) => p.category === activeCategory)),
-    [activeCategory],
+    () => (activeCategory === "All" ? sortedPosts : sortedPosts.filter((p) => p.category === activeCategory)),
+    [activeCategory, sortedPosts],
   );
   return (
     <div className="min-h-screen bg-background">
