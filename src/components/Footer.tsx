@@ -8,10 +8,8 @@ const Footer = () => {
           <img src={logo} alt="Couples Coaching With Bruna monogram" width={96} height={96} className="w-24 h-24" loading="lazy" />
           <div className="inline-flex flex-col items-stretch leading-none">
             <span className="font-display text-primary text-3xl font-semibold tracking-tight">Couples Coaching</span>
-            <span className="font-body text-[0.6rem] uppercase text-accent flex justify-between w-full mt-[3px]">
-              {"With Bruna".split("").map((c, i) => (
-                <span key={i}>{c === " " ? "\u00A0" : c}</span>
-              ))}
+            <span className="font-body text-[0.6rem] uppercase text-accent tracking-[0.15em] mt-[3px] text-center">
+              With Bruna
             </span>
           </div>
         </div>
