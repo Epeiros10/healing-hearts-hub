@@ -225,11 +225,14 @@ const Quiz = () => {
           </div>
 
           <div className="mt-14 p-6 sm:p-8 bg-card border border-border rounded-2xl text-center">
+            <span className="inline-block text-primary font-body text-xs font-medium tracking-[0.2em] uppercase mb-3 px-3 py-1 rounded-full bg-primary/10">
+              Relationship Coaching with Bruna
+            </span>
             <h2 className="font-display text-xl text-foreground mb-2">
               Want personalised support for your phase?
             </h2>
             <p className="font-body text-sm text-muted-foreground mb-5 max-w-md mx-auto">
-              Book a 45-minute 1:1 session with Bruna. Compassionate, judgment-free, and tailored to exactly where you are right now.
+              Breakup recovery is one of Bruna's coaching specialties. Book a 45-minute 1:1 session, compassionate, judgment-free, and tailored to exactly where you are right now.
             </p>
             <a
               href="/#coaching"
