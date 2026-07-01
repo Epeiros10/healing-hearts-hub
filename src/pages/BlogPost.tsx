@@ -249,7 +249,7 @@ const BlogPost = () => {
                         aria-hidden="true"
                       >
                         <span className="h-px w-10 bg-border" />
-                        <span className="w-1.5 h-1.5 rounded-full bg-[hsl(var(--accent-gold,42_55%_55%))] opacity-70" />
+                        <span className="w-1.5 h-1.5 rounded-full bg-primary opacity-70" />
                         <span className="h-px w-10 bg-border" />
                       </div>
                     )}
