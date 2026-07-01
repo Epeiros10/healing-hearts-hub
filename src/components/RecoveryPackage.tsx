@@ -46,6 +46,22 @@ const offerings: Offering[] = [
     getHref: (i) => coaches[i].calLink,
   },
   {
+    icon: Heart,
+    tag: "Couples Session",
+    title: "Couples Deep Dive",
+    description: "A dedicated 75-minute session for you and your partner. Space to be heard, understood, and leave with clear next steps together.",
+    price: "€129",
+    priceNote: "/ 75 min for two",
+    benefits: [
+      "Extended 75-min couples call",
+      "Structured space for both partners",
+      "Practical communication tools",
+      "Shared summary after the session",
+    ],
+    ctaLabel: "Book with",
+    getHref: (i) => coaches[i].calLink,
+  },
+  {
     icon: Sprout,
     tag: "Focus Pack",
     title: "3-Session Focus Pack",
