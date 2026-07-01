@@ -15,10 +15,10 @@ const About = () => {
             Meet Your Coach
           </span>
           <h2 className="text-3xl md:text-4xl font-display font-semibold mb-4">
-            I've been where you are.
+            Relationships are hard. You're not alone.
           </h2>
           <p className="text-muted-foreground font-body max-w-xl mx-auto">
-            A coach who understands heartbreak firsthand, here to walk beside you on your healing journey.
+            A certified relationship and attachment coach walking beside couples through conflict, disconnection, and heartbreak.
           </p>
         </motion.div>
 
