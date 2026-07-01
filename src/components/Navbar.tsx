@@ -39,15 +39,15 @@ const Navbar = () => {
           <img
             src={logo}
             alt="Couples Coaching With Bruna monogram"
-            width={48}
-            height={48}
-            className="w-11 h-11 md:w-12 md:h-12 shrink-0 drop-shadow-sm transition-transform group-hover:scale-105"
+            width={72}
+            height={72}
+            className="w-14 h-14 md:w-16 md:h-16 shrink-0 drop-shadow-sm transition-transform group-hover:scale-105"
           />
-          <span className="inline-flex flex-col leading-tight items-stretch">
+          <span className="inline-flex flex-col leading-none items-stretch">
             <span className="font-display text-primary text-2xl md:text-3xl font-semibold tracking-tight">
               Couples Coaching
             </span>
-            <span className="font-body text-[0.6rem] md:text-[0.65rem] uppercase text-accent flex justify-between w-full mt-0.5">
+            <span className="font-body text-[0.5rem] md:text-[0.55rem] uppercase text-accent flex justify-between w-full mt-[2px]">
               {"With Bruna".split("").map((c, i) => (
                 <span key={i}>{c === " " ? "\u00A0" : c}</span>
               ))}
