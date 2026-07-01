@@ -135,7 +135,7 @@ const Index = () => {
       <ContactSection />
       <FAQ />
       <Footer />
-      
+      <LeadMagnetPopup />
     </div>
   );
 };
