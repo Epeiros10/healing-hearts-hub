@@ -28,6 +28,14 @@ import imgNoReason from "@/assets/blog/breakup-without-a-reason.webp";
 import imgCheated from "@/assets/blog/getting-over-being-cheated-on.webp";
 import imgMovingOut from "@/assets/blog/moving-out-after-a-breakup.webp";
 import imgReconnecting from "@/assets/blog/reconnecting-with-yourself-after-a-breakup.webp";
+import imgCommunicateBetter from "@/assets/blog/how-to-communicate-better-in-a-relationship.webp";
+import imgRebuildTrust from "@/assets/blog/rebuilding-trust-after-betrayal.webp";
+import imgAnxiousAttachment from "@/assets/blog/anxious-attachment-in-relationships.webp";
+import imgAvoidantPartner from "@/assets/blog/avoidant-partner-how-to-connect.webp";
+import imgHealthyConflict from "@/assets/blog/healthy-conflict-in-couples.webp";
+import imgDatingIntention from "@/assets/blog/dating-with-intention.webp";
+import imgGreenFlags from "@/assets/blog/green-flags-in-a-new-relationship.webp";
+import imgSameFight from "@/assets/blog/stop-fighting-about-the-same-thing.webp";
 
 export type BlogPost = {
   slug: string;
