@@ -35,9 +35,22 @@ const Navbar = () => {
       }>
 
       <div className="max-w-5xl mx-auto flex items-center justify-between px-4 py-4">
-        <a href="/" className="flex items-center gap-2 leading-none">
-          <img src={logo} alt="Couples Coaching With Bruna monogram" width={32} height={32} className="w-8 h-8 shrink-0" />
-          <span className="uppercase tracking-[0.18em] text-foreground font-normal text-left text-[0.7rem] font-sans">Couples Coaching<br/>With Bruna</span>
+        <a href="/" className="flex items-center gap-3 leading-none group">
+          <img
+            src={logo}
+            alt="Couples Coaching With Bruna monogram"
+            width={48}
+            height={48}
+            className="w-11 h-11 md:w-12 md:h-12 shrink-0 drop-shadow-sm transition-transform group-hover:scale-105"
+          />
+          <span className="flex flex-col leading-tight">
+            <span className="font-display text-primary text-lg md:text-xl font-semibold tracking-tight">
+              Couples Coaching
+            </span>
+            <span className="font-body text-[0.7rem] md:text-xs uppercase tracking-[0.25em] text-accent">
+              With Bruna
+            </span>
+          </span>
         </a>
 
         {/* Desktop */}
