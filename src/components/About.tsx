@@ -55,7 +55,7 @@ const About = () => {
               their patterns, rebuild trust, and create the kind of connection that actually feels safe.
             </p>
             <p className="text-foreground font-medium italic font-display text-base">
-              "You're not broken. You're healing."
+              "Love isn't always easy. But it can get lighter."
             </p>
           </div>
           <div className="flex gap-4 mt-6 justify-center">
