@@ -34,10 +34,10 @@ const TalkToSomeone = () => {
           <svg width="20" height="20" viewBox="0 0 32 32" fill="none">
             <path d="M16 28C16 28 4 19 4 12a6 6 0 0 1 12-1" className="stroke-primary" strokeWidth="1.8" strokeLinecap="round" fill="none" />
             <path d="M16 28C16 28 28 19 28 12a6 6 0 0 0-12-1" className="stroke-primary" strokeWidth="1.8" strokeLinecap="round" fill="none" />
-            <path d="M16 7 L15 12 L17 16 L15 20 L16 28" stroke="#D4A843" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" fill="none" />
+            <path d="M16 7 L15 12 L17 16 L15 20 L16 28" className="stroke-accent" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" fill="none" />
           </svg>
           <span className="uppercase tracking-[0.2em] text-foreground font-normal text-[10px] font-sans">
-            Break Up Recovery
+            Coaching with Bruna
           </span>
         </Link>
         <Link to="/" className="text-xs text-muted-foreground hover:text-foreground font-body transition-colors">
