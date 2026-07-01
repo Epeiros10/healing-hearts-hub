@@ -6,9 +6,13 @@ const Footer = () => {
       <div className="max-w-5xl mx-auto text-center">
         <div className="flex flex-col items-center gap-3 mb-4">
           <img src={logo} alt="Couples Coaching With Bruna monogram" width={64} height={64} className="w-16 h-16" loading="lazy" />
-          <div className="flex flex-col items-center leading-tight">
+          <div className="inline-flex flex-col items-stretch leading-tight">
             <span className="font-display text-primary text-xl font-semibold tracking-tight">Couples Coaching</span>
-            <span className="font-body text-xs uppercase tracking-[0.25em] text-accent">With Bruna</span>
+            <span className="font-body text-xs uppercase text-accent flex justify-between w-full">
+              {"With Bruna".split("").map((c, i) => (
+                <span key={i}>{c === " " ? "\u00A0" : c}</span>
+              ))}
+            </span>
           </div>
         </div>
         <p className="font-body text-sm text-muted-foreground max-w-md mx-auto mb-6">
