@@ -122,6 +122,7 @@ const Index = () => {
       <Helmet>
         <link rel="canonical" href={`${SITE_URL}/`} />
         <script type="application/ld+json">{JSON.stringify(faqLd)}</script>
+        <script type="application/ld+json">{JSON.stringify(professionalServiceLd)}</script>
       </Helmet>
       <Navbar />
       <Hero />
