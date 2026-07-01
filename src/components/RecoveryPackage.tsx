@@ -187,33 +187,17 @@ const RecoveryPackage = () => {
                     ))}
                   </ul>
 
-                  <div className="pt-2 border-t border-border">
+                  <div className="pt-2">
                     {coaches.map((coach, i) => (
                       <a
                         key={coach.name}
                         href={offering.getHref(i)}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="flex items-center gap-3 p-2.5 rounded-xl bg-background border border-border hover:border-primary/40 hover:bg-primary/5 transition-all group"
+                        className="flex items-center justify-center gap-2 w-full px-4 py-3 rounded-xl bg-primary text-primary-foreground font-display font-semibold text-sm hover:bg-primary/90 transition-all group"
                       >
-                        <img
-                          src={coach.image}
-                          alt={`${coach.name}, ${coach.role}`}
-                          loading="lazy"
-                          decoding="async"
-                          className="w-9 h-9 rounded-full object-cover flex-shrink-0"
-                        />
-                        <div className="flex-1 min-w-0">
-                          <p className="font-display font-semibold text-sm text-foreground truncate">
-                            {offering.ctaLabel} {coach.name}
-                          </p>
-                          <p className="font-body text-[11px] text-muted-foreground truncate">
-                            {coach.role}
-                          </p>
-                        </div>
-                        <span className="font-body text-xs font-medium text-primary group-hover:translate-x-0.5 transition-transform">
-                          →
-                        </span>
+                        Book it now
+                        <span className="group-hover:translate-x-0.5 transition-transform">→</span>
                       </a>
                     ))}
                   </div>
