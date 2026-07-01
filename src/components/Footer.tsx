@@ -8,14 +8,14 @@ const Footer = () => {
             <path d="M16 28C16 28 28 19 28 12a6 6 0 0 0-12-1" className="stroke-primary" strokeWidth="1.8" strokeLinecap="round" fill="none" />
             <path d="M16 7 L15 12 L17 16 L15 20 L16 28" stroke="#D4A843" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" fill="none" />
           </svg>
-          <span className="text-[0.6rem] font-body font-medium uppercase tracking-[0.2em] text-foreground/70">Break Up Recovery</span>
+          <span className="text-[0.6rem] font-body font-medium uppercase tracking-[0.2em] text-foreground/70">Coaching with Bruna</span>
         </div>
         <p className="font-body text-sm text-muted-foreground max-w-md mx-auto mb-6">
-          Remember: healing isn't linear, and it's okay to not be okay.
-          You're already brave for being here. 💛
+          Relationship coaching for couples — communication, connection, and healing.
+          Wherever you are in your relationship, you don't have to figure it out alone. 💛
         </p>
         <div className="flex items-center justify-center gap-3 font-body text-xs text-muted-foreground/60">
-          <span>© {new Date().getFullYear()} Break Up Recovery</span>
+          <span>© {new Date().getFullYear()} Coaching with Bruna</span>
           <span>·</span>
           <a href="/blog" className="hover:text-foreground transition-colors">Blog</a>
           <span>·</span>
