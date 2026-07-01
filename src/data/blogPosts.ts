@@ -1036,4 +1036,4 @@ export const legacySlugMap: Record<string, string> = {
   "first-date-after-heartbreak": "first-date-after-a-breakup",
 };
 
-export const SITE_URL = "https://breakup-recovery.org";
+export const SITE_URL = "https://couplescoachingwithbruna.lovable.app";

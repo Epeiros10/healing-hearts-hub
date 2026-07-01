@@ -3,7 +3,7 @@ import Footer from "@/components/Footer";
 import RecoveryQuiz from "@/components/RecoveryQuiz";
 import { Helmet } from "react-helmet-async";
 
-const SITE_URL = "https://breakup-recovery.org";
+const SITE_URL = "https://couplescoachingwithbruna.lovable.app";
 
 const Quiz = () => {
   const title = "Breakup Recovery Quiz: Where Are You in Your Healing Journey?";

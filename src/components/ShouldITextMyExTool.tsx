@@ -271,7 +271,7 @@ const ShouldITextMyExTool = ({ variant = "page" }: Props) => {
   const back = () => setPath((p) => (p.length > 1 ? p.slice(0, -1) : p));
 
   const share = async () => {
-    const url = "https://breakup-recovery.org/should-i-text-my-ex";
+    const url = "https://couplescoachingwithbruna.lovable.app/should-i-text-my-ex";
     if (navigator.share) {
       try {
         await navigator.share({
