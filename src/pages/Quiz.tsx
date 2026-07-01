@@ -89,14 +89,17 @@ const Quiz = () => {
       <Navbar />
       <main className="pt-24">
         <div className="max-w-2xl mx-auto px-4 text-center mb-4">
-          <span className="text-primary font-body text-sm font-medium tracking-wide uppercase mb-3 block">
-            Free Quiz · 2 minutes
+          <span className="inline-block text-primary font-body text-xs font-medium tracking-[0.2em] uppercase mb-4 px-3 py-1 rounded-full bg-primary/10">
+            A Relationship Coaching Specialty · With Bruna
           </span>
           <h1 className="text-4xl md:text-5xl font-display font-semibold mb-4">
             Breakup Recovery Quiz
           </h1>
-          <p className="text-muted-foreground font-body max-w-xl mx-auto text-lg">
+          <p className="text-muted-foreground font-body max-w-xl mx-auto text-lg mb-3">
             Where are you in your healing journey? Seven gentle questions, one personalized answer.
+          </p>
+          <p className="text-muted-foreground/80 font-body max-w-xl mx-auto text-sm">
+            Breakup recovery is one of Bruna's core relationship coaching specialties, alongside couples work, attachment, and rebuilding trust. This quiz helps identify where you are so your next step fits the phase you're actually in.
           </p>
         </div>
         <RecoveryQuiz variant="page" />
