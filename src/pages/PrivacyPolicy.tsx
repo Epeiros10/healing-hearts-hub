@@ -6,8 +6,8 @@ const PrivacyPolicy = () => {
   return (
     <div className="min-h-screen bg-background px-4 py-20">
       <Helmet>
-        <title>Privacy Policy — Break Up Recovery</title>
-        <meta name="description" content="Break Up Recovery respects your privacy. Read our privacy policy to learn how we collect, use, and protect your information." />
+        <title>Privacy Policy — Coaching with Bruna</title>
+        <meta name="description" content="Coaching with Bruna respects your privacy. Read our privacy policy to learn how we collect, use, and protect your information." />
         <link rel="canonical" href={`${SITE_URL}/privacy`} />
       </Helmet>
       <div className="max-w-3xl mx-auto font-body">
