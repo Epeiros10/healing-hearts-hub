@@ -378,6 +378,28 @@ const RecoveryQuiz = ({ variant = "section" }: RecoveryQuizProps) => {
                       <RotateCcw className="w-3.5 h-3.5" />
                       Retake the quiz
                     </button>
+
+                    <div className="mt-8 pt-6 border-t border-border">
+                      <p className="font-body text-[11px] font-medium text-muted-foreground uppercase tracking-[0.2em] text-center mb-4">
+                        Bruna's other coaching specialties
+                      </p>
+                      <div className="flex flex-wrap justify-center gap-2">
+                        {[
+                          "Couples communication",
+                          "Attachment patterns",
+                          "Rebuilding trust",
+                          "Conscious dating",
+                          "Post-breakup clarity",
+                        ].map((s) => (
+                          <span
+                            key={s}
+                            className="inline-flex items-center px-3 py-1.5 rounded-full bg-secondary/50 border border-border text-xs font-body text-foreground/80"
+                          >
+                            {s}
+                          </span>
+                        ))}
+                      </div>
+                    </div>
                   </div>
                 </motion.div>
               );
