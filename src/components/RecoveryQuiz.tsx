@@ -239,11 +239,14 @@ const RecoveryQuiz = ({ variant = "section" }: RecoveryQuizProps) => {
                 <div className="w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center mx-auto mb-5">
                   <Sparkles className="w-6 h-6 text-primary" />
                 </div>
+                <span className="inline-block text-primary font-body text-[10px] font-medium tracking-[0.2em] uppercase mb-3 px-2.5 py-1 rounded-full bg-primary/10">
+                  A Relationship Coaching Specialty
+                </span>
                 <h3 className="text-2xl font-display font-semibold mb-3">
                   Breakup Recovery Quiz
                 </h3>
                 <p className="text-muted-foreground font-body mb-8 max-w-md mx-auto">
-                  Healing isn't one thing. Find out which phase you're in, and what helps most right now.
+                  Healing isn't one thing. Find out which phase you're in, and what helps most, one of Bruna's core coaching specialties.
                 </p>
                 <button
                   onClick={() => setStarted(true)}
