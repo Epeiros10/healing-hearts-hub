@@ -1033,7 +1033,7 @@ export const blogPosts: BlogPost[] = [
       "Most couples don't need more talking. They need a different way of talking. Here are the tools that change everything.",
     category: "Communication",
     readTime: "7 min read",
-    date: "June 4, 2026",
+    date: "July 1, 2026",
     author: "Bruna",
     image: imgCommunicateBetter,
     imageAlt:
@@ -1068,7 +1068,7 @@ export const blogPosts: BlogPost[] = [
       "Trust can be rebuilt. Not by moving on quickly, but by moving through, together, with honesty neither of you is used to.",
     category: "Trust",
     readTime: "8 min read",
-    date: "June 1, 2026",
+    date: "June 30, 2026",
     author: "Bruna",
     image: imgRebuildTrust,
     imageAlt:
@@ -1102,7 +1102,7 @@ export const blogPosts: BlogPost[] = [
       "If love feels like waiting for the other shoe to drop, you're not too much. You're carrying a nervous system that learned to brace early.",
     category: "Attachment",
     readTime: "7 min read",
-    date: "May 28, 2026",
+    date: "June 29, 2026",
     author: "Bruna",
     image: imgAnxiousAttachment,
     imageAlt:
@@ -1134,7 +1134,7 @@ export const blogPosts: BlogPost[] = [
       "Avoidant partners don't need less love. They need love that doesn't feel like a demand. Here's what actually works.",
     category: "Attachment",
     readTime: "7 min read",
-    date: "May 24, 2026",
+    date: "June 28, 2026",
     author: "Bruna",
     image: imgAvoidantPartner,
     imageAlt:
@@ -1166,7 +1166,7 @@ export const blogPosts: BlogPost[] = [
       "The strongest couples aren't the ones who never fight. They're the ones who fight without contempt, and repair quickly when they slip.",
     category: "Communication",
     readTime: "7 min read",
-    date: "May 20, 2026",
+    date: "June 27, 2026",
     author: "Bruna",
     image: imgHealthyConflict,
     imageAlt:
@@ -1199,7 +1199,7 @@ export const blogPosts: BlogPost[] = [
       "The topic changes. The choreography doesn't. Here's how to name the loop and step out of it, together.",
     category: "Communication",
     readTime: "6 min read",
-    date: "May 16, 2026",
+    date: "June 26, 2026",
     author: "Bruna",
     image: imgSameFight,
     imageAlt:
@@ -1231,7 +1231,7 @@ export const blogPosts: BlogPost[] = [
       "Dating with intention isn't rigid. It's honest. It's knowing what you want, and being brave enough to walk toward it, slowly.",
     category: "Dating",
     readTime: "7 min read",
-    date: "May 12, 2026",
+    date: "June 25, 2026",
     author: "Bruna",
     image: imgDatingIntention,
     imageAlt:
@@ -1265,7 +1265,7 @@ export const blogPosts: BlogPost[] = [
       "Red flags are loud. Green flags are quiet. Here's what emotional safety actually looks like in the first few months.",
     category: "Dating",
     readTime: "6 min read",
-    date: "May 8, 2026",
+    date: "June 24, 2026",
     author: "Bruna",
     image: imgGreenFlags,
     imageAlt:
