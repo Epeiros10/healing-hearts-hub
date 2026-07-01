@@ -30,15 +30,15 @@ type Offering = {
 const offerings: Offering[] = [
   {
     icon: Zap,
-    tag: "Crisis Mode",
-    title: "Emergency Call",
-    description: "For when you need to talk to someone, fast. A single 45-minute call to help you through the hardest moments.",
+    tag: "Single Session",
+    title: "1:1 or Couples Session",
+    description: "One focused 45-minute session with Bruna. Perfect for a specific challenge, a difficult conversation, or seeing if coaching is right for you.",
     price: "€79",
     priceNote: "/ 45 min",
     benefits: [
       "Same-week availability",
-      "One focused 45-minute call",
-      "Immediate emotional support",
+      "One focused 45-minute video call",
+      "Individual or couples",
       "No commitment required",
     ],
     ctaLabel: "Book with",
@@ -46,32 +46,32 @@ const offerings: Offering[] = [
   },
   {
     icon: Sprout,
-    tag: "Low Commitment",
-    title: "Starter Pack",
-    description: "Three sessions to begin building momentum. A gentle entry point to explore what deeper work could look like.",
+    tag: "Focus Pack",
+    title: "3-Session Focus Pack",
+    description: "Three sessions to work through one clear focus area, communication, trust, attachment, dating, or a recent breakup.",
     price: "€210",
     priceNote: "€70 / session",
     benefits: [
       "3 personalized 45-min sessions",
       "Save €27 vs. individual bookings",
-      "Build early momentum",
-      "Perfect first step into coaching",
+      "Great first commitment",
+      "Individual or couples",
     ],
     ctaLabel: "Start with",
     getHref: () => STRIPE_LINK_STARTER,
   },
   {
     icon: Sparkles,
-    tag: "Deeper Healing",
-    title: "10-Session Recovery Package",
-    description: "A complete journey of healing with the same coach by your side, every step of the way.",
+    tag: "Full Journey",
+    title: "10-Session Coaching Journey",
+    description: "A complete coaching arc with Bruna, for couples rebuilding together or individuals doing deeper attachment and relationship work.",
     price: "€699",
     priceNote: "€69.90 / session",
     originalPrice: "€790",
     benefits: [
       "10 personalized 45-min sessions",
-      "Structured recovery plan tailored to you",
-      "Priority scheduling with your coach",
+      "A structured plan tailored to you",
+      "Priority scheduling with Bruna",
       "Save €91 vs. individual sessions",
     ],
     ctaLabel: "Begin with",
@@ -91,13 +91,13 @@ const RecoveryPackage = () => {
           className="text-center mb-14"
         >
           <span className="text-primary font-body text-sm font-medium tracking-wide uppercase mb-3 block">
-            Choose Your Path
+            Coaching Plans
           </span>
           <h2 className="text-3xl md:text-4xl font-display font-semibold mb-4">
             Find the Support That Fits Where You Are
           </h2>
           <p className="text-muted-foreground font-body max-w-xl mx-auto">
-            Whether you need immediate support or a structured journey, we have a path for you.
+            One session to get unstuck, a focus pack to work through something specific, or a full journey to change how your relationships feel.
           </p>
         </motion.div>
 
@@ -170,10 +170,7 @@ const RecoveryPackage = () => {
                     ))}
                   </ul>
 
-                  <div className="space-y-2 pt-2 border-t border-border">
-                    <p className="font-body text-xs text-muted-foreground mb-2">
-                      Choose your coach:
-                    </p>
+                  <div className="pt-2 border-t border-border">
                     {coaches.map((coach, i) => (
                       <a
                         key={coach.name}
@@ -192,6 +189,9 @@ const RecoveryPackage = () => {
                         <div className="flex-1 min-w-0">
                           <p className="font-display font-semibold text-sm text-foreground truncate">
                             {offering.ctaLabel} {coach.name}
+                          </p>
+                          <p className="font-body text-[11px] text-muted-foreground truncate">
+                            {coach.role}
                           </p>
                         </div>
                         <span className="font-body text-xs font-medium text-primary group-hover:translate-x-0.5 transition-transform">

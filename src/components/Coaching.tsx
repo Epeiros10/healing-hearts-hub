@@ -6,24 +6,25 @@ import BookingDialog from "./BookingDialog";
 const highlights = [
   {
     icon: Heart,
-    title: "A safe space to feel",
-    description: "Be heard without judgment. We hold space for whatever you're carrying, grief, anger, confusion, or hope.",
+    title: "A space to be honest",
+    description: "Whether you come alone or with your partner, this is a place to speak plainly. No performing, no judgment, no taking sides.",
   },
   {
     icon: Compass,
     title: "Clarity on your next step",
-    description: "Walk away from each session with a clear direction and gentle, practical tools you can actually use.",
+    description: "Leave each session with a clear focus and small, practical tools you can actually use in your relationship this week.",
   },
   {
     icon: Sparkles,
     title: "A plan tailored to you",
-    description: "Whether you're navigating a rough patch or a fresh heartbreak, we shape a path that honors your pace and your relationship.",
+    description: "Couples work, attachment patterns, conscious dating, or breakup recovery, we shape a path that fits where you actually are.",
   },
 ];
 
 const includes = [
   "45-minute private video session with Bruna",
-  "Same-day booking possible",
+  "Individual or couples",
+  "Same-week booking possible",
   "100% confidential & judgment-free",
 ];
 
@@ -94,11 +95,11 @@ const Coaching = () => {
                 Private Video Session
               </div>
               <h3 className="text-2xl md:text-3xl font-display font-semibold mb-3">
-                A 45-minute session, just for you
+                A 45-minute session, just for you or you both
               </h3>
               <p className="text-muted-foreground font-body text-sm leading-relaxed mb-6">
-                Face-to-face, from wherever you are. We'll listen deeply, help you make sense
-                of what you're feeling, and build a personalized recovery plan together.
+                Face-to-face, from wherever you are. Bruna listens deeply, helps you make sense
+                of what's happening in your relationship, and builds a personalized plan with you.
               </p>
 
               <ul className="space-y-3 mb-8">
@@ -131,7 +132,7 @@ const Coaching = () => {
                 <span className="font-body text-sm text-muted-foreground">/ 45 min</span>
               </div>
               <p className="font-body text-sm text-muted-foreground mb-6">
-                Emergency calls available today.
+                Individual or couples, same-week availability.
               </p>
               <div className="h-px bg-border mb-6" />
               <p className="font-body text-sm text-foreground leading-relaxed italic">
