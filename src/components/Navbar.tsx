@@ -44,10 +44,10 @@ const Navbar = () => {
             className="w-11 h-11 md:w-12 md:h-12 shrink-0 drop-shadow-sm transition-transform group-hover:scale-105"
           />
           <span className="inline-flex flex-col leading-tight items-stretch">
-            <span className="font-display text-primary text-lg md:text-xl font-semibold tracking-tight">
+            <span className="font-display text-primary text-2xl md:text-3xl font-semibold tracking-tight">
               Couples Coaching
             </span>
-            <span className="font-body text-[0.7rem] md:text-xs uppercase text-accent flex justify-between w-full">
+            <span className="font-body text-[0.6rem] md:text-[0.65rem] uppercase text-accent flex justify-between w-full mt-0.5">
               {"With Bruna".split("").map((c, i) => (
                 <span key={i}>{c === " " ? "\u00A0" : c}</span>
               ))}
