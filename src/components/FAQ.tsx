@@ -8,36 +8,36 @@ import {
 
 const faqs = [
   {
+    q: "What kind of coaching does Bruna offer?",
+    a: "Bruna is a certified relationship and attachment coach. She works with couples on communication, conflict, and rebuilding trust and closeness, and with individuals on attachment patterns, dating, and breakup recovery. Each session is shaped around your situation, not a one-size-fits-all program.",
+  },
+  {
+    q: "Do you work with couples, individuals, or both?",
+    a: "Both. Couples come for help with recurring arguments, disconnection, trust after a rupture, or navigating a major life change together. Individuals come to understand their patterns, work through a breakup, or prepare for a healthier next relationship.",
+  },
+  {
     q: "Is this therapy?",
-    a: "No, and that's an important distinction. Coaching isn't a substitute for therapy or clinical mental health care. We're here to walk beside you through heartbreak with compassion, practical tools, and accountability. If you're navigating trauma or a mental health condition, we'll always encourage you to also work with a licensed therapist.",
+    a: "No, and that's an important distinction. Coaching isn't a substitute for therapy or clinical mental health care. Bruna walks beside you with compassion, practical tools, and accountability. If you're navigating trauma or a mental health condition, she'll always encourage you to also work with a licensed therapist.",
   },
   {
     q: "How is coaching different from talking to a friend?",
-    a: "Friends are wonderful, but they're often too close to be objective, and they get tired of hearing the same story. As certified coaches who've been through heartbreak ourselves, we hold a focused, judgment-free space, ask the questions no one else will, and help you move forward instead of looping in the same pain.",
-  },
-  {
-    q: "What if I'm not ready to talk to someone?",
-    a: "That's completely okay. There's no pressure and no timeline, healing happens at your pace. When you're ready, even just reaching out with a short message is a meaningful first step. We'll meet you wherever you are.",
+    a: "Friends are wonderful, but they're often too close to be objective. As a certified coach, Bruna holds a focused, judgment-free space, asks the questions no one else will, and helps you and your partner move forward instead of looping in the same pain.",
   },
   {
     q: "How much does a session cost?",
-    a: "A 45-minute 1:1 coaching call with Bruna is €79. One session is often enough to feel lighter, clearer, and more grounded, and many people return when they need extra support along the way.",
+    a: "A 45-minute 1:1 coaching call with Bruna is €79, whether you come solo or as a couple. One session is often enough to feel clearer and more grounded, and many people return when they want deeper support.",
   },
   {
-    q: "How quickly can I book a session?",
-    a: "Usually within the same day. Bruna keeps regular availability, and you can see real-time open slots when you book through her calendar. If you're in an urgent moment, grab the soonest spot, we'll make it work.",
-  },
-  {
-    q: "Who will I be working with?",
-    a: "You'll work directly with Bruna, a certified relationship coach who specializes in heartbreak recovery, attachment patterns, and helping people rebuild after a breakup.",
+    q: "How quickly can we book a session?",
+    a: "Usually within the same day. Bruna keeps regular availability, and you can see real-time open slots when you book through her calendar. If you're in an urgent moment, grab the soonest spot.",
   },
   {
     q: "What happens after the first call?",
-    a: "You'll leave with more clarity, a little more breathing room, and a few practical next steps to focus on. There's no obligation to continue, but many people book follow-up sessions to keep the momentum going as they rebuild.",
+    a: "You'll leave with more clarity, a little more breathing room, and a few practical next steps to focus on together. There's no obligation to continue, but many couples and individuals book follow-up sessions to keep the momentum going.",
   },
   {
-    q: "Do you offer ongoing support programs?",
-    a: "Yes. Beyond one-off sessions, many clients work with us across a series of calls to go deeper, through no-contact, rebuilding self-worth, or preparing for what's next. Just mention it on your first call and your coach will tailor a plan with you.",
+    q: "Do you offer ongoing coaching packages?",
+    a: "Yes. Beyond one-off sessions, many clients work with Bruna across a series of calls to go deeper, on communication, attachment, rebuilding trust, no-contact, or preparing for what's next. Just mention it on your first call and she'll tailor a plan with you.",
   },
 ];
 
