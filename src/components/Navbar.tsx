@@ -43,7 +43,7 @@ const Navbar = () => {
             {/* Gold kintsugi crack */}
             <path d="M16 7 L15 12 L17 16 L15 20 L16 28" stroke="#D4A843" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" fill="none" />
           </svg>
-          <span className="uppercase tracking-[0.2em] text-black font-normal text-left text-xs font-sans">BREAK UP RECOVERY      </span>
+          <span className="uppercase tracking-[0.2em] text-black font-normal text-left text-xs font-sans">COACHING WITH BRUNA      </span>
         </a>
 
         {/* Desktop */}

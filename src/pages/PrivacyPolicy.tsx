@@ -6,8 +6,8 @@ const PrivacyPolicy = () => {
   return (
     <div className="min-h-screen bg-background px-4 py-20">
       <Helmet>
-        <title>Privacy Policy — Break Up Recovery</title>
-        <meta name="description" content="Break Up Recovery respects your privacy. Read our privacy policy to learn how we collect, use, and protect your information." />
+        <title>Privacy Policy — Coaching with Bruna</title>
+        <meta name="description" content="Coaching with Bruna respects your privacy. Read our privacy policy to learn how we collect, use, and protect your information." />
         <link rel="canonical" href={`${SITE_URL}/privacy`} />
       </Helmet>
       <div className="max-w-3xl mx-auto font-body">
@@ -18,7 +18,7 @@ const PrivacyPolicy = () => {
         <div className="space-y-8 text-sm text-muted-foreground leading-relaxed">
           <section>
             <h2 className="text-lg font-medium text-foreground mb-2">1. Introduction</h2>
-            <p>Break Up Recovery ("we", "our", "us") respects your privacy. This policy explains how we collect, use, and protect your information when you use our website and coaching services.</p>
+            <p>Coaching with Bruna ("we", "our", "us") respects your privacy. This policy explains how we collect, use, and protect your information when you use our website and coaching services.</p>
           </section>
 
           <section>

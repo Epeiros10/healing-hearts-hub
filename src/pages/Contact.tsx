@@ -7,8 +7,8 @@ const Contact = () => {
   return (
     <div className="min-h-screen bg-background px-4 py-20">
       <Helmet>
-        <title>Contact — Break Up Recovery</title>
-        <meta name="description" content="Get in touch with Break Up Recovery. Have a question, feedback, or need someone to point you in the right direction? We'd love to hear from you." />
+        <title>Contact — Coaching with Bruna</title>
+        <meta name="description" content="Get in touch with Coaching with Bruna. Questions about relationship coaching, sessions, or support? We'd love to hear from you." />
         <link rel="canonical" href={`${SITE_URL}/contact`} />
       </Helmet>
       <div className="max-w-3xl mx-auto font-body text-center">

@@ -16,8 +16,8 @@ const highlights = [
   },
   {
     icon: Sparkles,
-    title: "A personalized recovery plan",
-    description: "Tailored to your story. Together we shape a path that honors your pace and your healing.",
+    title: "A plan tailored to you",
+    description: "Whether you're navigating a rough patch or a fresh heartbreak, we shape a path that honors your pace and your relationship.",
   },
 ];
 
@@ -47,8 +47,8 @@ const Coaching = () => {
             Personalized Support, Just for You
           </h2>
           <p className="text-muted-foreground font-body max-w-xl mx-auto">
-            Everyone's healing journey is unique. Work face-to-face with Bruna
-            in a private video session, and let's start moving through this together.
+            Every relationship, and every heart, is different. Work face-to-face with Bruna
+            in a private video session and let's move through this together.
           </p>
 
         </motion.div>
