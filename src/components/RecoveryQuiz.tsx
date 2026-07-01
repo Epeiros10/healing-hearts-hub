@@ -3,82 +3,93 @@ import { motion, AnimatePresence } from "framer-motion";
 import { ArrowRight, ArrowLeft, RotateCcw, Sparkles } from "lucide-react";
 import BookingDialog from "./BookingDialog";
 
-type Phase = "shock" | "grief" | "anger" | "bargaining" | "rebuilding";
+type Track =
+  | "couples"
+  | "trust"
+  | "attachment"
+  | "dating"
+  | "breakup";
 
-type Option = { label: string; phase: Phase };
+type Option = { label: string; track: Track };
 type Question = { q: string; options: Option[] };
 
 const questions: Question[] = [
   {
-    q: "How long has it been since the breakup?",
+    q: "Which best describes your situation right now?",
     options: [
-      { label: "It just happened (days ago)", phase: "shock" },
-      { label: "A few weeks", phase: "grief" },
-      { label: "One to three months", phase: "anger" },
-      { label: "Several months or more", phase: "rebuilding" },
+      { label: "My partner and I keep having the same fights", track: "couples" },
+      { label: "We feel more like roommates than partners", track: "couples" },
+      { label: "Trust was broken and we're trying to rebuild", track: "trust" },
+      { label: "I keep repeating the same patterns in relationships", track: "attachment" },
+      { label: "I'm single and want to date more consciously", track: "dating" },
+      { label: "I'm going through or recovering from a breakup", track: "breakup" },
     ],
   },
   {
-    q: "Which feeling shows up the most right now?",
+    q: "When something difficult comes up in your relationship (or last one), you tend to:",
     options: [
-      { label: "Numbness, like I can't believe it", phase: "shock" },
-      { label: "Deep sadness and crying", phase: "grief" },
-      { label: "Anger or resentment", phase: "anger" },
-      { label: "Replaying what I could've done differently", phase: "bargaining" },
-      { label: "Cautious hope, mixed with sadness", phase: "rebuilding" },
+      { label: "Push for connection and reassurance", track: "attachment" },
+      { label: "Shut down or need space", track: "attachment" },
+      { label: "Try to talk it out calmly but it escalates", track: "couples" },
+      { label: "Feel suspicious or on edge", track: "trust" },
+      { label: "Avoid dating altogether", track: "dating" },
+      { label: "Spiral thinking about my ex", track: "breakup" },
     ],
   },
   {
-    q: "How are you sleeping?",
+    q: "What feels most out of reach right now?",
     options: [
-      { label: "Barely. I wake up and remember all over again", phase: "shock" },
-      { label: "I cry myself to sleep or wake up sad", phase: "grief" },
-      { label: "My mind races with frustration", phase: "anger" },
-      { label: "Mostly okay, with rough nights", phase: "rebuilding" },
+      { label: "Feeling heard by my partner", track: "couples" },
+      { label: "Trusting my partner (or myself) again", track: "trust" },
+      { label: "Feeling secure without needing constant reassurance", track: "attachment" },
+      { label: "Meeting people I actually connect with", track: "dating" },
+      { label: "Imagining a future without my ex", track: "breakup" },
     ],
   },
   {
-    q: "What's your relationship with their social media?",
+    q: "How does your body feel most days?",
     options: [
-      { label: "I check it constantly", phase: "shock" },
-      { label: "I look when I miss them", phase: "grief" },
-      { label: "I look and it makes me furious", phase: "anger" },
-      { label: "I'm trying to win them back somehow", phase: "bargaining" },
-      { label: "I've muted or unfollowed them", phase: "rebuilding" },
+      { label: "Tense, especially around my partner", track: "couples" },
+      { label: "Guarded, like I'm bracing for something", track: "trust" },
+      { label: "Anxious or hyper-aware in relationships", track: "attachment" },
+      { label: "Flat, disconnected, unmotivated to date", track: "dating" },
+      { label: "Heavy, tired, or numb since the breakup", track: "breakup" },
     ],
   },
   {
-    q: "When you imagine the next few months, you feel:",
+    q: "How often do you and the important people in your life truly connect?",
     options: [
-      { label: "Terrified. I can't picture life without them", phase: "shock" },
-      { label: "Heavy. Like grief I'll carry forever", phase: "grief" },
-      { label: "Frustrated they get to move on", phase: "anger" },
-      { label: "Like maybe we could still fix this", phase: "bargaining" },
-      { label: "Quietly curious about who I'm becoming", phase: "rebuilding" },
+      { label: "Rarely, we're on autopilot", track: "couples" },
+      { label: "It's there but shaky, I'm still wary", track: "trust" },
+      { label: "It depends on my mood or theirs", track: "attachment" },
+      { label: "I don't have that connection right now", track: "dating" },
+      { label: "I lost the one person I had it with", track: "breakup" },
     ],
   },
   {
-    q: "How are you taking care of yourself?",
+    q: "When you picture six months from now, what do you most want?",
     options: [
-      { label: "I'm barely functioning", phase: "shock" },
-      { label: "Some days I manage, some I don't", phase: "grief" },
-      { label: "I'm forcing routine to feel in control", phase: "anger" },
-      { label: "I'm building small habits back", phase: "rebuilding" },
+      { label: "A partnership that actually feels like teamwork", track: "couples" },
+      { label: "To feel safe and trusting with my person again", track: "trust" },
+      { label: "To feel calm and secure in myself", track: "attachment" },
+      { label: "To be dating from a healed, clear place", track: "dating" },
+      { label: "To feel like myself again after this breakup", track: "breakup" },
     ],
   },
   {
-    q: "What would help you most right now?",
+    q: "What kind of support feels most useful right now?",
     options: [
-      { label: "Someone to talk to today", phase: "shock" },
-      { label: "Space to feel without judgment", phase: "grief" },
-      { label: "Help making sense of what happened", phase: "bargaining" },
-      { label: "A plan to rebuild my life and confidence", phase: "rebuilding" },
+      { label: "Sessions with my partner and a coach", track: "couples" },
+      { label: "A structured plan to rebuild trust", track: "trust" },
+      { label: "Understanding my attachment patterns", track: "attachment" },
+      { label: "Coaching on dating and choosing well", track: "dating" },
+      { label: "Someone to help me through heartbreak", track: "breakup" },
     ],
   },
 ];
 
 type Result = {
-  phase: Phase;
+  track: Track;
   title: string;
   subtitle: string;
   description: string;
@@ -86,71 +97,71 @@ type Result = {
   recommendation: string;
 };
 
-const results: Record<Phase, Result> = {
-  shock: {
-    phase: "shock",
-    title: "You're in the Shock Phase",
-    subtitle: "The ground just disappeared beneath you, and that makes sense.",
+const results: Record<Track, Result> = {
+  couples: {
+    track: "couples",
+    title: "Your focus: Couples Communication",
+    subtitle: "You still care, you're just stuck in the same loop.",
     description:
-      "Right now your nervous system is in survival mode. You're not broken, you're processing something huge. The most important thing isn't to fix anything yet, it's to feel safe enough to breathe.",
+      "Most couples don't have a love problem, they have a communication problem. When the same arguments repeat, it's usually because unmet needs and old patterns are running the conversation. With the right tools, you can go from cycling through the same fight to actually being heard.",
     helps: [
-      "Talking to someone the same week, not in a month",
-      "Tiny anchors: water, sleep, one short walk",
-      "Permission to not have answers yet",
+      "Learning to name what you actually need",
+      "Interrupting the fight cycle before it escalates",
+      "Rebuilding warmth and everyday connection",
     ],
-    recommendation: "Emergency Call",
+    recommendation: "Couples session with Bruna",
   },
-  grief: {
-    phase: "grief",
-    title: "You're in the Grief Phase",
-    subtitle: "You're mourning a future you really believed in.",
+  trust: {
+    track: "trust",
+    title: "Your focus: Rebuilding Trust",
+    subtitle: "Trust doesn't rebuild by accident, it rebuilds by design.",
     description:
-      "This isn't weakness, it's love with nowhere to go. Grief moves in waves, and trying to skip it usually makes it last longer. You deserve space to feel this without being rushed.",
+      "Whether trust was broken by a betrayal, a long stretch of disconnection, or a pattern you're both trying to change, this phase needs structure. Rebuilding trust is a series of repeatable, honest choices, not a single conversation. Coaching gives you a clear path.",
     helps: [
-      "Letting yourself cry without timing it",
-      "A consistent person to process with",
-      "Gentle structure, not pressure to be okay",
+      "A shared framework for honesty and repair",
+      "Boundaries that create safety, not walls",
+      "Small daily practices that rebuild reliability",
     ],
-    recommendation: "Starter Pack",
+    recommendation: "Couples session with Bruna",
   },
-  anger: {
-    phase: "anger",
-    title: "You're in the Anger Phase",
-    subtitle: "Underneath the fire is grief that needs somewhere to go.",
+  attachment: {
+    track: "attachment",
+    title: "Your focus: Attachment Patterns",
+    subtitle: "The pattern isn't you, it's what you learned about closeness.",
     description:
-      "Anger after a breakup is often the part of you that's finally protecting you. It's not bad, it's information. The work is learning what it's pointing at without letting it run the show.",
+      "If you keep ending up in the same dynamic, anxious, avoidant, or on edge, it's usually attachment doing the driving. The good news: attachment patterns are learned, and they can be updated. This is one of the fastest, most life-changing areas of relationship coaching.",
     helps: [
-      "Writing it out before you act on it",
-      "Naming what was actually unfair, clearly",
-      "Channeling the energy into your own life",
+      "Identifying your attachment pattern clearly",
+      "Regulating your nervous system in relationships",
+      "Choosing partners and responses from a secure place",
     ],
-    recommendation: "Starter Pack",
+    recommendation: "1:1 session with Bruna",
   },
-  bargaining: {
-    phase: "bargaining",
-    title: "You're in the Bargaining Phase",
-    subtitle: "Your mind keeps rewriting the story, looking for a different ending.",
+  dating: {
+    track: "dating",
+    title: "Your focus: Conscious Dating",
+    subtitle: "Dating from clarity feels completely different than dating from lack.",
     description:
-      "If only I had said that. If only they understood. This phase is exhausting because it keeps the door cracked open. The relief comes from understanding what really happened, not winning them back.",
+      "You don't need better apps, you need a clearer signal. Conscious dating is about knowing what you actually want, spotting green and red flags early, and staying grounded in yourself while getting to know someone. It turns dating from draining into curious.",
     helps: [
-      "An honest, kind look at the relationship",
-      "Reality-checking the 'if only' stories",
-      "Closure that doesn't depend on them",
+      "Getting clear on your non-negotiables",
+      "Recognising patterns early, not months in",
+      "Staying yourself while getting closer to someone",
     ],
-    recommendation: "Starter Pack",
+    recommendation: "1:1 session with Bruna",
   },
-  rebuilding: {
-    phase: "rebuilding",
-    title: "You're in the Rebuilding Phase",
-    subtitle: "You're not over it, but you're becoming someone new.",
+  breakup: {
+    track: "breakup",
+    title: "Your focus: Post-Breakup Clarity",
+    subtitle: "Heartbreak is real. It's also workable, especially with support.",
     description:
-      "This is the quiet, beautiful part nobody warns you about. You still have hard days, and you're also starting to feel like yourself again. This is when deeper work pays off the most.",
+      "Breakup recovery is one of Bruna's coaching specialties. Whether you're in the early shock, deep grief, or slowly rebuilding, you don't have to figure it out alone. Structured, compassionate support can compress months of confusion into real clarity.",
     helps: [
-      "A structured plan, not just venting",
-      "Rebuilding identity and confidence",
-      "Preparing for the next relationship from a healed place",
+      "Understanding the phase you're actually in",
+      "Ending the loop of reaching out and regretting it",
+      "Rebuilding identity and confidence from the inside",
     ],
-    recommendation: "10-Session Recovery Package",
+    recommendation: "1:1 session with Bruna",
   },
 };
 
@@ -161,26 +172,33 @@ interface RecoveryQuizProps {
 const RecoveryQuiz = ({ variant = "section" }: RecoveryQuizProps) => {
   const [started, setStarted] = useState(false);
   const [step, setStep] = useState(0);
-  const [answers, setAnswers] = useState<Phase[]>([]);
+  const [answers, setAnswers] = useState<Track[]>([]);
   const [bookingOpen, setBookingOpen] = useState(false);
 
   const isDone = answers.length === questions.length;
 
   const computeResult = (): Result => {
-    const counts: Record<Phase, number> = {
-      shock: 0,
-      grief: 0,
-      anger: 0,
-      bargaining: 0,
-      rebuilding: 0,
+    const counts: Record<Track, number> = {
+      couples: 0,
+      trust: 0,
+      attachment: 0,
+      dating: 0,
+      breakup: 0,
     };
-    answers.forEach((p) => counts[p]++);
-    const top = (Object.entries(counts) as [Phase, number][]).sort((a, b) => b[1] - a[1])[0][0];
-    return results[top];
+    answers.forEach((t) => counts[t]++);
+    // First question is weighted a bit more by iterating naturally,
+    // ties broken by the earliest answer's track.
+    const sorted = (Object.entries(counts) as [Track, number][]).sort(
+      (a, b) => b[1] - a[1]
+    );
+    const topCount = sorted[0][1];
+    const tied = sorted.filter(([, c]) => c === topCount).map(([t]) => t);
+    const winner = answers.find((a) => tied.includes(a)) ?? sorted[0][0];
+    return results[winner];
   };
 
-  const handleAnswer = (phase: Phase) => {
-    const next = [...answers, phase];
+  const handleAnswer = (track: Track) => {
+    const next = [...answers, track];
     setAnswers(next);
     if (step < questions.length - 1) setStep(step + 1);
   };
@@ -218,10 +236,10 @@ const RecoveryQuiz = ({ variant = "section" }: RecoveryQuizProps) => {
               Free Quiz · 2 minutes
             </span>
             <h2 className="text-3xl md:text-4xl font-display font-semibold mb-4">
-              Where Are You in Your Healing Journey?
+              Which Relationship Coaching Path Fits You?
             </h2>
             <p className="text-muted-foreground font-body max-w-xl mx-auto">
-              Seven gentle questions to help you understand the phase you're in, and what actually helps right now.
+              Seven honest questions to help you understand where you are, and which kind of coaching support will actually move the needle.
             </p>
           </motion.div>
         )}
@@ -240,13 +258,13 @@ const RecoveryQuiz = ({ variant = "section" }: RecoveryQuizProps) => {
                   <Sparkles className="w-6 h-6 text-primary" />
                 </div>
                 <span className="inline-block text-primary font-body text-[10px] font-medium tracking-[0.2em] uppercase mb-3 px-2.5 py-1 rounded-full bg-primary/10">
-                  A Relationship Coaching Specialty
+                  Coaching with Bruna
                 </span>
                 <h3 className="text-2xl font-display font-semibold mb-3">
-                  Breakup Recovery Quiz
+                  Relationship Coaching Quiz
                 </h3>
                 <p className="text-muted-foreground font-body mb-8 max-w-md mx-auto">
-                  Healing isn't one thing. Find out which phase you're in, and what helps most, one of Bruna's core coaching specialties.
+                  Couples, communication, trust, attachment, dating, or breakup recovery. Find the one thing worth focusing on first.
                 </p>
                 <button
                   onClick={() => setStarted(true)}
@@ -293,7 +311,7 @@ const RecoveryQuiz = ({ variant = "section" }: RecoveryQuizProps) => {
                   {questions[step].options.map((opt) => (
                     <button
                       key={opt.label}
-                      onClick={() => handleAnswer(opt.phase)}
+                      onClick={() => handleAnswer(opt.track)}
                       className="w-full text-left p-4 rounded-xl border border-border bg-background hover:border-primary/40 hover:bg-primary/5 transition-all font-body text-sm group"
                     >
                       <span className="flex items-center justify-between gap-3">
@@ -357,10 +375,10 @@ const RecoveryQuiz = ({ variant = "section" }: RecoveryQuizProps) => {
                   <div className="border-t border-border pt-6">
                     <div className="text-center mb-4">
                       <span className="inline-block text-primary font-body text-[10px] font-medium tracking-[0.2em] uppercase mb-2 px-2.5 py-1 rounded-full bg-primary/10">
-                        Relationship Coaching with Bruna
+                        Coaching with Bruna
                       </span>
                       <p className="font-body text-sm text-muted-foreground">
-                        Breakup recovery is one of Bruna's coaching specialties. Based on where you are, we recommend starting with the{" "}
+                        Based on your answers, the best next step is a{" "}
                         <span className="font-medium text-foreground">{result.recommendation}</span>.
                       </p>
                     </div>
@@ -368,7 +386,7 @@ const RecoveryQuiz = ({ variant = "section" }: RecoveryQuizProps) => {
                       onClick={() => setBookingOpen(true)}
                       className="w-full inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-primary text-primary-foreground font-body text-sm font-medium hover:opacity-90 transition-opacity"
                     >
-                      Book a 1:1 session with Bruna
+                      Book a session with Bruna
                       <ArrowRight className="w-4 h-4" />
                     </button>
                     <button
@@ -381,15 +399,15 @@ const RecoveryQuiz = ({ variant = "section" }: RecoveryQuizProps) => {
 
                     <div className="mt-8 pt-6 border-t border-border">
                       <p className="font-body text-[11px] font-medium text-muted-foreground uppercase tracking-[0.2em] text-center mb-4">
-                        Bruna's other coaching specialties
+                        Bruna's coaching specialties
                       </p>
                       <div className="flex flex-wrap justify-center gap-2">
                         {[
                           "Couples communication",
-                          "Attachment patterns",
                           "Rebuilding trust",
+                          "Attachment patterns",
                           "Conscious dating",
-                          "Post-breakup clarity",
+                          "Breakup recovery",
                         ].map((s) => (
                           <span
                             key={s}
