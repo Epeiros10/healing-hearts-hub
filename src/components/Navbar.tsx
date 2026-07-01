@@ -47,10 +47,8 @@ const Navbar = () => {
             <span className="font-display text-primary text-2xl md:text-3xl font-semibold tracking-tight">
               Couples Coaching
             </span>
-            <span className="font-body text-[0.5rem] md:text-[0.55rem] uppercase text-accent flex justify-between w-full mt-[2px]">
-              {"With Bruna".split("").map((c, i) => (
-                <span key={i}>{c === " " ? "\u00A0" : c}</span>
-              ))}
+            <span className="font-body text-[0.5rem] md:text-[0.55rem] uppercase text-accent tracking-[0.15em] mt-[2px]">
+              With Bruna
             </span>
           </span>
         </a>
