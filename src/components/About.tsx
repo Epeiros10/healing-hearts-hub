@@ -47,13 +47,12 @@ const About = () => {
           <h3 className="text-2xl font-display font-semibold mb-3 text-center">Hi, I'm Bruna.</h3>
           <div className="space-y-3 text-muted-foreground font-body text-sm leading-relaxed">
             <p>
-              I know how it feels. The sleepless nights, the constant replaying
-              of memories. I've been there, and I found my way through.
+              I work with couples and individuals navigating the messy, tender parts
+              of love, communication breakdowns, disconnection, attachment wounds, and heartbreak.
             </p>
             <p>
-              As a relationship and attachment coach, I specialize in helping
-              people navigate heartbreak, understand their attachment patterns,
-              and emerge stronger than they ever imagined.
+              As a certified relationship and attachment coach, I help people understand
+              their patterns, rebuild trust, and create the kind of connection that actually feels safe.
             </p>
             <p className="text-foreground font-medium italic font-display text-base">
               "You're not broken. You're healing."
