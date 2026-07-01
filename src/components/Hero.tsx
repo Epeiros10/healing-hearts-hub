@@ -91,10 +91,10 @@ const Hero = () => {
           transition={{ duration: 0.8, ease: "easeOut" }}>
 
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-display font-semibold leading-tight mb-10">
-            Struggling after a breakup?
+            Love feels hard right now?
           </h1>
           <p className="text-lg md:text-xl text-muted-foreground font-body max-w-xl mx-auto mb-10 leading-relaxed">
-            Talk to someone who gets it. Book a free 15-min call with a certified breakup coach.
+            Relationship coaching for couples navigating conflict, disconnection, or heartbreak. Book a free 15-min call with Bruna.
           </p>
 
           <div className="flex flex-col gap-4 justify-center items-center">
