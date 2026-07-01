@@ -90,6 +90,14 @@ const slugImages: Record<string, string> = {
   "getting-over-being-cheated-on": imgCheated,
   "moving-out-after-a-breakup": imgMovingOut,
   "reconnecting-with-yourself-after-a-breakup": imgReconnecting,
+  "how-to-communicate-better-in-a-relationship": imgCommunicateBetter,
+  "rebuilding-trust-after-betrayal": imgRebuildTrust,
+  "anxious-attachment-in-relationships": imgAnxiousAttachment,
+  "avoidant-partner-how-to-connect": imgAvoidantPartner,
+  "healthy-conflict-in-couples": imgHealthyConflict,
+  "dating-with-intention": imgDatingIntention,
+  "green-flags-in-a-new-relationship": imgGreenFlags,
+  "stop-fighting-about-the-same-thing": imgSameFight,
 };
 
 // Placeholder used during array construction; overridden below per slug.
