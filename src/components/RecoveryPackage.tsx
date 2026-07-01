@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
-import { Check, Zap, Sprout, Sparkles } from "lucide-react";
+import { Check, Zap, Sprout, Sparkles, Heart } from "lucide-react";
+
 
 const STRIPE_LINK_10 = "https://buy.stripe.com/14AfZieaCexddfkaHXe7m00";
 const STRIPE_LINK_STARTER = "https://buy.stripe.com/eVqbJ2feGcp5cbg8zPe7m01";
@@ -40,6 +41,22 @@ const offerings: Offering[] = [
       "One focused 45-minute video call",
       "Individual or couples",
       "No commitment required",
+    ],
+    ctaLabel: "Book with",
+    getHref: (i) => coaches[i].calLink,
+  },
+  {
+    icon: Heart,
+    tag: "Couples Session",
+    title: "Couples Deep Dive",
+    description: "A dedicated 75-minute session for you and your partner. Space to be heard, understood, and leave with clear next steps together.",
+    price: "€129",
+    priceNote: "/ 75 min for two",
+    benefits: [
+      "Extended 75-min couples call",
+      "Structured space for both partners",
+      "Practical communication tools",
+      "Shared summary after the session",
     ],
     ctaLabel: "Book with",
     getHref: (i) => coaches[i].calLink,
@@ -101,7 +118,7 @@ const RecoveryPackage = () => {
           </p>
         </motion.div>
 
-        <div className="grid md:grid-cols-3 gap-6">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           {offerings.map((offering, idx) => {
             const Icon = offering.icon;
             return (
