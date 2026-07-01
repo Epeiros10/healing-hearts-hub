@@ -1,8 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
 import { ArrowDown, MessageCircle } from "lucide-react";
-import heroBg from "@/assets/hero-bg.webp";
-import heroBgMobile from "@/assets/hero-bg-mobile.webp";
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 
 const Hero = () => {
@@ -68,21 +66,24 @@ const Hero = () => {
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Background Image */}
-      <div className="absolute inset-0">
-        <img
-          src={heroBg}
-          srcSet={`${heroBgMobile} 800w, ${heroBg} 1600w`}
-          sizes="(max-width: 768px) 100vw, 1600px"
-          alt="Warm sunrise symbolizing hope and healing"
-          fetchPriority="high"
-          decoding="async"
-          width={1600}
-          height={900}
-          className="w-full h-full object-cover" />
-
-        <div className="absolute inset-0 bg-gradient-to-b from-background/70 via-background/50 to-background" />
-      </div>
+      {/* Soft blush → lavender gradient background */}
+      <div
+        className="absolute inset-0"
+        style={{ background: "var(--gradient-hero)" }}
+        aria-hidden="true"
+      />
+      {/* Ambient primary glow */}
+      <div
+        className="absolute -top-40 -right-32 w-[38rem] h-[38rem] rounded-full opacity-25 blur-3xl"
+        style={{ background: "radial-gradient(circle, hsl(var(--primary) / 0.55), transparent 65%)" }}
+        aria-hidden="true"
+      />
+      <div
+        className="absolute -bottom-40 -left-32 w-[34rem] h-[34rem] rounded-full opacity-20 blur-3xl"
+        style={{ background: "radial-gradient(circle, hsl(var(--accent) / 0.5), transparent 65%)" }}
+        aria-hidden="true"
+      />
+      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-background pointer-events-none" aria-hidden="true" />
 
       <div className="relative z-10 max-w-3xl mx-auto text-center px-4 py-20">
         <motion.div

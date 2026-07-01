@@ -4,88 +4,87 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Brand: Couples Coaching With Bruna — Blush & Lavender palette
-   #f8e8ee blush bg, #e8c5d0 soft pink, #c9a0dc light lavender, #9b72cf deep lavender */
+/* Brand: Couples Coaching With Bruna — Blush & Deep Purple palette */
 
 @layer base {
   :root {
-    --background: 340 60% 97%;
-    --foreground: 270 30% 18%;
+    --background: 340 55% 97%;
+    --foreground: 270 40% 14%;
 
-    --card: 340 50% 96%;
-    --card-foreground: 270 30% 18%;
+    --card: 340 45% 96%;
+    --card-foreground: 270 40% 14%;
 
-    --popover: 340 60% 97%;
-    --popover-foreground: 270 30% 18%;
+    --popover: 340 55% 97%;
+    --popover-foreground: 270 40% 14%;
 
-    --primary: 267 47% 63%;
+    --primary: 268 55% 42%;
     --primary-foreground: 340 60% 98%;
 
-    --secondary: 342 45% 84%;
-    --secondary-foreground: 270 30% 18%;
+    --secondary: 342 45% 86%;
+    --secondary-foreground: 270 40% 14%;
 
-    --muted: 340 40% 92%;
-    --muted-foreground: 270 15% 45%;
+    --muted: 340 40% 93%;
+    --muted-foreground: 270 20% 40%;
 
-    --accent: 283 46% 74%;
-    --accent-foreground: 270 30% 18%;
+    --accent: 268 45% 55%;
+    --accent-foreground: 340 60% 98%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
     --border: 340 30% 88%;
     --input: 340 30% 88%;
-    --ring: 267 47% 63%;
+    --ring: 268 55% 42%;
 
     --radius: 0.75rem;
 
-    --sidebar-background: 340 50% 96%;
-    --sidebar-foreground: 270 30% 18%;
-    --sidebar-primary: 267 47% 63%;
+    --sidebar-background: 340 45% 96%;
+    --sidebar-foreground: 270 40% 14%;
+    --sidebar-primary: 268 55% 42%;
     --sidebar-primary-foreground: 340 60% 98%;
-    --sidebar-accent: 340 40% 92%;
-    --sidebar-accent-foreground: 270 30% 18%;
+    --sidebar-accent: 340 40% 93%;
+    --sidebar-accent-foreground: 270 40% 14%;
     --sidebar-border: 340 30% 88%;
-    --sidebar-ring: 267 47% 63%;
+    --sidebar-ring: 268 55% 42%;
 
     --font-display: 'Playfair Display', serif;
     --font-body: 'DM Sans', sans-serif;
 
-    --gradient-warm: linear-gradient(135deg, hsl(267 47% 63%), hsl(283 46% 74%));
-    --gradient-soft: linear-gradient(180deg, hsl(340 60% 97%), hsl(342 45% 90%));
-    --gradient-hero: linear-gradient(135deg, hsl(340 60% 97% / 0.9), hsl(267 47% 63% / 0.12));
-    --shadow-soft: 0 4px 20px -4px hsl(267 47% 63% / 0.18);
-    --shadow-warm: 0 8px 30px -8px hsl(267 47% 63% / 0.25);
+    --gradient-warm: linear-gradient(135deg, hsl(268 55% 42%), hsl(283 45% 60%));
+    --gradient-soft: linear-gradient(180deg, hsl(340 55% 97%), hsl(342 45% 90%));
+    --gradient-hero: linear-gradient(135deg, hsl(340 55% 97%) 0%, hsl(342 50% 92%) 45%, hsl(283 40% 82%) 100%);
+    --shadow-soft: 0 4px 20px -4px hsl(268 55% 42% / 0.18);
+    --shadow-warm: 0 8px 30px -8px hsl(268 55% 42% / 0.28);
   }
 
   .dark {
-    --background: 270 25% 10%;
+    --background: 270 30% 8%;
     --foreground: 340 30% 94%;
-    --card: 270 25% 14%;
+    --card: 270 25% 12%;
     --card-foreground: 340 30% 94%;
-    --popover: 270 25% 10%;
+    --popover: 270 30% 8%;
     --popover-foreground: 340 30% 94%;
-    --primary: 267 47% 68%;
-    --primary-foreground: 270 25% 10%;
+    --primary: 268 55% 62%;
+    --primary-foreground: 270 30% 8%;
     --secondary: 342 25% 30%;
     --secondary-foreground: 340 30% 94%;
-    --muted: 270 20% 18%;
+    --muted: 270 20% 16%;
     --muted-foreground: 340 15% 65%;
-    --accent: 283 40% 50%;
+    --accent: 268 45% 45%;
     --accent-foreground: 340 30% 94%;
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 210 40% 98%;
     --border: 270 20% 22%;
     --input: 270 20% 22%;
-    --ring: 267 47% 68%;
-    --sidebar-background: 270 25% 12%;
+    --ring: 268 55% 62%;
+    --sidebar-background: 270 25% 10%;
     --sidebar-foreground: 340 30% 94%;
-    --sidebar-primary: 267 47% 68%;
-    --sidebar-primary-foreground: 270 25% 10%;
-    --sidebar-accent: 270 20% 18%;
+    --sidebar-primary: 268 55% 62%;
+    --sidebar-primary-foreground: 270 30% 8%;
+    --sidebar-accent: 270 20% 16%;
     --sidebar-accent-foreground: 340 30% 94%;
     --sidebar-border: 270 20% 22%;
-    --sidebar-ring: 267 47% 68%;
+    --sidebar-ring: 268 55% 62%;
   }
 }
 
