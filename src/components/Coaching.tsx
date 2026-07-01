@@ -146,6 +146,94 @@ const Coaching = () => {
           </div>
         </motion.div>
 
+        {/* How it works: scheduling, first session, cancellation */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="mt-16"
+        >
+          <div className="text-center mb-10">
+            <span className="text-primary font-body text-sm font-medium tracking-wide uppercase mb-3 block">
+              How it works
+            </span>
+            <h3 className="text-2xl md:text-3xl font-display font-semibold mb-3">
+              What to Expect, Step by Step
+            </h3>
+            <p className="text-muted-foreground font-body max-w-xl mx-auto text-sm">
+              Simple to book, easy to prepare for, and flexible if life gets in the way.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-6">
+            {/* How to schedule */}
+            <div
+              className="bg-background rounded-2xl p-7 border border-border"
+              style={{ boxShadow: "var(--shadow-soft)" }}
+            >
+              <div className="w-11 h-11 rounded-xl bg-primary/10 flex items-center justify-center mb-4">
+                <CalendarCheck className="w-5 h-5 text-primary" />
+              </div>
+              <h4 className="text-lg font-display font-semibold mb-3">
+                How to schedule
+              </h4>
+              <ol className="space-y-2.5 font-body text-sm text-foreground/90 list-decimal list-inside">
+                <li>Click any "Book it now" button on the page.</li>
+                <li>Pick a time that works for you in Bruna's calendar.</li>
+                <li>Enter your name, email, and a short note about your situation.</li>
+                <li>You'll get an instant confirmation with the video call link.</li>
+              </ol>
+              <p className="font-body text-xs text-muted-foreground mt-4">
+                Same-week availability. Sessions are held on Google Meet or Zoom.
+              </p>
+            </div>
+
+            {/* First session */}
+            <div
+              className="bg-background rounded-2xl p-7 border border-border"
+              style={{ boxShadow: "var(--shadow-soft)" }}
+            >
+              <div className="w-11 h-11 rounded-xl bg-primary/10 flex items-center justify-center mb-4">
+                <MessageCircle className="w-5 h-5 text-primary" />
+              </div>
+              <h4 className="text-lg font-display font-semibold mb-3">
+                Your first session
+              </h4>
+              <ul className="space-y-2.5 font-body text-sm text-foreground/90">
+                <li className="flex gap-2"><span className="text-primary">·</span> A warm welcome, no pressure to have it all figured out.</li>
+                <li className="flex gap-2"><span className="text-primary">·</span> Bruna listens to what's happening and what you want to change.</li>
+                <li className="flex gap-2"><span className="text-primary">·</span> Together you name one clear focus for the session.</li>
+                <li className="flex gap-2"><span className="text-primary">·</span> You leave with 1-2 practical tools to use this week.</li>
+              </ul>
+              <p className="font-body text-xs text-muted-foreground mt-4">
+                Come as you are, tissues, notebook, or partner welcome.
+              </p>
+            </div>
+
+            {/* Cancellation */}
+            <div
+              className="bg-background rounded-2xl p-7 border border-border"
+              style={{ boxShadow: "var(--shadow-soft)" }}
+            >
+              <div className="w-11 h-11 rounded-xl bg-primary/10 flex items-center justify-center mb-4">
+                <CalendarX className="w-5 h-5 text-primary" />
+              </div>
+              <h4 className="text-lg font-display font-semibold mb-3">
+                Rescheduling & cancellation
+              </h4>
+              <ul className="space-y-2.5 font-body text-sm text-foreground/90">
+                <li className="flex gap-2"><span className="text-primary">·</span> Reschedule or cancel free up to 24 hours before your session.</li>
+                <li className="flex gap-2"><span className="text-primary">·</span> Use the link in your confirmation email, no back-and-forth needed.</li>
+                <li className="flex gap-2"><span className="text-primary">·</span> Under 24 hours: the session is counted as held, but one courtesy reschedule per client is offered when life happens.</li>
+                <li className="flex gap-2"><span className="text-primary">·</span> Packs (3 and 10 sessions) are valid for 6 months from purchase.</li>
+              </ul>
+              <p className="font-body text-xs text-muted-foreground mt-4">
+                Questions? Email hello@couplescoachingwithbruna.com.
+              </p>
+            </div>
+          </div>
+        </motion.div>
+
       </div>
     </section>
   );
