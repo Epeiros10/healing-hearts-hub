@@ -4,9 +4,12 @@ const Footer = () => {
   return (
     <footer className="py-12 px-4 border-t border-border">
       <div className="max-w-5xl mx-auto text-center">
-        <div className="flex flex-col items-center gap-2 mb-4">
-          <img src={logo} alt="Couples Coaching With Bruna monogram" width={40} height={40} className="w-10 h-10" loading="lazy" />
-          <span className="text-[0.65rem] font-body font-medium uppercase tracking-[0.2em] text-foreground/70">Couples Coaching With Bruna</span>
+        <div className="flex flex-col items-center gap-3 mb-4">
+          <img src={logo} alt="Couples Coaching With Bruna monogram" width={64} height={64} className="w-16 h-16" loading="lazy" />
+          <div className="flex flex-col items-center leading-tight">
+            <span className="font-display text-primary text-xl font-semibold tracking-tight">Couples Coaching</span>
+            <span className="font-body text-xs uppercase tracking-[0.25em] text-accent">With Bruna</span>
+          </div>
         </div>
         <p className="font-body text-sm text-muted-foreground max-w-md mx-auto mb-6">
           Relationship coaching for couples, communication, connection, and healing.
