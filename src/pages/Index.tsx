@@ -9,7 +9,7 @@ import RecoveryQuiz from "@/components/RecoveryQuiz";
 import Footer from "@/components/Footer";
 import ContactSection from "@/components/ContactSection";
 import FAQ from "@/components/FAQ";
-import LeadMagnetPopup from "@/components/LeadMagnetPopup";
+
 
 const SITE_URL = "https://couplescoachingwithbruna.lovable.app";
 
@@ -134,7 +134,7 @@ const Index = () => {
       <ContactSection />
       <FAQ />
       <Footer />
-      <LeadMagnetPopup />
+      
     </div>
   );
 };
