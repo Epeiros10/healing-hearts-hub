@@ -16,8 +16,8 @@ const highlights = [
   },
   {
     icon: Sparkles,
-    title: "A personalized recovery plan",
-    description: "Tailored to your story. Together we shape a path that honors your pace and your healing.",
+    title: "A plan tailored to you",
+    description: "Whether you're navigating a rough patch or a fresh heartbreak, we shape a path that honors your pace and your relationship.",
   },
 ];
 
