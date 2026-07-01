@@ -352,15 +352,20 @@ const RecoveryQuiz = ({ variant = "section" }: RecoveryQuizProps) => {
                   </div>
 
                   <div className="border-t border-border pt-6">
-                    <p className="font-body text-sm text-muted-foreground mb-4 text-center">
-                      Based on where you are, we recommend starting with the{" "}
-                      <span className="font-medium text-foreground">{result.recommendation}</span>.
-                    </p>
+                    <div className="text-center mb-4">
+                      <span className="inline-block text-primary font-body text-[10px] font-medium tracking-[0.2em] uppercase mb-2 px-2.5 py-1 rounded-full bg-primary/10">
+                        Relationship Coaching with Bruna
+                      </span>
+                      <p className="font-body text-sm text-muted-foreground">
+                        Breakup recovery is one of Bruna's coaching specialties. Based on where you are, we recommend starting with the{" "}
+                        <span className="font-medium text-foreground">{result.recommendation}</span>.
+                      </p>
+                    </div>
                     <button
                       onClick={() => setBookingOpen(true)}
                       className="w-full inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-primary text-primary-foreground font-body text-sm font-medium hover:opacity-90 transition-opacity"
                     >
-                      Book a session with a coach
+                      Book a 1:1 session with Bruna
                       <ArrowRight className="w-4 h-4" />
                     </button>
                     <button
