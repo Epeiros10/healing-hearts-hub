@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
-import { Check, Zap, Sprout, Sparkles } from "lucide-react";
+import { Check, Zap, Sprout, Sparkles, Heart } from "lucide-react";
+
 
 const STRIPE_LINK_10 = "https://buy.stripe.com/14AfZieaCexddfkaHXe7m00";
 const STRIPE_LINK_STARTER = "https://buy.stripe.com/eVqbJ2feGcp5cbg8zPe7m01";
