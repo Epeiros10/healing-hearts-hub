@@ -41,7 +41,8 @@ const Navbar = () => {
             alt="Couples Coaching With Bruna monogram"
             width={72}
             height={72}
-            className="w-14 h-14 md:w-16 md:h-16 shrink-0 drop-shadow-sm transition-transform group-hover:scale-105"
+            className="w-14 h-14 md:w-16 md:h-16 shrink-0 drop-shadow-md transition-transform group-hover:scale-105"
+            style={{ filter: "brightness(0.7) contrast(1.35) saturate(1.2)" }}
           />
           <span className="inline-flex flex-col leading-none items-stretch">
             <span className="font-display text-primary text-2xl md:text-3xl font-semibold tracking-tight">

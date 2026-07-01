@@ -5,7 +5,7 @@ const Footer = () => {
     <footer className="py-12 px-4 border-t border-border">
       <div className="max-w-5xl mx-auto text-center">
         <div className="flex flex-col items-center gap-3 mb-4">
-          <img src={logo} alt="Couples Coaching With Bruna monogram" width={96} height={96} className="w-24 h-24" loading="lazy" />
+          <img src={logo} alt="Couples Coaching With Bruna monogram" width={96} height={96} className="w-24 h-24 drop-shadow-md" style={{ filter: "brightness(0.7) contrast(1.35) saturate(1.2)" }} loading="lazy" />
           <div className="inline-flex flex-col items-stretch leading-none">
             <span className="font-display text-primary text-3xl font-semibold tracking-tight">Couples Coaching</span>
             <span className="font-body text-[0.75rem] uppercase text-accent flex justify-between w-full mt-[3px]">
