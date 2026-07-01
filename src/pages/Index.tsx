@@ -82,7 +82,7 @@ const faqLd = {
   ],
 };
 
-const SITE_URL = "https://breakup-recovery.org";
+const SITE_URL = "https://couplescoachingwithbruna.lovable.app";
 
 const Index = () => {
   return (

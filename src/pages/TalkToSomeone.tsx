@@ -5,7 +5,7 @@ import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 import BookingDialog from "@/components/BookingDialog";
 
-const SITE_URL = "https://breakup-recovery.org";
+const SITE_URL = "https://couplescoachingwithbruna.lovable.app";
 
 const coaches = [
   {

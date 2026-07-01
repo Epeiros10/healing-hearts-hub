@@ -1,7 +1,7 @@
 import { Helmet } from "react-helmet-async";
 import { Mail } from "lucide-react";
 
-const SITE_URL = "https://breakup-recovery.org";
+const SITE_URL = "https://couplescoachingwithbruna.lovable.app";
 
 const Contact = () => {
   return (

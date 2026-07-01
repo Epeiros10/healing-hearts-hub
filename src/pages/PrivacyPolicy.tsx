@@ -1,6 +1,6 @@
 import { Helmet } from "react-helmet-async";
 
-const SITE_URL = "https://breakup-recovery.org";
+const SITE_URL = "https://couplescoachingwithbruna.lovable.app";
 
 const PrivacyPolicy = () => {
   return (

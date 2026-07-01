@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import BookingDialog from "./BookingDialog";
+import logo from "@/assets/logo-monogram.png";
 
 const navLinks = [
 { label: "About", href: "/#about" },
@@ -34,16 +35,9 @@ const Navbar = () => {
       }>
 
       <div className="max-w-5xl mx-auto flex items-center justify-between px-4 py-4">
-        <a href="#" className="flex flex-col items-center gap-0.5 leading-none">
-          <svg width="24" height="24" viewBox="0 0 32 32" fill="none" className="shrink-0">
-            {/* Left half */}
-            <path d="M16 28C16 28 4 19 4 12a6 6 0 0 1 12-1" className="stroke-primary" strokeWidth="1.8" strokeLinecap="round" fill="none" />
-            {/* Right half */}
-            <path d="M16 28C16 28 28 19 28 12a6 6 0 0 0-12-1" className="stroke-primary" strokeWidth="1.8" strokeLinecap="round" fill="none" />
-            {/* Gold kintsugi crack */}
-            <path d="M16 7 L15 12 L17 16 L15 20 L16 28" stroke="#D4A843" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" fill="none" />
-          </svg>
-          <span className="uppercase tracking-[0.2em] text-black font-normal text-left text-xs font-sans">COACHING WITH BRUNA      </span>
+        <a href="/" className="flex items-center gap-2 leading-none">
+          <img src={logo} alt="Couples Coaching With Bruna monogram" width={32} height={32} className="w-8 h-8 shrink-0" />
+          <span className="uppercase tracking-[0.18em] text-foreground font-normal text-left text-[0.7rem] font-sans">Couples Coaching<br/>With Bruna</span>
         </a>
 
         {/* Desktop */}

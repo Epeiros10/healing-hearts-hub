@@ -3,7 +3,7 @@ import Footer from "@/components/Footer";
 import ShouldITextMyExTool from "@/components/ShouldITextMyExTool";
 import { Helmet } from "react-helmet-async";
 
-const SITE_URL = "https://breakup-recovery.org";
+const SITE_URL = "https://couplescoachingwithbruna.lovable.app";
 
 const ShouldITextMyEx = () => {
   const title = "Should I Text My Ex? Free Decision Tool (2026)";
