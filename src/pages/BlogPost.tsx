@@ -106,8 +106,6 @@ const BlogPost = () => {
                 {post.category}
               </span>
               <span>·</span>
-              <span>{post.readTime}</span>
-              <span>·</span>
               <span>{post.date}</span>
             </div>
 
