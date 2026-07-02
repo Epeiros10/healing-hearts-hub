@@ -258,7 +258,7 @@ const BlogPost = () => {
                           Struggling with this on your own? You don't have to. A 45-minute
                           1:1 session with{" "}
                           <Link to="/#coaching" className="text-primary underline underline-offset-4">
-                            a breakup recovery coach
+                            a couples coach
                           </Link>{" "}
                           can help you move through it with support.
                         </p>
