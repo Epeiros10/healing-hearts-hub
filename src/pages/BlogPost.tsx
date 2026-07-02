@@ -255,12 +255,12 @@ const BlogPost = () => {
                     {i === midpoint && (
                       <aside className="my-10 p-5 sm:p-6 bg-muted/40 border-l-4 border-primary rounded-r-xl">
                         <p className="font-body text-sm text-foreground/85 leading-relaxed mb-3">
-                          Struggling with this on your own? You don't have to. A 45-minute
-                          1:1 session with{" "}
+                          Want support with this in your relationship? A 45-minute
+                          session with{" "}
                           <Link to="/#coaching" className="text-primary underline underline-offset-4">
                             a couples coach
                           </Link>{" "}
-                          can help you move through it with support.
+                          can help you and your partner move forward together.
                         </p>
                         <button
                           onClick={() => setBookingOpen(true)}
