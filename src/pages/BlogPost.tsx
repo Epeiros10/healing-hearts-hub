@@ -278,11 +278,11 @@ const BlogPost = () => {
 
             <div className="mt-14 p-6 sm:p-8 bg-card border border-border rounded-2xl text-center">
               <h2 className="font-display text-xl text-foreground mb-2">
-                Need someone to walk through this with you?
+                Ready to strengthen your relationship?
               </h2>
               <p className="font-body text-sm text-muted-foreground mb-5 max-w-md mx-auto">
-                Book a 45-minute 1:1 session with Bruna. Compassionate,
-                judgment-free, and built around where you are right now.
+                Book a 45-minute session with Bruna, together or on your own.
+                Practical, judgment-free, and tailored to where you are right now.
               </p>
               <button
                 onClick={() => setBookingOpen(true)}
